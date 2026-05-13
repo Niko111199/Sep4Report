@@ -1,0 +1,569 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{BRUNBECH2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d155069f79ee1ab9c223addd11f989ca}{%
+           family={Brunbech},
+           familyi={B\bibinitperiod},
+           given={P.\bibnamedelimi Y.},
+           giveni={P\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Danmarks National Leksikon}%
+      }
+      \strng{namehash}{d155069f79ee1ab9c223addd11f989ca}
+      \strng{fullhash}{d155069f79ee1ab9c223addd11f989ca}
+      \strng{fullhashraw}{d155069f79ee1ab9c223addd11f989ca}
+      \strng{bibnamehash}{d155069f79ee1ab9c223addd11f989ca}
+      \strng{authorbibnamehash}{d155069f79ee1ab9c223addd11f989ca}
+      \strng{authornamehash}{d155069f79ee1ab9c223addd11f989ca}
+      \strng{authorfullhash}{d155069f79ee1ab9c223addd11f989ca}
+      \strng{authorfullhashraw}{d155069f79ee1ab9c223addd11f989ca}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{title}{Besættelsen, 9. april 1940 -- Danmarkshistorien | Lex}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://danmarkshistorien.lex.dk/Bes%C3%A6ttelsen,_9._april_1940
+      \endverb
+      \verb{url}
+      \verb https://danmarkshistorien.lex.dk/Bes%C3%A6ttelsen,_9._april_1940
+      \endverb
+    \endentry
+    \entry{Damgaard1990}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=54db3e5cbcd70f87550c899106278321}{%
+           family={Damgaard\bibnamedelima Petersen},
+           familyi={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{54db3e5cbcd70f87550c899106278321}
+      \strng{fullhash}{54db3e5cbcd70f87550c899106278321}
+      \strng{fullhashraw}{54db3e5cbcd70f87550c899106278321}
+      \strng{bibnamehash}{54db3e5cbcd70f87550c899106278321}
+      \strng{authorbibnamehash}{54db3e5cbcd70f87550c899106278321}
+      \strng{authornamehash}{54db3e5cbcd70f87550c899106278321}
+      \strng{authorfullhash}{54db3e5cbcd70f87550c899106278321}
+      \strng{authorfullhashraw}{54db3e5cbcd70f87550c899106278321}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Faldne i Danmarks Frihedskamp 1940--1945}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{1990}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://mindelunden.dk/UDFORSKMINDELUNDEN/det-store-gravfelt/christian-ulrik-hansen
+      \endverb
+      \verb{url}
+      \verb https://mindelunden.dk/UDFORSKMINDELUNDEN/det-store-gravfelt/christian-ulrik-hansen
+      \endverb
+    \endentry
+    \entry{Woldlike2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9c66a79037db584f25a5b6e1a201e56c}{%
+           family={Fabricius\bibnamedelima W{ø}ldike},
+           familyi={F\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={H.\bibnamedelimi A.},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {National Museet}%
+      }
+      \strng{namehash}{9c66a79037db584f25a5b6e1a201e56c}
+      \strng{fullhash}{9c66a79037db584f25a5b6e1a201e56c}
+      \strng{fullhashraw}{9c66a79037db584f25a5b6e1a201e56c}
+      \strng{bibnamehash}{9c66a79037db584f25a5b6e1a201e56c}
+      \strng{authorbibnamehash}{9c66a79037db584f25a5b6e1a201e56c}
+      \strng{authornamehash}{9c66a79037db584f25a5b6e1a201e56c}
+      \strng{authorfullhash}{9c66a79037db584f25a5b6e1a201e56c}
+      \strng{authorfullhashraw}{9c66a79037db584f25a5b6e1a201e56c}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Modstandsdatabasen - Biografi af Helmer Andreas Fabricius W{ø}ldike}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://modstand.natmus.dk/PersonBiografi.aspx?10587
+      \endverb
+      \verb{url}
+      \verb https://modstand.natmus.dk/PersonBiografi.aspx?10587
+      \endverb
+    \endentry
+    \entry{nationalmuseet2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cf8566fe65edcf24d69d2972e1b472d8}{%
+           family={{NationalMuseet}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Museet}%
+      }
+      \strng{namehash}{cf8566fe65edcf24d69d2972e1b472d8}
+      \strng{fullhash}{cf8566fe65edcf24d69d2972e1b472d8}
+      \strng{fullhashraw}{cf8566fe65edcf24d69d2972e1b472d8}
+      \strng{bibnamehash}{cf8566fe65edcf24d69d2972e1b472d8}
+      \strng{authorbibnamehash}{cf8566fe65edcf24d69d2972e1b472d8}
+      \strng{authornamehash}{cf8566fe65edcf24d69d2972e1b472d8}
+      \strng{authorfullhash}{cf8566fe65edcf24d69d2972e1b472d8}
+      \strng{authorfullhashraw}{cf8566fe65edcf24d69d2972e1b472d8}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Hverdag og samarbejdspolitik under besættelsen}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://natmus.dk/historisk-viden/danmark/besaettelsestiden-1940-1945/besaettelsen-kort-fortalt/hverdagen-fortsaetter/
+      \endverb
+      \verb{url}
+      \verb https://natmus.dk/historisk-viden/danmark/besaettelsestiden-1940-1945/besaettelsen-kort-fortalt/hverdagen-fortsaetter/
+      \endverb
+    \endentry
+    \entry{trommer2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a8a173266dfae684678510b196eb8def}{%
+           family={Trommer},
+           familyi={T\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0,
+           suffix={A.\bibnamedelimi og\bibnamedelima Krautwald},
+           suffixi={A\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim K\bibinitperiod},
+           suffixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Danmarks National Leksikon}%
+      }
+      \strng{namehash}{a8a173266dfae684678510b196eb8def}
+      \strng{fullhash}{a8a173266dfae684678510b196eb8def}
+      \strng{fullhashraw}{a8a173266dfae684678510b196eb8def}
+      \strng{bibnamehash}{a8a173266dfae684678510b196eb8def}
+      \strng{authorbibnamehash}{a8a173266dfae684678510b196eb8def}
+      \strng{authornamehash}{a8a173266dfae684678510b196eb8def}
+      \strng{authorfullhash}{a8a173266dfae684678510b196eb8def}
+      \strng{authorfullhashraw}{a8a173266dfae684678510b196eb8def}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Modstandsbev{æ}gelsen i Danmark 1940--1945 -- Lex}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://lex.dk/Modstandsbev%C3%A6gelsen_i_Danmark_1940-1945
+      \endverb
+      \verb{url}
+      \verb https://lex.dk/Modstandsbev%C3%A6gelsen_i_Danmark_1940-1945
+      \endverb
+    \endentry
+    \entry{katedralskole2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e98e026c7a388a74098b54f8dfe95287}{%
+           family={{Viborg Katedralskole}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{fullhash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{fullhashraw}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{bibnamehash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{authorbibnamehash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{authornamehash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{authorfullhash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{authorfullhashraw}{e98e026c7a388a74098b54f8dfe95287}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Levende historie - Viborg Katedralskole}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://viborgkatedralskole.dk/om-vk/levende-historie
+      \endverb
+      \verb{url}
+      \verb https://viborgkatedralskole.dk/om-vk/levende-historie
+      \endverb
+    \endentry
+    \entry{viborgmuseum2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0e52efb962d4b80404c5e2d77e8ffddf}{%
+           family={{Viborg Museum}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{0e52efb962d4b80404c5e2d77e8ffddf}
+      \strng{fullhash}{0e52efb962d4b80404c5e2d77e8ffddf}
+      \strng{fullhashraw}{0e52efb962d4b80404c5e2d77e8ffddf}
+      \strng{bibnamehash}{0e52efb962d4b80404c5e2d77e8ffddf}
+      \strng{authorbibnamehash}{0e52efb962d4b80404c5e2d77e8ffddf}
+      \strng{authornamehash}{0e52efb962d4b80404c5e2d77e8ffddf}
+      \strng{authorfullhash}{0e52efb962d4b80404c5e2d77e8ffddf}
+      \strng{authorfullhashraw}{0e52efb962d4b80404c5e2d77e8ffddf}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Mindetavle ved Viborg Katedralskole - Viborg Museum}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://viborgmuseum.dk/leksikon/m/mindetavle-ved-viborg-katedralskole
+      \endverb
+      \verb{url}
+      \verb https://viborgmuseum.dk/leksikon/m/mindetavle-ved-viborg-katedralskole
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{BRUNBECH2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d155069f79ee1ab9c223addd11f989ca}{%
+           family={Brunbech},
+           familyi={B\bibinitperiod},
+           given={P.\bibnamedelimi Y.},
+           giveni={P\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Danmarks National Leksikon}%
+      }
+      \strng{namehash}{d155069f79ee1ab9c223addd11f989ca}
+      \strng{fullhash}{d155069f79ee1ab9c223addd11f989ca}
+      \strng{fullhashraw}{d155069f79ee1ab9c223addd11f989ca}
+      \strng{bibnamehash}{d155069f79ee1ab9c223addd11f989ca}
+      \strng{authorbibnamehash}{d155069f79ee1ab9c223addd11f989ca}
+      \strng{authornamehash}{d155069f79ee1ab9c223addd11f989ca}
+      \strng{authorfullhash}{d155069f79ee1ab9c223addd11f989ca}
+      \strng{authorfullhashraw}{d155069f79ee1ab9c223addd11f989ca}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{title}{Besættelsen, 9. april 1940 -- Danmarkshistorien | Lex}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://danmarkshistorien.lex.dk/Bes%C3%A6ttelsen,_9._april_1940
+      \endverb
+      \verb{url}
+      \verb https://danmarkshistorien.lex.dk/Bes%C3%A6ttelsen,_9._april_1940
+      \endverb
+    \endentry
+    \entry{Damgaard1990}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=54db3e5cbcd70f87550c899106278321}{%
+           family={Damgaard\bibnamedelima Petersen},
+           familyi={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{54db3e5cbcd70f87550c899106278321}
+      \strng{fullhash}{54db3e5cbcd70f87550c899106278321}
+      \strng{fullhashraw}{54db3e5cbcd70f87550c899106278321}
+      \strng{bibnamehash}{54db3e5cbcd70f87550c899106278321}
+      \strng{authorbibnamehash}{54db3e5cbcd70f87550c899106278321}
+      \strng{authornamehash}{54db3e5cbcd70f87550c899106278321}
+      \strng{authorfullhash}{54db3e5cbcd70f87550c899106278321}
+      \strng{authorfullhashraw}{54db3e5cbcd70f87550c899106278321}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Faldne i Danmarks Frihedskamp 1940--1945}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{1990}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://mindelunden.dk/UDFORSKMINDELUNDEN/det-store-gravfelt/christian-ulrik-hansen
+      \endverb
+      \verb{url}
+      \verb https://mindelunden.dk/UDFORSKMINDELUNDEN/det-store-gravfelt/christian-ulrik-hansen
+      \endverb
+    \endentry
+    \entry{Woldlike2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9c66a79037db584f25a5b6e1a201e56c}{%
+           family={Fabricius\bibnamedelima W{ø}ldike},
+           familyi={F\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={H.\bibnamedelimi A.},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {National Museet}%
+      }
+      \strng{namehash}{9c66a79037db584f25a5b6e1a201e56c}
+      \strng{fullhash}{9c66a79037db584f25a5b6e1a201e56c}
+      \strng{fullhashraw}{9c66a79037db584f25a5b6e1a201e56c}
+      \strng{bibnamehash}{9c66a79037db584f25a5b6e1a201e56c}
+      \strng{authorbibnamehash}{9c66a79037db584f25a5b6e1a201e56c}
+      \strng{authornamehash}{9c66a79037db584f25a5b6e1a201e56c}
+      \strng{authorfullhash}{9c66a79037db584f25a5b6e1a201e56c}
+      \strng{authorfullhashraw}{9c66a79037db584f25a5b6e1a201e56c}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Modstandsdatabasen - Biografi af Helmer Andreas Fabricius W{ø}ldike}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://modstand.natmus.dk/PersonBiografi.aspx?10587
+      \endverb
+      \verb{url}
+      \verb https://modstand.natmus.dk/PersonBiografi.aspx?10587
+      \endverb
+    \endentry
+    \entry{nationalmuseet2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cf8566fe65edcf24d69d2972e1b472d8}{%
+           family={{NationalMuseet}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Museet}%
+      }
+      \strng{namehash}{cf8566fe65edcf24d69d2972e1b472d8}
+      \strng{fullhash}{cf8566fe65edcf24d69d2972e1b472d8}
+      \strng{fullhashraw}{cf8566fe65edcf24d69d2972e1b472d8}
+      \strng{bibnamehash}{cf8566fe65edcf24d69d2972e1b472d8}
+      \strng{authorbibnamehash}{cf8566fe65edcf24d69d2972e1b472d8}
+      \strng{authornamehash}{cf8566fe65edcf24d69d2972e1b472d8}
+      \strng{authorfullhash}{cf8566fe65edcf24d69d2972e1b472d8}
+      \strng{authorfullhashraw}{cf8566fe65edcf24d69d2972e1b472d8}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Hverdag og samarbejdspolitik under besættelsen}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://natmus.dk/historisk-viden/danmark/besaettelsestiden-1940-1945/besaettelsen-kort-fortalt/hverdagen-fortsaetter/
+      \endverb
+      \verb{url}
+      \verb https://natmus.dk/historisk-viden/danmark/besaettelsestiden-1940-1945/besaettelsen-kort-fortalt/hverdagen-fortsaetter/
+      \endverb
+    \endentry
+    \entry{trommer2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a8a173266dfae684678510b196eb8def}{%
+           family={Trommer},
+           familyi={T\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0,
+           suffix={A.\bibnamedelimi og\bibnamedelima Krautwald},
+           suffixi={A\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim K\bibinitperiod},
+           suffixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Danmarks National Leksikon}%
+      }
+      \strng{namehash}{a8a173266dfae684678510b196eb8def}
+      \strng{fullhash}{a8a173266dfae684678510b196eb8def}
+      \strng{fullhashraw}{a8a173266dfae684678510b196eb8def}
+      \strng{bibnamehash}{a8a173266dfae684678510b196eb8def}
+      \strng{authorbibnamehash}{a8a173266dfae684678510b196eb8def}
+      \strng{authornamehash}{a8a173266dfae684678510b196eb8def}
+      \strng{authorfullhash}{a8a173266dfae684678510b196eb8def}
+      \strng{authorfullhashraw}{a8a173266dfae684678510b196eb8def}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Modstandsbev{æ}gelsen i Danmark 1940--1945 -- Lex}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://lex.dk/Modstandsbev%C3%A6gelsen_i_Danmark_1940-1945
+      \endverb
+      \verb{url}
+      \verb https://lex.dk/Modstandsbev%C3%A6gelsen_i_Danmark_1940-1945
+      \endverb
+    \endentry
+    \entry{katedralskole2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e98e026c7a388a74098b54f8dfe95287}{%
+           family={{Viborg Katedralskole}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{fullhash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{fullhashraw}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{bibnamehash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{authorbibnamehash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{authornamehash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{authorfullhash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{authorfullhashraw}{e98e026c7a388a74098b54f8dfe95287}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Levende historie - Viborg Katedralskole}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://viborgkatedralskole.dk/om-vk/levende-historie
+      \endverb
+      \verb{url}
+      \verb https://viborgkatedralskole.dk/om-vk/levende-historie
+      \endverb
+    \endentry
+    \entry{viborgmuseum2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0e52efb962d4b80404c5e2d77e8ffddf}{%
+           family={{Viborg Museum}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{0e52efb962d4b80404c5e2d77e8ffddf}
+      \strng{fullhash}{0e52efb962d4b80404c5e2d77e8ffddf}
+      \strng{fullhashraw}{0e52efb962d4b80404c5e2d77e8ffddf}
+      \strng{bibnamehash}{0e52efb962d4b80404c5e2d77e8ffddf}
+      \strng{authorbibnamehash}{0e52efb962d4b80404c5e2d77e8ffddf}
+      \strng{authornamehash}{0e52efb962d4b80404c5e2d77e8ffddf}
+      \strng{authorfullhash}{0e52efb962d4b80404c5e2d77e8ffddf}
+      \strng{authorfullhashraw}{0e52efb962d4b80404c5e2d77e8ffddf}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Mindetavle ved Viborg Katedralskole - Viborg Museum}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://viborgmuseum.dk/leksikon/m/mindetavle-ved-viborg-katedralskole
+      \endverb
+      \verb{url}
+      \verb https://viborgmuseum.dk/leksikon/m/mindetavle-ved-viborg-katedralskole
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
