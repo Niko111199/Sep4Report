@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.26)  13 MAY 2026 07:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.26)  15 MAY 2026 08:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jonat/Downloads/rapporter/projekt_rapport/main.tex
-(c:/Users/jonat/Downloads/rapporter/projekt_rapport/main.tex
+**c:/Users/jonat/Downloads/mynewproject/Sep4Report/rapporter/projekt_rapport/main.tex
+(c:/Users/jonat/Downloads/mynewproject/Sep4Report/rapporter/projekt_rapport/main.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
 (C:\Users\jonat\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -719,14 +719,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  19271 strings out of 468130
- 344748 string characters out of 5430633
+ 345156 string characters out of 5430633
  1284949 words of memory out of 5000000
  47665 multiletter control sequences out of 15000+600000
  635981 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,11n,67p,2734b,2807s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,12n,67p,2691b,2807s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk>
-Output written on main.pdf (8 pages, 130888 bytes).
+Output written on main.pdf (8 pages, 130700 bytes).
 PDF statistics:
  399 PDF objects out of 1000 (max. 8388607)
  21 named destinations out of 1000 (max. 500000)

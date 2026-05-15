@@ -1,6 +1,6 @@
-PWD c:\Users\jonat\Downloads\rapporter\projekt_rapport
+PWD c:\Users\jonat\Downloads\mynewproject\Sep4Report\rapporter\projekt_rapport
 INPUT C:\Users\jonat\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\jonat\Downloads\rapporter\projekt_rapport\main.tex
+INPUT c:\Users\jonat\Downloads\mynewproject\Sep4Report\rapporter\projekt_rapport\main.tex
 OUTPUT main.log
 INPUT C:\Users\jonat\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\jonat\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
