@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1779707441.80253 -1
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1779784344.41833 -1
   "../bibliography.bib" 1778654999 4618 dbbc4c5f5ce3995fc9062b366fa35266 ""
-  "main.bcf" 1779707441 134223 a992502dec9acef2dfe478574c608935 "pdflatex"
+  "main.bcf" 1779784344 134223 a992502dec9acef2dfe478574c608935 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1779707440.77155 "c:/Users/niko1/Desktop/Sep4Report/rapporter/projektbeskrivelse/main.tex" "main.pdf" "main" 1779707441.80317 0
+["pdflatex"] 1779784343.34083 "c:/Users/niko1/Desktop/Sep4Report/rapporter/projektbeskrivelse/main.tex" "main.pdf" "main" 1779784344.41942 0
   "../figures/ViaLogo.png" 1778654999 10306 3069fa436e314b51d37288c336ec5517 ""
   "../figures/tidsplan.png" 1778654999 27048 555aa199b8072cf488496af24411d51d ""
   "C:/Users/niko1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1779706787 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
@@ -107,18 +107,18 @@
   "C:/Users/niko1/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/niko1/AppData/Local/Programs/MiKTeX/tex/latex/textpos/textpos.sty" 1658745447 12842 35403bda336a71a37a5edc37b78e3ec3 ""
   "C:/Users/niko1/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/niko1/Desktop/Sep4Report/rapporter/projektbeskrivelse/main.tex" 1778655001 1929 7b85ca2fc9668eceff1f997f0e7e6606 ""
-  "main.aux" 1779707441 2446 b3f713622d94f1ce29fa18d2fbfaca44 "pdflatex"
+  "c:/Users/niko1/Desktop/Sep4Report/rapporter/projektbeskrivelse/main.tex" 1779784342 1937 3f535e556704f3aff8a646e1a85523ca ""
+  "main.aux" 1779784344 2446 b3f713622d94f1ce29fa18d2fbfaca44 "pdflatex"
   "main.bbl" 1779706800 14843 e13e880e2bc82031aeb71ad0764664a4 "biber main"
-  "main.out" 1779707441 702 d20bff514ec1a07a59031144075403a2 "pdflatex"
-  "main.run.xml" 1779707441 2362 34c4a7385696d00b4e94f69249a19762 "pdflatex"
-  "main.tex" 1778655001 1929 7b85ca2fc9668eceff1f997f0e7e6606 ""
-  "main.toc" 1779707441 485 62711867b6b2bf400a8b80b0a1b271cd "pdflatex"
+  "main.out" 1779784344 702 d20bff514ec1a07a59031144075403a2 "pdflatex"
+  "main.run.xml" 1779784344 2362 34c4a7385696d00b4e94f69249a19762 "pdflatex"
+  "main.tex" 1779784342 1937 3f535e556704f3aff8a646e1a85523ca ""
+  "main.toc" 1779784344 485 62711867b6b2bf400a8b80b0a1b271cd "pdflatex"
   "sections/afgraensning.tex" 1778655001 679 88e07ee8a446f925921277984dd498f4 ""
   "sections/metoder.tex" 1778655001 153 95cbea823431bc737065c79f17dc3bf4 ""
   "sections/problemfelt.tex" 1778830497 3226 b0817e95fbf7f445c0111e2890295a43 ""
   "sections/problemformulering.tex" 1778830497 633 9ac8c50fb39f763824afacfd9506d934 ""
-  "sections/risikovurdering.tex" 1779707440 745 41c4de1588a64375689c69e30d78d8c3 ""
+  "sections/risikovurdering.tex" 1779707443 745 41c4de1588a64375689c69e30d78d8c3 ""
   "sections/tidsplan.tex" 1778655001 187 52997a13addf9dddae87dd0dd0e416eb ""
   (generated)
   "main.aux"
