@@ -10,13 +10,20 @@ I begyndelsen af projektet bar arbejdet præg af eksperimentering og læring, hv
 
 \newpage
 \subsection{Game Sessions}
-den første del af systemet som blev udviklet var Faktisk Online Session systmet, dette blev gjordt, for at sikre at alle efterfølgende systemer kunne testes i en online kontekst, og for at sikre at vi havde en stabil base at bygge videre på. Dette system blev udviklet ved hjælp af Unreal Engine's Online Subsystem, som giver en række værktøjer og funktioner til at håndtere online multiplayer-funktionalitet. Implementeringen omfattede oprettelse og håndtering af sessions, matchmaking, og netværkskommunikation mellem klienter og servere. Dette var en vigtig milepæl i projektet, da det lagde grundlaget for alle de multiplayer-aspekter, der senere skulle implementeres i spillet.
+En af de første centrale dele af systemet, som gruppen udviklede, var det online sessionssystem. Dette blev prioriteret tidligt i projektforløbet for at sikre, at alle efterfølgende systemer kunne testes og udvikles i en reel multiplayer-kontekst. Samtidig gav det gruppen mulighed for tidligt at etablere en stabil teknisk base, som resten af spillets netværksfunktionalitet kunne bygges ovenpå.
 
-i praksis blev implementationen af online sessions først oprettet som et system hvor spilleren kunne oprette en session, og spiller der joinede ville altid senere 
+Systemet blev udviklet ved hjælp af Unreal Engine’s Online Subsystem, som tilbyder en række værktøjer til håndtering af multiplayer-funktioner. Implementeringen omfattede blandt andet oprettelse og håndtering af sessions, grundlæggende matchmaking samt netværkskommunikation mellem klienter og servere. Dette udgjorde en vigtig milepæl i projektet, da det var første gang gruppen fik etableret fungerende multiplayer-infrastruktur, hvilket senere blev afgørende for hele spillets struktur og funktionalitet.
+
+I den første version af systemet blev der implementeret en relativt simpel løsning, hvor en spiller kunne oprette en session, og andre spillere automatisk blev koblet til den først oprettede session. Denne løsning fungerede som et udgangspunkt for at få systemet teknisk stabilt, men viste sig senere at være begrænset i forhold til brugeroplevelse og fleksibilitet.
+
+Senere i udviklingsforløbet blev systemet derfor videreudviklet til den nuværende løsning (jf. bilag F.2.29–F.2.30), hvor spillere i stedet kan vælge mellem tilgængelige sessioner. Der blev desuden implementeret en lobby-funktion, hvor spillere kan samles og vente, inden spillet starter. Denne ændring blev foretaget på baggrund af test og overvejelser om brugeroplevelse, da gruppen vurderede, at det var vigtigt at give spillerne mere kontrol og bedre overblik over multiplayer-delen af spillet.
+
+Sessionhåndteringen blev implementeret i Unreal Engine’s GameInstance-klasse, som er designet til at bevare data og funktionalitet på tværs af levels og spiltilstande. Ved at placere al sessionlogik her sikrede gruppen, at sessiondata kunne bevares uanset, hvilken del af spillet spilleren befandt sig i. Dette var en vigtig teknisk beslutning, da det bidrog til en mere stabil og konsistent multiplayer-oplevelse og reducerede risikoen for datatab ved level-skift.
+
+For at gøre sessionssystemet tilgængeligt for spilleren blev der desuden udviklet et brugerinterface (UI), hvor spilleren kunne se en liste over aktive sessioner og vælge, hvilken de ønskede at deltage i. Dette UI blev implementeret ved hjælp af Unreal Engine’s Widget System, som gør det muligt at opbygge interaktive og dynamiske brugergrænseflader. UI’et inkluderede funktioner til realtidsopdatering af sessionlisten, visning af relevante sessiondetaljer samt håndtering af brugerinput til både at oprette og tilslutte sessioner.
 
 \newpage
 \subsection{TeamSelection}
-
 
 \newpage
 \subsection{VoiceChat}
