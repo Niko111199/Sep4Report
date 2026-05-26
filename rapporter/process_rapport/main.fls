@@ -226,10 +226,10 @@ INPUT sections\projectinitiering.tex
 INPUT .\sections\projektudfoerelse.tex
 INPUT .\sections\projektudfoerelse.tex
 INPUT sections\projektudfoerelse.tex
+INPUT C:\Users\niko1\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
 INPUT .\sections\personlige_refleksioner.tex
 INPUT .\sections\personlige_refleksioner.tex
 INPUT sections\personlige_refleksioner.tex
-INPUT C:\Users\niko1\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
 INPUT .\sections\refleksion_over_vejledning.tex
 INPUT .\sections\refleksion_over_vejledning.tex
 INPUT sections\refleksion_over_vejledning.tex

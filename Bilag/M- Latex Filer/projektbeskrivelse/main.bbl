@@ -1,0 +1,363 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{Mayer2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=446d06692da0f080b431472f0603a16f}{%
+           family={Mayer},
+           familyi={M\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3be8e1b034b34ab35d6d99801c274e4}{%
+           family={Makransky},
+           familyi={M\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97aee17ad67372d75d5c0e32acfc6207}{%
+           family={Parong},
+           familyi={P\bibinitperiod},
+           given={Jocelyn},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8ad86a07f4193ec47c24a0963b81860e}
+      \strng{fullhash}{cca4e5bd63372249ea11dc1b3a4287ab}
+      \strng{fullhashraw}{cca4e5bd63372249ea11dc1b3a4287ab}
+      \strng{bibnamehash}{cca4e5bd63372249ea11dc1b3a4287ab}
+      \strng{authorbibnamehash}{cca4e5bd63372249ea11dc1b3a4287ab}
+      \strng{authornamehash}{8ad86a07f4193ec47c24a0963b81860e}
+      \strng{authorfullhash}{cca4e5bd63372249ea11dc1b3a4287ab}
+      \strng{authorfullhashraw}{cca4e5bd63372249ea11dc1b3a4287ab}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Human-Computer Interaction}
+      \field{month}{08}
+      \field{title}{The Promise and Pitfalls of Learning in Immersive Virtual Reality}
+      \field{volume}{39}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1080/10447318.2022.2108563
+      \endverb
+    \endentry
+    \entry{VanDoorsselaere2025}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=26419ac89a9cb3afec069b4a7f673d49}{%
+           family={Van\bibnamedelima Doorsselaere},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Joris},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{26419ac89a9cb3afec069b4a7f673d49}
+      \strng{fullhash}{26419ac89a9cb3afec069b4a7f673d49}
+      \strng{fullhashraw}{26419ac89a9cb3afec069b4a7f673d49}
+      \strng{bibnamehash}{26419ac89a9cb3afec069b4a7f673d49}
+      \strng{authorbibnamehash}{26419ac89a9cb3afec069b4a7f673d49}
+      \strng{authornamehash}{26419ac89a9cb3afec069b4a7f673d49}
+      \strng{authorfullhash}{26419ac89a9cb3afec069b4a7f673d49}
+      \strng{authorfullhashraw}{26419ac89a9cb3afec069b4a7f673d49}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{History Education Research Journal}
+      \field{month}{05}
+      \field{title}{Meaningful learning beyond the textbook: a case study of student experiences during an authentic historical inquiry on local heritage}
+      \field{volume}{22}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.14324/HERJ.22.1.09
+      \endverb
+    \endentry
+    \entry{katedralskole2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e98e026c7a388a74098b54f8dfe95287}{%
+           family={{Viborg Katedralskole}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{fullhash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{fullhashraw}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{bibnamehash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{authorbibnamehash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{authornamehash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{authorfullhash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{authorfullhashraw}{e98e026c7a388a74098b54f8dfe95287}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Levende historie - Viborg Katedralskole}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://viborgkatedralskole.dk/om-vk/levende-historie
+      \endverb
+      \verb{url}
+      \verb https://viborgkatedralskole.dk/om-vk/levende-historie
+      \endverb
+    \endentry
+    \entry{Wouters2013}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9df08a724bb83b4a09e45550480e1292}{%
+           family={Wouters},
+           familyi={W\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=528fc4f40b4644895b8c07753ead46f4}{%
+           family={Nimwegen},
+           familyi={N\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51ab0cc8fc6e042b11697f54782b8c30}{%
+           family={Oostendorp},
+           familyi={O\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85762009b924140722e0ae641d967bf9}{%
+           family={Spek},
+           familyi={S\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7e76e3bfee0f97b1d44ab84f603dc606}
+      \strng{fullhash}{b874213bb5f1872dfb313fdccaedd43d}
+      \strng{fullhashraw}{b874213bb5f1872dfb313fdccaedd43d}
+      \strng{bibnamehash}{b874213bb5f1872dfb313fdccaedd43d}
+      \strng{authorbibnamehash}{b874213bb5f1872dfb313fdccaedd43d}
+      \strng{authornamehash}{7e76e3bfee0f97b1d44ab84f603dc606}
+      \strng{authorfullhash}{b874213bb5f1872dfb313fdccaedd43d}
+      \strng{authorfullhashraw}{b874213bb5f1872dfb313fdccaedd43d}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Educational Psychology}
+      \field{month}{02}
+      \field{title}{A Meta-Analysis of the Cognitive and Motivational Effects of Serious Games}
+      \field{volume}{105}
+      \field{year}{2013}
+      \field{pages}{249\bibrangedash 265}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1037/a0031311
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{Mayer2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=446d06692da0f080b431472f0603a16f}{%
+           family={Mayer},
+           familyi={M\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3be8e1b034b34ab35d6d99801c274e4}{%
+           family={Makransky},
+           familyi={M\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97aee17ad67372d75d5c0e32acfc6207}{%
+           family={Parong},
+           familyi={P\bibinitperiod},
+           given={Jocelyn},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8ad86a07f4193ec47c24a0963b81860e}
+      \strng{fullhash}{cca4e5bd63372249ea11dc1b3a4287ab}
+      \strng{fullhashraw}{cca4e5bd63372249ea11dc1b3a4287ab}
+      \strng{bibnamehash}{cca4e5bd63372249ea11dc1b3a4287ab}
+      \strng{authorbibnamehash}{cca4e5bd63372249ea11dc1b3a4287ab}
+      \strng{authornamehash}{8ad86a07f4193ec47c24a0963b81860e}
+      \strng{authorfullhash}{cca4e5bd63372249ea11dc1b3a4287ab}
+      \strng{authorfullhashraw}{cca4e5bd63372249ea11dc1b3a4287ab}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Human-Computer Interaction}
+      \field{month}{08}
+      \field{title}{The Promise and Pitfalls of Learning in Immersive Virtual Reality}
+      \field{volume}{39}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1080/10447318.2022.2108563
+      \endverb
+    \endentry
+    \entry{VanDoorsselaere2025}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=26419ac89a9cb3afec069b4a7f673d49}{%
+           family={Van\bibnamedelima Doorsselaere},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Joris},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{26419ac89a9cb3afec069b4a7f673d49}
+      \strng{fullhash}{26419ac89a9cb3afec069b4a7f673d49}
+      \strng{fullhashraw}{26419ac89a9cb3afec069b4a7f673d49}
+      \strng{bibnamehash}{26419ac89a9cb3afec069b4a7f673d49}
+      \strng{authorbibnamehash}{26419ac89a9cb3afec069b4a7f673d49}
+      \strng{authornamehash}{26419ac89a9cb3afec069b4a7f673d49}
+      \strng{authorfullhash}{26419ac89a9cb3afec069b4a7f673d49}
+      \strng{authorfullhashraw}{26419ac89a9cb3afec069b4a7f673d49}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{History Education Research Journal}
+      \field{month}{05}
+      \field{title}{Meaningful learning beyond the textbook: a case study of student experiences during an authentic historical inquiry on local heritage}
+      \field{volume}{22}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.14324/HERJ.22.1.09
+      \endverb
+    \endentry
+    \entry{katedralskole2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e98e026c7a388a74098b54f8dfe95287}{%
+           family={{Viborg Katedralskole}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{fullhash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{fullhashraw}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{bibnamehash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{authorbibnamehash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{authornamehash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{authorfullhash}{e98e026c7a388a74098b54f8dfe95287}
+      \strng{authorfullhashraw}{e98e026c7a388a74098b54f8dfe95287}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Levende historie - Viborg Katedralskole}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://viborgkatedralskole.dk/om-vk/levende-historie
+      \endverb
+      \verb{url}
+      \verb https://viborgkatedralskole.dk/om-vk/levende-historie
+      \endverb
+    \endentry
+    \entry{Wouters2013}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9df08a724bb83b4a09e45550480e1292}{%
+           family={Wouters},
+           familyi={W\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=528fc4f40b4644895b8c07753ead46f4}{%
+           family={Nimwegen},
+           familyi={N\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51ab0cc8fc6e042b11697f54782b8c30}{%
+           family={Oostendorp},
+           familyi={O\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85762009b924140722e0ae641d967bf9}{%
+           family={Spek},
+           familyi={S\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7e76e3bfee0f97b1d44ab84f603dc606}
+      \strng{fullhash}{b874213bb5f1872dfb313fdccaedd43d}
+      \strng{fullhashraw}{b874213bb5f1872dfb313fdccaedd43d}
+      \strng{bibnamehash}{b874213bb5f1872dfb313fdccaedd43d}
+      \strng{authorbibnamehash}{b874213bb5f1872dfb313fdccaedd43d}
+      \strng{authornamehash}{7e76e3bfee0f97b1d44ab84f603dc606}
+      \strng{authorfullhash}{b874213bb5f1872dfb313fdccaedd43d}
+      \strng{authorfullhashraw}{b874213bb5f1872dfb313fdccaedd43d}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Educational Psychology}
+      \field{month}{02}
+      \field{title}{A Meta-Analysis of the Cognitive and Motivational Effects of Serious Games}
+      \field{volume}{105}
+      \field{year}{2013}
+      \field{pages}{249\bibrangedash 265}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1037/a0031311
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

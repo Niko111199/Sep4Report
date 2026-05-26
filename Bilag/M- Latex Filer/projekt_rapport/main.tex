@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{setspace}
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage[utf8]{inputenc}   % Allows Danish characters like æ, ø, å
+\usepackage[T1]{fontenc}      % Proper font encoding for hyphenation
+\usepackage[danish]{babel}    % Danish language settings
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage[absolute,overlay]{textpos}
+
+\usepackage{csquotes}             % Recommended with biblatex
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{../bibliography.bib}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}          % use fancy page style
+\fancyhf{}    
+\fancyhead[L]{23/10/1944 - Projektrapport}
+\fancyfoot[C]{\thepage}
+\usepackage{hyperref}       
+
+
+\title{projektrapport sep4}
+\author{jonathan}
+\date{maj 2026}
+
+\pagenumbering{arabic}
+\onehalfspacing
+
+
+\begin{document}
+	
+	
+\begin{titlepage}
+	\begin{textblock*}{5cm}(18cm,0cm)
+    \includegraphics[width=2.5cm]{../figures/ViaLogo.png}
+	\end{textblock*}
+	\centering
+	{\Huge \textbf{VIA University College}\par}
+	\vspace*{3cm}
+	{\Huge \textbf{VR Bus - Projektrapport}\par}
+	\vspace{1.5cm}
+	{\Large  Nikolaj Bræmer Christensen – 354322 \\ Jonathan Cilius Østberg Winther Engell Gøtze – 354500 \\ Victor Bruun Fassbender – 354361\par}
+	\vspace{1cm}
+	{\Large PELC \par}
+	\vfill
+	%TODO : indsæt antal tegn til sidst - consol komando til at få antal tegn: texcount -inc -sum -char main.tex
+	{\large Antal tegn: \par}
+	{\large XR Softwareingeniøruddannelsen \par}
+	{\large 4. semester \par}
+	{\large \today\par}
+\end{titlepage}
+
+
+\tableofcontents
+
+\clearpage  
+
+\input{sections/resume.tex}
+\clearpage  
+
+\input{sections/indledning.tex}
+\clearpage  
+
+\input{sections/hovedafsnit.tex}
+\clearpage  
+
+\input{sections/diskussion.tex}
+\clearpage  
+
+\input{sections/konklusion.tex}
+
+\clearpage
+
+\addcontentsline{toc}{section}{Litteratur}
+\printbibliography
+
+\end{document}

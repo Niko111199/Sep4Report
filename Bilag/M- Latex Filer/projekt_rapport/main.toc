@@ -1,0 +1,6 @@
+\babel@toc {danish}{}\relax 
+\contentsline {section}{\numberline {1}Resume}{2}{section.1}%
+\contentsline {section}{\numberline {2}Indledning}{3}{section.2}%
+\contentsline {section}{\numberline {3}Hovedafsnit}{5}{section.3}%
+\contentsline {section}{\numberline {4}Diskussion}{6}{section.4}%
+\contentsline {section}{Litteratur}{7}{section.4}%
