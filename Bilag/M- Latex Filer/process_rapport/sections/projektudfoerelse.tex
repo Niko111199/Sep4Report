@@ -24,6 +24,21 @@ For at gøre sessionssystemet tilgængeligt for spilleren blev der desuden udvik
 
 \newpage
 \subsection{TeamSelection}
+Dette system blev designet for at give spillerne mulighed for at vælge mellem forskellige hold, hvilket var en central del af spillets multiplayer-struktur og gameplay-dynamik.
+
+Implementeringen af Team Selection blev i første omgang lavet ved hjælp af Unreal Engine’s tag-system. Dette blev valgt som en enkel og fleksibel løsning, da alle spillere i den tidlige version af spillet havde samme basiskarakter, før et egentligt klassesystem blev implementeret. Gruppen udviklede i denne forbindelse et widget-baseret system, hvor spilleren fik tildelt et specifikt tag baseret på deres holdvalg.
+
+For at understøtte dette blev der oprettet spawn points i scenen med tilsvarende tags, således at systemet kunne matche spillerens tag med det relevante spawn point. På denne måde blev spilleren automatisk spawn’et på den korrekte placering afhængigt af det valgte hold (jf. bilag F.2.3). Denne løsning gjorde det muligt at skabe en simpel, men effektiv logik til holdopdeling i den tidlige fase af udviklingen.
+
+Som projektet udviklede sig, blev der senere implementeret et mere avanceret nedarvningssystem for spillerklasser, som gjorde det muligt at differentiere spillernes egenskaber og roller mere detaljeret. Dette klassesystem vil blive behandlet senere i rapporten.
+
+Team Selection-systemet blev implementeret i Unreal Engine’s GameMode-klasse, da denne klasse håndterer spillets overordnede regler og logik, herunder spawn af spillere og styring af holdfordeling. Ved at placere logikken her sikrede gruppen, at systemet fungerede globalt på tværs af levels og spiltilstande, hvilket var vigtigt for at opretholde en konsistent multiplayer-oplevelse.
+
+For at gøre systemet tilgængeligt for spilleren blev der udviklet et UI, hvor man kunne vælge mellem de tilgængelige hold. Dette UI blev implementeret via Unreal Engine’s Widget System, som gjorde det muligt at skabe en interaktiv og brugervenlig grænseflade. UI’et indeholdt blandt andet visning af holdnavne som hjalp spilleren med at træffe et valg.
+
+UI’et blev instansieret gennem PlayerController-klassen, da denne klasse håndterer spillerens input og interaktion med spillet. Denne placering gjorde det muligt at sikre en effektiv kobling mellem brugerinput og spillets logik. Systemet blev løbende testet og itereret gennem udviklingsprocessen for at sikre stabil funktionalitet og en god brugeroplevelse, da holdvalg var en vigtig del af spillets multiplayer-dynamik (jf. bilag F.2.10–F.2.11).
+
+Efter at spilleren har valgt et hold, sendes de videre til næste UI, hvor de kan vælge deres klasse (jf. bilag F.2.33). Denne opdeling i trin bidrog til en mere struktureret onboarding-proces i spillet og gjorde det lettere for spilleren at forstå deres rolle i spillets startfase.
 
 \newpage
 \subsection{VoiceChat}
@@ -37,7 +52,17 @@ For at gøre sessionssystemet tilgængeligt for spilleren blev der desuden udvik
 
 \newpage
 \subsection{Class Selection}
+Som tidligere nævnt har de forskellige hold også tilknyttede klasser, som spillerne kan vælge imellem. Dette system blev implementeret for at give spillerne mulighed for at differentiere sig yderligere inden for deres valgte hold og for at tilføje mere dybde til gameplayet, da hver klasse kunne have unikke evner og roller i spillet.
 
+For at udvikle klassesystemet blev der taget udgangspunkt i en fælles base-klasse, PlayerCharacter, hvor alle fælles funktioner og egenskaber blev defineret. Herefter blev der oprettet specifikke klasser for hvert hold. Disse klasser indeholdt fælles hold-specifikke egenskaber, hvor eksempelvis Resistance team kunne samle nøgler op, mens Nazi team havde evnen til at fange modstandere. Disse mekanikker blev designet som centrale gameplay-elementer og vil blive uddybet senere i rapporten.
+
+Denne nedarvningsstruktur gjorde det muligt at organisere koden på en måde, der understøttede genbrug og modularitet, samtidig med at der var plads til specialisering af de enkelte klasser. Gruppen oplevede, at denne tilgang gjorde systemet mere overskueligt at arbejde med, især i takt med at antallet af klasser voksede.
+
+Derfra blev der implementeret yderligere nedarvede klasser inden for hvert hold, hvor hver enkelt klasse fik tildelt unikke evner og egenskaber. Dette gjorde det muligt at skabe en mere varieret og strategisk gameplay-oplevelse, hvor spilleren kunne vælge en rolle, der passede til deres spillestil. For Resistance team blev der eksempelvis udviklet fire forskellige karakterklasser (Sport, Science, Music, Language), mens Nazi team blev udvidet med to forskellige karakterklasser (Gastapo Solider og SS Officer). Hver klasse blev desuden udstyret med unikke meshes, hvilket gjorde det muligt visuelt at skelne mellem både klasser og hold i spillet.
+
+I praksis foregik klassevalget ved, at spilleren først blev sendt videre fra Team Selection UI’et til et klassevalg-UI (jf. bilag F.2.33). Herfra blev spilleren dirigeret videre til enten Unreal Engine-baserede UI’er for henholdsvis Resistance (jf. bilag F.2.28) og Nazi (jf. bilag F.2.27). Disse UI’er bestod i praksis af interaktive knapper, som kaldte en funktion, der spawner spillerens karakter, tildeler det korrekte team-tag og placerer spilleren på det rigtige spawn point.
+
+Når karakteren er blevet spawnet korrekt, kan spilleren vælge deres specifikke klasse inden for det valgte hold til den pågældende spil-session. Denne opdeling i flere trin gjorde det muligt at strukturere onboarding-processen i spillet og sikre, at spilleren gradvist blev introduceret til deres rolle og muligheder i spillet.
 
 \newpage
 \subsection{Speceille Evner}

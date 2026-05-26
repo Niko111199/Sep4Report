@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1779797797.73611 -1
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1779801105.59309 -1
   "../bibliography.bib" 1778654999 4618 dbbc4c5f5ce3995fc9062b366fa35266 ""
-  "main.bcf" 1779797797 133947 1104f3c35bb0aaad64e3fff0f870f1bb "pdflatex"
+  "main.bcf" 1779801105 133947 1104f3c35bb0aaad64e3fff0f870f1bb "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1779797796.68242 "c:/Users/niko1/Desktop/Sep4Report/Bilag/M- Latex Filer/process_rapport/main.tex" "main.pdf" "main" 1779797797.73705 0
+["pdflatex"] 1779801104.48463 "c:/Users/niko1/Desktop/Sep4Report/Bilag/M- Latex Filer/process_rapport/main.tex" "main.pdf" "main" 1779801105.59427 0
   "../figures/ViaLogo.png" 1778654999 10306 3069fa436e314b51d37288c336ec5517 ""
   "C:/Users/niko1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1779706787 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/niko1/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1779706792 31952 13de0fa319216d4fdb48188e0268f081 ""
@@ -104,19 +104,19 @@
   "C:/Users/niko1/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/niko1/AppData/Local/Programs/MiKTeX/tex/latex/textpos/textpos.sty" 1658745447 12842 35403bda336a71a37a5edc37b78e3ec3 ""
   "C:/Users/niko1/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/niko1/Desktop/Sep4Report/Bilag/M- Latex Filer/process_rapport/main.tex" 1779785142 2040 ce55a450f25c268b31a4c721ea0a6add ""
-  "main.aux" 1779797797 3143 dd3a780d5c1c1e8098aa725b6cf4638d "pdflatex"
+  "c:/Users/niko1/Desktop/Sep4Report/Bilag/M- Latex Filer/process_rapport/main.tex" 1779801103 2057 5577aa92b3e438cdbdc4def14fdac441 ""
+  "main.aux" 1779801105 3143 7f35ae650751dd7b9448e57a893d229a "pdflatex"
   "main.bbl" 1779784582 486 76d65a242ec496c9b4361af646ff12cb "biber main"
-  "main.out" 1779797797 2823 0d0be90d5249fe03f476dc10aa17fcb4 "pdflatex"
-  "main.run.xml" 1779797797 2362 34c4a7385696d00b4e94f69249a19762 "pdflatex"
-  "main.tex" 1779785142 2040 ce55a450f25c268b31a4c721ea0a6add ""
-  "main.toc" 1779797797 1813 f1e6f21960616e1704f25c055a46885e "pdflatex"
+  "main.out" 1779801105 2823 0d0be90d5249fe03f476dc10aa17fcb4 "pdflatex"
+  "main.run.xml" 1779801105 2362 34c4a7385696d00b4e94f69249a19762 "pdflatex"
+  "main.tex" 1779801103 2057 5577aa92b3e438cdbdc4def14fdac441 ""
+  "main.toc" 1779801105 1813 210819241eccb010afdfb7cb0042f8d5 "pdflatex"
   "sections/gruppearbejde.tex" 1779789276 4065 2be1142df46134ca0bfe587d445889af ""
   "sections/indledning.tex" 1779786502 4295 9676ac12cc1e3c5519b2a504d7e4887f ""
   "sections/konklusion.tex" 1779784120 20 26fae91c7098672b22aae15d7727eb4b ""
   "sections/personlige_refleksioner.tex" 1779795158 1509 db47d5113ea4fc63a90210292f5a4c34 ""
   "sections/projectinitiering.tex" 1779787308 2888 e3e97eda8323f3ca04ce69cc286c52b7 ""
-  "sections/projektudfoerelse.tex" 1779797796 5520 32e86011ce2c227a0c0a768e9d9fefe7 ""
+  "sections/projektudfoerelse.tex" 1779801008 10969 1fb02bc8d2be065717bd664f0a69fe0a ""
   "sections/refleksion_over_vejledning.tex" 1779787912 1417 bd4f5dd7984361e3ce2b0c3b9e6fd5a5 ""
   (generated)
   "main.aux"
