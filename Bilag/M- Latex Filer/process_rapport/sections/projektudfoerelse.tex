@@ -1,44 +1,82 @@
 \section{Projektudførelse}
 \subsection{Oprettelse af projekt}
-For at komme i gang med projektet oprettede gruppen først selve Unreal Engine-projektet. Projektet blev initialt oprettet som et C++-projekt baseret på en First Person-template, da gruppen ønskede, at spillet skulle opleves fra et førstepersonsperspektiv. Dette valg blev truffet tidligt i processen for at sikre, at gameplay-oplevelsen blev defineret allerede fra starten, hvilket senere har haft betydning for designvalg og udvikling af spilmekanikker.
+For at komme i gang med projektet oprettede gruppen først selve Unreal Engine-projektet. Projektet blev initialt oprettet som et C++-projekt baseret på Unreal Engine’s \texttt{FirstPersonTemplate}, da gruppen ønskede, at spillet skulle opleves fra et førstepersonsperspektiv.
 
-Efter oprettelsen af projektet blev der opsat et fælles GitHub-repository for at understøtte samarbejdet i gruppen. Dette gjorde det muligt at arbejde parallelt på projektet, samtidig med at der blev skabt en struktureret versionstyring af filer og ændringer. Brugen af pull requests og code reviews blev implementeret for at sikre kvalitet i koden og for at give mulighed for faglig sparring mellem gruppemedlemmerne. Denne arbejdsform viste sig at være vigtig for at undgå konflikter i koden og for at sikre, at ændringer blev gennemgået og forstået af flere i gruppen, før de blev integreret i hovedprojektet.
+Dette valg blev truffet tidligt i processen for at sikre, at gameplay-oplevelsen blev defineret allerede fra starten, hvilket senere fik betydning for designvalg og udviklingen af spilmekanikker.
 
-Tidligt i udviklingsfasen blev der eksperimenteret med Unreal Engine, særligt i forhold til samspillet mellem Blueprints og C++. Gruppen undersøgte, hvordan Blueprints kunne anvendes til hurtig prototyping af gameplay-elementer, mens C++ blev brugt til mere komplekse og performancekritiske systemer. Denne kombination viste sig at være central for projektets udvikling, da den gav en god balance mellem fleksibilitet og kontrol.
+Efter oprettelsen af projektet blev der opsat et fælles GitHub-repository for at understøtte samarbejdet i gruppen. Dette gjorde det muligt at arbejde parallelt på projektet, samtidig med at der blev skabt en struktureret versionstyring af filer og ændringer.
 
-I begyndelsen af projektet bar arbejdet præg af eksperimentering og læring, hvor gruppen brugte tid på at opbygge forståelse for engine’ens struktur og arbejdsmetoder. Dette betød, at fremdriften i starten var relativt langsom, men til gengæld lagde det et solidt fundament for den videre udvikling. Efterhånden som gruppen fik større teknisk forståelse, blev arbejdsprocessen mere effektiv, og udviklingen af spillets funktioner kunne ske mere struktureret og målrettet.
+Brugen af pull requests og code reviews blev implementeret for at sikre kvalitet i koden og for at give mulighed for faglig sparring mellem gruppemedlemmerne. Denne arbejdsform viste sig at være vigtig for at undgå konflikter i koden og for at sikre, at ændringer blev gennemgået og forstået af flere i gruppen, før de blev integreret i hovedprojektet.
+
+Tidligt i udviklingsfasen blev der eksperimenteret med Unreal Engine, særligt i forhold til samspillet mellem \texttt{Blueprints} og C++. Gruppen undersøgte blandt andet, hvordan \texttt{Blueprints} kunne anvendes til hurtig prototyping af gameplay-elementer, mens C++ blev brugt til mere komplekse og performancekritiske systemer.
+
+Denne kombination viste sig at være central for projektets udvikling, da den gav en balance mellem fleksibilitet og kontrol. Eksempelvis blev gameplay-relaterede funktioner ofte udviklet som \texttt{Blueprint}-baserede actors og widgets, mens centrale systemer som netværkslogik, sessionshåndtering og spillerdata blev implementeret i C++-klasser såsom \texttt{GameMode}, \texttt{GameState}, \texttt{PlayerController} og \texttt{GameInstance}.
+
+I begyndelsen af projektet bar arbejdet præg af eksperimentering og læring, hvor gruppen brugte tid på at opbygge forståelse for engine’ens struktur og arbejdsmetoder. Dette betød, at fremdriften i starten var relativt langsom, men til gengæld lagde det et solidt fundament for den videre udvikling.
+
+Efterhånden som gruppen fik større teknisk forståelse, blev arbejdsprocessen mere effektiv, og udviklingen af spillets funktioner kunne ske mere struktureret og målrettet. Gruppen begyndte her at arbejde mere systematisk med opdeling af ansvar mellem klasser, genbrug af kode samt strukturering af assets og \texttt{Blueprints} i projektet.For at komme i gang med projektet oprettede gruppen først selve Unreal Engine-projektet. Projektet blev initialt oprettet som et C++-projekt baseret på Unreal Engine’s \texttt{FirstPersonTemplate}, da gruppen ønskede, at spillet skulle opleves fra et førstepersonsperspektiv.
+
+Dette valg blev truffet tidligt i processen for at sikre, at gameplay-oplevelsen blev defineret allerede fra starten, hvilket senere fik betydning for designvalg og udviklingen af spilmekanikker.
+
+Efter oprettelsen af projektet blev der opsat et fælles GitHub-repository for at understøtte samarbejdet i gruppen. Dette gjorde det muligt at arbejde parallelt på projektet, samtidig med at der blev skabt en struktureret versionstyring af filer og ændringer.
+
+Brugen af pull requests og code reviews blev implementeret for at sikre kvalitet i koden og for at give mulighed for faglig sparring mellem gruppemedlemmerne. Denne arbejdsform viste sig at være vigtig for at undgå konflikter i koden og for at sikre, at ændringer blev gennemgået og forstået af flere i gruppen, før de blev integreret i hovedprojektet.
+
+Tidligt i udviklingsfasen blev der eksperimenteret med Unreal Engine, særligt i forhold til samspillet mellem \texttt{Blueprints} og C++. Gruppen undersøgte blandt andet, hvordan \texttt{Blueprints} kunne anvendes til hurtig prototyping af gameplay-elementer, mens C++ blev brugt til mere komplekse og performancekritiske systemer.
+
+Denne kombination viste sig at være central for projektets udvikling, da den gav en balance mellem fleksibilitet og kontrol. Eksempelvis blev gameplay-relaterede funktioner ofte udviklet som \texttt{Blueprint}-baserede actors og widgets, mens centrale systemer som netværkslogik, sessionshåndtering og spillerdata blev implementeret i C++-klasser såsom \texttt{GameMode}, \texttt{GameState}, \texttt{PlayerController} og \texttt{GameInstance}.
+
+I begyndelsen af projektet bar arbejdet præg af eksperimentering og læring, hvor gruppen brugte tid på at opbygge forståelse for engine’ens struktur og arbejdsmetoder. Dette betød, at fremdriften i starten var relativt langsom, men til gengæld lagde det et solidt fundament for den videre udvikling.
+
+Efterhånden som gruppen fik større teknisk forståelse, blev arbejdsprocessen mere effektiv, og udviklingen af spillets funktioner kunne ske mere struktureret og målrettet. Gruppen begyndte her at arbejde mere systematisk med opdeling af ansvar mellem klasser, genbrug af kode samt strukturering af assets og \texttt{Blueprints} i projektet.
 
 \newpage
 \subsection{Game Sessions}
-En af de første centrale dele af systemet, som gruppen udviklede, var det online sessionssystem. Dette blev prioriteret tidligt i projektforløbet for at sikre, at alle efterfølgende systemer kunne testes og udvikles i en reel multiplayer-kontekst. Samtidig gav det gruppen mulighed for tidligt at etablere en stabil teknisk base, som resten af spillets netværksfunktionalitet kunne bygges ovenpå.
+En af de første centrale dele af systemet, som gruppen udviklede, var online sessionssystemet. Dette blev prioriteret tidligt i projektforløbet for at sikre, at alle efterfølgende systemer kunne testes og udvikles i en reel multiplayer-kontekst. Samtidig gav det gruppen mulighed for tidligt at etablere en stabil teknisk base, som resten af spillets netværksfunktionalitet kunne bygges ovenpå.
 
-Systemet blev udviklet ved hjælp af Unreal Engine’s Online Subsystem, som tilbyder en række værktøjer til håndtering af multiplayer-funktioner. Implementeringen omfattede blandt andet oprettelse og håndtering af sessions, grundlæggende matchmaking samt netværkskommunikation mellem klienter og servere. Dette udgjorde en vigtig milepæl i projektet, da det var første gang gruppen fik etableret fungerende multiplayer-infrastruktur, hvilket senere blev afgørende for hele spillets struktur og funktionalitet.
+Systemet blev udviklet ved hjælp af Unreal Engine’s \texttt{OnlineSubsystem}, som tilbyder en række værktøjer til håndtering af multiplayer-funktioner. Implementeringen omfattede blandt andet oprettelse og håndtering af sessions, grundlæggende matchmaking samt netværkskommunikation mellem klienter og servere.
 
-I den første version af systemet blev der implementeret en relativt simpel løsning, hvor en spiller kunne oprette en session, og andre spillere automatisk blev koblet til den først oprettede session. Denne løsning fungerede som et udgangspunkt for at få systemet teknisk stabilt, men viste sig senere at være begrænset i forhold til brugeroplevelse og fleksibilitet.
+Dette udgjorde en vigtig milepæl i projektet, da det var første gang gruppen fik etableret fungerende multiplayer-infrastruktur, hvilket senere blev afgørende for hele spillets struktur og funktionalitet.
 
-Senere i udviklingsforløbet blev systemet derfor videreudviklet til den nuværende løsning (jf. bilag F.2.29–F.2.30), hvor spillere i stedet kan vælge mellem tilgængelige sessioner. Der blev desuden implementeret en lobby-funktion, hvor spillere kan samles og vente, inden spillet starter. Denne ændring blev foretaget på baggrund af test og overvejelser om brugeroplevelse, da gruppen vurderede, at det var vigtigt at give spillerne mere kontrol og bedre overblik over multiplayer-delen af spillet.
+I den første version af systemet blev der implementeret en relativt simpel løsning, hvor en spiller kunne oprette en session, og andre spillere automatisk blev koblet til den først oprettede session. Denne funktionalitet blev implementeret gennem funktioner i \texttt{GameInstance}-klassen, som håndterede oprettelse, søgning og tilslutning til sessions via Unreal Engine’s online subsystem.
 
-Sessionhåndteringen blev implementeret i Unreal Engine’s GameInstance-klasse, som er designet til at bevare data og funktionalitet på tværs af levels og spiltilstande. Ved at placere al sessionlogik her sikrede gruppen, at sessiondata kunne bevares uanset, hvilken del af spillet spilleren befandt sig i. Dette var en vigtig teknisk beslutning, da det bidrog til en mere stabil og konsistent multiplayer-oplevelse og reducerede risikoen for datatab ved level-skift.
+Denne løsning fungerede som et udgangspunkt for at få systemet teknisk stabilt, men viste sig senere at være begrænset i forhold til brugeroplevelse og fleksibilitet.
 
-For at gøre sessionssystemet tilgængeligt for spilleren blev der desuden udviklet et brugerinterface (UI), hvor spilleren kunne se en liste over aktive sessioner og vælge, hvilken de ønskede at deltage i. Dette UI blev implementeret ved hjælp af Unreal Engine’s Widget System, som gør det muligt at opbygge interaktive og dynamiske brugergrænseflader. UI’et inkluderede funktioner til realtidsopdatering af sessionlisten, visning af relevante sessiondetaljer samt håndtering af brugerinput til både at oprette og tilslutte sessioner.
+Senere i udviklingsforløbet blev systemet derfor videreudviklet til den nuværende løsning (jf. bilag F.2.29--F.2.30), hvor spillere i stedet kunne vælge mellem tilgængelige sessioner. Der blev desuden implementeret en lobby-funktion, hvor spillere kunne samles og vente, inden spillet startede.
+
+Denne ændring blev foretaget på baggrund af test og overvejelser om brugeroplevelse, da gruppen vurderede, at det var vigtigt at give spillerne mere kontrol og bedre overblik over multiplayer-delen af spillet.
+
+Sessionhåndteringen blev implementeret i Unreal Engine’s \texttt{GameInstance}-klasse, som er designet til at bevare data og funktionalitet på tværs af levels og spiltilstande. Ved at placere al sessionlogik i \texttt{GameInstance} sikrede gruppen, at sessiondata kunne bevares uanset, hvilken del af spillet spilleren befandt sig i.
+
+Dette var en vigtig teknisk beslutning, da det bidrog til en mere stabil og konsistent multiplayer-oplevelse og reducerede risikoen for datatab ved level-skift.
+
+For at gøre sessionssystemet tilgængeligt for spilleren blev der desuden udviklet et brugerinterface, \texttt{SessionBrowserUI}, hvor spilleren kunne se en liste over aktive sessioner og vælge, hvilken session vedkommende ønskede at deltage i.
+
+Dette UI blev implementeret ved hjælp af Unreal Engine’s Widget System, som gør det muligt at opbygge interaktive og dynamiske brugergrænseflader. UI’et inkluderede funktioner til realtidsopdatering af sessionlisten, visning af relevante sessiondetaljer samt håndtering af brugerinput til både oprettelse og tilslutning af sessions.
+
+Forbindelsen mellem UI’et og sessionlogikken blev håndteret gennem \texttt{GameInstance}-klassen, som fungerede som bindeled mellem brugerens input og Unreal Engine’s online subsystem.
 
 \newpage
 \subsection{TeamSelection}
 Dette system blev designet for at give spillerne mulighed for at vælge mellem forskellige hold, hvilket var en central del af spillets multiplayer-struktur og gameplay-dynamik.
 
-Implementeringen af Team Selection blev i første omgang lavet ved hjælp af Unreal Engine’s tag-system. Dette blev valgt som en enkel og fleksibel løsning, da alle spillere i den tidlige version af spillet havde samme basiskarakter, før et egentligt klassesystem blev implementeret. Gruppen udviklede i denne forbindelse et widget-baseret system, hvor spilleren fik tildelt et specifikt tag baseret på deres holdvalg.
+Implementeringen af Team Selection blev i første omgang lavet ved hjælp af Unreal Engine’s tag-system. Dette blev valgt som en enkel og fleksibel løsning, da alle spillere i den tidlige version af spillet havde samme basiskarakter, før et egentligt klassesystem blev implementeret.
+
+Gruppen udviklede i denne forbindelse et widget-baseret system, hvor spilleren fik tildelt et specifikt tag baseret på deres holdvalg. Dette blev håndteret gennem \texttt{TeamSelectionUI}, som registrerede spillerens valg og sendte informationen videre til \texttt{GameMode}-klassen.
 
 For at understøtte dette blev der oprettet spawn points i scenen med tilsvarende tags, således at systemet kunne matche spillerens tag med det relevante spawn point. På denne måde blev spilleren automatisk spawn’et på den korrekte placering afhængigt af det valgte hold (jf. bilag F.2.3). Denne løsning gjorde det muligt at skabe en simpel, men effektiv logik til holdopdeling i den tidlige fase af udviklingen.
 
 Som projektet udviklede sig, blev der senere implementeret et mere avanceret nedarvningssystem for spillerklasser, som gjorde det muligt at differentiere spillernes egenskaber og roller mere detaljeret. Dette klassesystem vil blive behandlet senere i rapporten.
 
-Team Selection-systemet blev implementeret i Unreal Engine’s GameMode-klasse, da denne klasse håndterer spillets overordnede regler og logik, herunder spawn af spillere og styring af holdfordeling. Ved at placere logikken her sikrede gruppen, at systemet fungerede globalt på tværs af levels og spiltilstande, hvilket var vigtigt for at opretholde en konsistent multiplayer-oplevelse.
+\texttt{TeamSelectionSystem} blev implementeret i Unreal Engine’s \texttt{GameMode}-klasse, da denne klasse håndterer spillets overordnede regler og logik, herunder spawning af spillere og styring af holdfordeling. Ved at placere logikken her sikrede gruppen, at systemet fungerede globalt på tværs af levels og spiltilstande, hvilket var vigtigt for at opretholde en konsistent multiplayer-oplevelse.
 
-For at gøre systemet tilgængeligt for spilleren blev der udviklet et UI, hvor man kunne vælge mellem de tilgængelige hold. Dette UI blev implementeret via Unreal Engine’s Widget System, som gjorde det muligt at skabe en interaktiv og brugervenlig grænseflade. UI’et indeholdt blandt andet visning af holdnavne som hjalp spilleren med at træffe et valg.
+For at gøre systemet tilgængeligt for spilleren blev der udviklet et UI, hvor spilleren kunne vælge mellem de tilgængelige hold. Dette UI blev implementeret via Unreal Engine’s Widget System, som gjorde det muligt at skabe en interaktiv og brugervenlig grænseflade. UI’et indeholdt blandt andet visning af holdnavne og tilhørende knapper, som hjalp spilleren med at træffe et valg.
 
-UI’et blev instansieret gennem PlayerController-klassen, da denne klasse håndterer spillerens input og interaktion med spillet. Denne placering gjorde det muligt at sikre en effektiv kobling mellem brugerinput og spillets logik. Systemet blev løbende testet og itereret gennem udviklingsprocessen for at sikre stabil funktionalitet og en god brugeroplevelse, da holdvalg var en vigtig del af spillets multiplayer-dynamik (jf. bilag F.2.10–F.2.11).
+UI’et blev instansieret gennem \texttt{PlayerController}-klassen, da denne klasse håndterer spillerens input og interaktion med spillet. Denne placering gjorde det muligt at sikre en effektiv kobling mellem brugerinput og spillets logik. Når spilleren valgte et hold, blev informationen sendt videre til \texttt{GameMode}, som herefter stod for spawning af spilleren på det korrekte spawn point.
 
-Efter at spilleren har valgt et hold, sendes de videre til næste UI, hvor de kan vælge deres klasse (jf. bilag F.2.33). Denne opdeling i trin bidrog til en mere struktureret onboarding-proces i spillet og gjorde det lettere for spilleren at forstå deres rolle i spillets startfase.
+Systemet blev løbende testet og itereret gennem udviklingsprocessen for at sikre stabil funktionalitet og en god brugeroplevelse, da holdvalg var en vigtig del af spillets multiplayer-dynamik (jf. bilag F.2.10--F.2.11).
+
+Efter at spilleren havde valgt et hold, blev vedkommende sendt videre til næste UI, hvor spilleren kunne vælge deres klasse (jf. bilag F.2.33). Denne opdeling i flere trin bidrog til en mere struktureret onboarding-proces i spillet og gjorde det lettere for spilleren at forstå deres rolle i spillets startfase.
 
 \newpage
 \subsection{VoiceChat}
@@ -54,15 +92,19 @@ Efter at spilleren har valgt et hold, sendes de videre til næste UI, hvor de ka
 \subsection{Class Selection}
 Som tidligere nævnt har de forskellige hold også tilknyttede klasser, som spillerne kan vælge imellem. Dette system blev implementeret for at give spillerne mulighed for at differentiere sig yderligere inden for deres valgte hold og for at tilføje mere dybde til gameplayet, da hver klasse kunne have unikke evner og roller i spillet.
 
-For at udvikle klassesystemet blev der taget udgangspunkt i en fælles base-klasse, PlayerCharacter, hvor alle fælles funktioner og egenskaber blev defineret. Herefter blev der oprettet specifikke klasser for hvert hold. Disse klasser indeholdt fælles hold-specifikke egenskaber, hvor eksempelvis Resistance team kunne samle nøgler op, mens Nazi team havde evnen til at fange modstandere. Disse mekanikker blev designet som centrale gameplay-elementer og vil blive uddybet senere i rapporten.
+For at udvikle klassesystemet blev der taget udgangspunkt i en fælles base-klasse, \texttt{PlayerCharacter}, hvor alle fælles funktioner og egenskaber blev defineret. Herefter blev der oprettet specifikke klasser for hvert hold. Disse klasser indeholdt fælles hold-specifikke egenskaber, hvor eksempelvis \texttt{ResistanceTeam} kunne samle nøgler op, mens \texttt{NaziTeam} havde evnen til at fange modstandere. Disse mekanikker blev designet som centrale gameplay-elementer og vil blive uddybet senere i rapporten.
 
-Denne nedarvningsstruktur gjorde det muligt at organisere koden på en måde, der understøttede genbrug og modularitet, samtidig med at der var plads til specialisering af de enkelte klasser. Gruppen oplevede, at denne tilgang gjorde systemet mere overskueligt at arbejde med, især i takt med at antallet af klasser voksede.
+Denne nedarvningsstruktur gjorde det muligt at organisere koden på en måde, der understøttede genbrug og modularitet, samtidig med at der var plads til specialisering af de enkelte klasser. Gruppen oplevede, at denne tilgang gjorde systemet mere overskueligt at arbejde med, særligt i takt med at antallet af klasser voksede.
 
-Derfra blev der implementeret yderligere nedarvede klasser inden for hvert hold, hvor hver enkelt klasse fik tildelt unikke evner og egenskaber. Dette gjorde det muligt at skabe en mere varieret og strategisk gameplay-oplevelse, hvor spilleren kunne vælge en rolle, der passede til deres spillestil. For Resistance team blev der eksempelvis udviklet fire forskellige karakterklasser (Sport, Science, Music, Language), mens Nazi team blev udvidet med to forskellige karakterklasser (Gastapo Solider og SS Officer). Hver klasse blev desuden udstyret med unikke meshes, hvilket gjorde det muligt visuelt at skelne mellem både klasser og hold i spillet.
+Derfra blev der implementeret yderligere nedarvede klasser inden for hvert hold, hvor hver enkelt klasse fik tildelt unikke evner og egenskaber. Dette gjorde det muligt at skabe en mere varieret og strategisk gameplay-oplevelse, hvor spilleren kunne vælge en rolle, der passede til deres spillestil.
 
-I praksis foregik klassevalget ved, at spilleren først blev sendt videre fra Team Selection UI’et til et klassevalg-UI (jf. bilag F.2.33). Herfra blev spilleren dirigeret videre til enten Unreal Engine-baserede UI’er for henholdsvis Resistance (jf. bilag F.2.28) og Nazi (jf. bilag F.2.27). Disse UI’er bestod i praksis af interaktive knapper, som kaldte en funktion, der spawner spillerens karakter, tildeler det korrekte team-tag og placerer spilleren på det rigtige spawn point.
+For \texttt{ResistanceTeam} blev der eksempelvis udviklet fire forskellige karakterklasser: \texttt{SportClass}, \texttt{ScienceClass}, \texttt{MusicClass} og \texttt{LanguageClass}. Tilsvarende blev \texttt{NaziTeam} udvidet med to karakterklasser: \texttt{GestapoSoldier} og \texttt{SSOfficer}. Hver klasse blev desuden udstyret med unikke meshes, hvilket gjorde det muligt visuelt at skelne mellem både klasser og hold i spillet.
 
-Når karakteren er blevet spawnet korrekt, kan spilleren vælge deres specifikke klasse inden for det valgte hold til den pågældende spil-session. Denne opdeling i flere trin gjorde det muligt at strukturere onboarding-processen i spillet og sikre, at spilleren gradvist blev introduceret til deres rolle og muligheder i spillet.
+I praksis foregik klassevalget ved, at spilleren først blev sendt videre fra \texttt{TeamSelectionUI} til et klassevalg-UI (jf. bilag F.2.33). Herfra blev spilleren dirigeret videre til Unreal Engine-baserede UI’er for henholdsvis \texttt{ResistanceUI} (jf. bilag F.2.28) og \texttt{NaziUI} (jf. bilag F.2.27).
+
+Disse UI’er bestod af interaktive knapper, som kaldte en funktion, der spawner spillerens karakter, tildeler det korrekte team-tag og placerer spilleren på det relevante spawn point. Dette blev håndteret gennem funktioner i henholdsvis \texttt{GameMode}- og \texttt{PlayerController}-klasserne, som stod for spawning og initialisering af spilleren.
+
+Når karakteren var blevet spawnet korrekt, kunne spilleren vælge deres specifikke klasse inden for det valgte hold til den pågældende spil-session. Denne opdeling i flere trin gjorde det muligt at strukturere onboarding-processen i spillet og sikre, at spilleren gradvist blev introduceret til deres rolle og muligheder i spillet.
 
 \newpage
 \subsection{Speceille Evner}
@@ -71,23 +113,81 @@ Når karakteren er blevet spawnet korrekt, kan spilleren vælge deres specifikke
 
 \newpage
 \subsection{nøgler og kisten}
+For at løse use casene omkring at finde nøgler og låse en kiste op, som fungerer som en reference til skolens symbolik og historie, blev der udviklet et dedikeret gameplay-system. Systemet blev implementeret ved at oprette en Actor kaldet \texttt{BPA\_Key} i spillet. Denne \texttt{Actor} indeholder en collider, som registrerer, når en spiller interagerer med objektet. Når en spiller kommer i kontakt med collideren, udløses en event, som sender en besked til spillets \texttt{GameState} om, at spilleren har samlet en nøgle.
 
+Implementeringen er baseret på Unreal Engine’s event-system, hvor en overlap-event på collideren anvendes til at detektere spillerens interaktion med nøglen. Når denne event trigges, sendes der en besked videre til \texttt{GameState}-klassen, som håndterer den overordnede logik for registrering af nøgler.
 
+Denne løsning blev valgt, fordi \texttt{GameState} er en replicated klasse, hvilket betyder, at den kan synkronisere information på tværs af alle klienter i et multiplayer-spil (jf. bilag F.2.16 og F.2.7). Når en spiller har samlet en nøgle, broadcaster \texttt{GameState} desuden en opdatering til alle klienter, så deres UI bliver opdateret og viser, at en nøgle er blevet fundet (jf. bilag F.2.18). Dette bidrager til en mere dynamisk og fælles spiloplevelse, hvor alle spillere løbende kan følge med i spillets progression.
+
+For at gøre placeringen af nøglerne mere dynamisk blev der udviklet et separat script til en Actor kaldet \texttt{BPA\_KeySpawnArea}. Denne \texttt{Actor} fungerer som et afgrænset område med en bounding box (jf. bilag F.2.17), hvorfra der kan genereres tilfældige spawn-positioner. Ved spilstart beregner systemet et tilfældigt punkt inden for dette område, hvor nøglen derefter spawnes.
+
+Denne løsning blev valgt for at øge variationen i gameplayet, da nøglerne dermed ikke altid er placeret samme sted i hver spil-session. For at sikre korrekt synkronisering på tværs af alle klienter blev spawn-logikken implementeret i \texttt{GameMode}-klassen (jf. bilag F.2.4), som håndterer spillets overordnede regler og initiering af spilobjekter.
+
+Efterfølgende blev der udviklet et tilsvarende system for kisten (chest). Kisten fungerer på mange måder på samme måde som nøglen og indeholder også en collider, der registrerer spillerinteraktion. Her kontrollerer systemet dog, om spilleren tilhører Resistance team, og hvis dette er tilfældet, aktiveres spillets win condition (jf. bilag F.2.14), som vil blive uddybet senere i rapporten.
+
+Ligesom med nøglerne blev kistens placering også koblet til key spawn-området, så den ikke altid befinder sig samme sted i hver spil-session. Dette blev ligeledes håndteret via \texttt{GameMode} for at sikre synkronisering mellem klienter og konsistent gameplay (jf. bilag F.2.4).
+
+Samlet set skaber dette system en gameplay-mekanisme, hvor spillerne skal udforske kortet, finde nøgler og til sidst låse kisten op for at vinde spillet. Dette bidrager til en dynamisk spiloplevelse, hvor både samarbejde og strategisk bevægelse på kortet bliver centrale elementer.
 \newpage
 \subsection{Fange Mechanic}
+For at implementere mekanikken omkring at fange modstandere, som er en central del af Nazi team-gameplayet, blev der tilføjet en collider på parent-klassen for alle Resistance team-spillere (bilag F.2.13). Denne collider kommunikerer via en variabel, som er tilgængelig for Nazi team-spilleren.
 
+Når der opstår et overlap, og variablen er aktiv, trigges der logik på Nazi team-spilleren (bilag F.2.9). Denne logik er implementeret i et Blueprint, som kalder et custom C++-funktionalitet, der er defineret i klassen \texttt{Sep4Character} (bilag F.1.7 og F.1.8). Denne klasse fungerer som den overordnede karakterklasse, som alle spillets characters nedarver fra.
+
+Funktionaliteten håndterer, at den fangede spiller “fastholdes” og derefter via serveren får besked om at blive teleporteret til en fast position i banen. Dette sikrer, at handlingen bliver synkroniseret korrekt i multiplayer-miljøet og dermed er ens for alle spillere.
+
+Det område, spilleren bliver teleportet til, er implementeret som en separat Actor kaldet \texttt{BPA\_JailArea}. Denne \texttt{Actor} består af fire vægge, som afgrænser området og definerer “fængslet” i spillet.
+
+Derudover er der implementeret en dør som en selvstændig Actor, \texttt{BPA\_Door}, som indeholder logik til både åbning og lukning. Døren lukkes automatisk ved spillets start via det custom \texttt{GameMode} (bilag F.2.6).
+
+Døren indeholder desuden en collider, som gør det muligt for andre spillere at interagere med den for at befri en fanget spiller. Denne befrielsesmekanik vil blive uddybet senere i rapporten.
 
 \newpage
 \subsection{befri fængslet}
+Som tidligere nævnt er der implementeret en mekanik, hvor spillere på Resistance-teamet kan befri fangede holdkammerater fra fængslet. Denne funktionalitet blev implementeret ved at tilføje en collider til døren i \texttt{BPA\_Door}-klassen, som registrerer, når en spiller interagerer med objektet.
 
+Når en spiller kommer i kontakt med collideren, udløses en event, som sender en besked til serveren om, at døren skal åbnes. Serveren håndterer herefter den overordnede logik for åbning af døren (bilag F.2.15). Denne serverbaserede tilgang sikrer, at handlingen bliver synkroniseret korrekt i multiplayer-spillet, så alle spillere oplever den samme ændring i spilverdenen samtidig.
 
 \newpage
 \subsection{Win Conditions}
+Da der allerede var implementeret en timer i spillet, og systemet med nøgler og kiste var på plads, var det en relativt overskuelig opgave at implementere et win condition-system, som samler disse mekanikker. Dette blev gjort ved at tilføje en funktion i \texttt{GameState}-klassen, som løbende evaluerer, om enten timeren er udløbet, eller om kisten er blevet åbnet (jf. bilag F.2.8).
 
+Når en af disse betingelser opfyldes, broadcaster systemet en besked til alle klienter, som aktiverer et slutspils-UI, hvor spillerne kan se, om deres hold har vundet eller tabt (jf. bilag F.2.19 og F.2.20). Samtidig stoppes den løbende spilopdatering (Game Tick) for at sikre, at spillets tilstand fryses ved afslutning, så resultatet ikke ændres efter win condition er opnået.
+
+Denne løsning sikrer en klar og synkron afslutning på spillet for alle spillere og binder de forskellige gameplay-systemer sammen til én samlet spiloplevelse.
 
 \newpage
 \subsection{map opsætning}
+For at udvikle mappet til spillet så realistisk som muligt, blev der anvendt specialiseret hardware i form af kameraer til optagelse af 360-graders video af relevante lokationer på Viborg Katedralskole. Disse videoer blev efterfølgende opdelt i stillbilleder, som blev brugt som datagrundlag til photogrammetry-processen.
 
+Til dette blev RealityScan anvendt, som er et værktøj udviklet af Epic Games. Softwaren analyserer en stor mængde billeder, hvor hvert billede indeholder information om perspektiv, position og vinkel. På baggrund af dette genererer programmet en point cloud, som efterfølgende anvendes til at opbygge et 3D mesh samt tilhørende materialer. Denne proces gør det muligt at skabe meget realistiske 3D-modeller og blev derfor valgt som en central metode til opbygning af spillets miljø.
+
+Metoden viste sig dog også at have udfordringer i praksis. Gruppen erfarede, at optagelserne krævede høj præcision og en vis teknisk erfaring for at opnå optimale resultater. Dette medførte, at nogle af de genererede modeller fik “interessante” eller urealistiske udtryk (jf. bilag E). På trods af dette var mange af lokationerne stadig genkendelige og anvendelige i spillet, mens andre måtte forkastes helt. Denne begrænsning vurderes som en naturlig konsekvens af, at området er væsentligt større end det, værktøjet typisk er designet til at håndtere.
+
+En anden udfordring opstod i forhold til den tekniske implementering af de genererede meshes i spillet. Da standard-output fra photogrammetry primært indeholder simple collision-boxes, har gruppen været nødt til manuelt at tilføje colliders til de enkelte meshes for at sikre korrekt spillerinteraktion. Dette har været en tidskrævende proces, men nødvendig for at sikre, at spilleren ikke kunne bevæge sig igennem faste objekter i miljøet.
+
+Derudover har sammensætningen af de enkelte meshes til et sammenhængende map også krævet manuelt arbejde. Modellerne blev placeret enkeltvis og justeret, så spilleren kunne bevæge sig mellem områderne uden tydelige overgange. Dette har dog medført visse udfordringer i forhold til spilbarhed og navigation, da det i nogle tilfælde krævede kreative løsninger for at guide spilleren og forhindre, at de faldt uden for kortets grænser.
+
+En yderligere problemstilling ved denne tilgang er, at RealityScan-genererede meshes ofte indeholder “mellemområder”, som udfylder huller i point cloud-data. Disse områder er ikke baseret direkte på optagelser, hvilket resulterer i uregelmæssige og ofte abstrakte former. Dette har skabt udfordringer i forhold til collision og spillerbevægelse, da spilleren i nogle tilfælde kunne bevæge sig ind i disse områder eller risikere at falde igennem geometrien.
+
+Set i retrospektiv vurderer gruppen, at et portalsystem, hvor spilleren teleporteres mellem separate områder, muligvis havde været en bedre løsning. Dette kunne have reduceret problemer med navigation og collision samt givet en mere kontrolleret og visuelt konsistent oplevelse. Samtidig kunne det have forbedret den samlede spiloplevelse.
 
 \newpage
 \subsection{AI NPC'er}
+På trods af at spillet primært er udviklet som et multiplayer-spil, var idéen om også at understøtte singleplayer en vigtig prioritet i designfasen. For at realisere dette blev AI-NPC’er implementeret som en løsning, der kunne simulere modstandere og medspillere i spillet.
+
+Til at starte med blev der oprettet en AI-nedarvning af alle karakterklasser. Derudover fik host-spilleren et dedikeret UI, hvorfra det var muligt at spawne enten tilfældige Resistance team-klasser eller tilfældige Nazi team-karakterer (bilag F.2.22). Dette gjorde det muligt at teste og spille spillet uden andre spillere online, samtidig med at de samme gameplay-systemer kunne genbruges.
+
+På alle AI-nedarvede karakterer blev der tilføjet et AI Sense-komponent, som giver AI’en mulighed for at “se” og registrere objekter i spillets verden. Dette blev brugt til at give NPC’erne perception og reaktionsevne, så de kunne interagere med spillets elementer på en mere dynamisk måde.
+
+Derudover blev der implementeret logik, som styrer AI’ens adfærd afhængigt af dens rolle. Hvis en Resistance team-AI opdager en nøgle, vil den prioritere at bevæge sig mod og samle den i stedet for at roame tilfældigt. Omvendt vil en Nazi team-AI aktivt forsøge at opspore og forfølge Resistance team-spillere.
+
+Denne adfærd blev implementeret i en custom AIController (bilag F.2.1), som håndterer beslutningslogik og styring af NPC’ernes handlinger. AIControlleren fungerer som hjernen i systemet og sikrer, at NPC’erne reagerer passende på deres omgivelser og spillets tilstand.
+
+Samlet set gjorde denne løsning det muligt at understøtte singleplayer-oplevelsen uden at ændre grundlæggende på spillets multiplayer-arkitektur, da AI’en er bygget oven på de samme karakter- og gameplay-systemer.
+
+ud over dette, gjorde det også sådan at fære spiller, ville kunne spille store spil, med mange modstander, da AI'en også blev synkroniserede ud til alle spiller.
+
+\newpage
+\subsection{aflsuttende forbedringer}
+for at gøre spillet til sidst mere en samlede færdig oplevelse, blev der først lavet mulighed for Session hosten, for at 
