@@ -184,10 +184,10 @@ INPUT .\main.out
 INPUT .\main.out
 INPUT main.out
 INPUT main.out
+OUTPUT main.pdf
 INPUT .\main.out
 INPUT .\main.out
 OUTPUT main.out
-OUTPUT main.pdf
 INPUT ..\figures\ViaLogo.png
 INPUT ..\figures\ViaLogo.png
 INPUT ..\figures\ViaLogo.png
@@ -204,6 +204,7 @@ INPUT C:\Users\jonat\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx172
 INPUT .\main.toc
 INPUT .\main.toc
 INPUT main.toc
+INPUT C:\Users\jonat\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1200.tfm
 OUTPUT main.toc
 INPUT .\sections\indledning.tex
 INPUT .\sections\indledning.tex
@@ -231,6 +232,8 @@ INPUT .\main.out
 INPUT .\main.out
 INPUT main.run.xml
 OUTPUT main.run.xml
+INPUT C:\Users\jonat\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+INPUT C:\Users\jonat\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 INPUT C:\Users\jonat\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
 INPUT C:\Users\jonat\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
 INPUT C:\Users\jonat\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
