@@ -190,4 +190,8 @@ ud over dette, gjorde det også sådan at fære spiller, ville kunne spille stor
 
 \newpage
 \subsection{aflsuttende forbedringer}
-for at gøre spillet til sidst mere en samlede færdig oplevelse, blev der først lavet mulighed for Session hosten, for at 
+For at gøre spillet til en samlet og færdig oplevelse blev der først implementeret en funktion, hvor session-hosteren har mulighed for at starte spillet. Dette blev gjort ved at tilføje en start-knap, som først aktiverer spillets øvrige funktionaliteter, når hosten trykker på den. Når knappen aktiveres, broadcastes beskeden via GameMode fra hosten ud til alle spillere (jf. bilag F.2.21 og F.2.6). Dette sikrer, at spilstart er synkroniseret på tværs af alle klienter.
+
+Derudover blev der implementeret animationer og simple gameplay-triggers for karaktererne. For at spare tid og reducere kompleksitet blev disse funktioner implementeret direkte i base PlayerCharacter-klassen, som alle spillere nedarver fra. Denne løsning medførte dog udfordringer, da ikke alle meshes anvender samme skeleton, hvilket resulterer i, at animationerne i nogle tilfælde fremstår forkert eller uhensigtsmæssige. På trods af dette blev det vurderet som en acceptabel løsning inden for projektets tidsramme.
+
+Afslutningsvis blev der udviklet en startside samt en main menu til at håndtere opstart af spillet og give en samlet brugeroplevelse (jf. bilag F.2.23). Dette bidrager til at samle spillets funktioner i en mere komplet og brugervenlig helhed.
