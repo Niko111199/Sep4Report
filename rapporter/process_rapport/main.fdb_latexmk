@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1778645088.84194 "main.bcf" "main.bbl" "main" 1778649077.79404 0
-  "main.bcf" 1778649077 133947 1104f3c35bb0aaad64e3fff0f870f1bb "pdflatex"
+["biber main"] 1779773191.37041 "main.bcf" "main.bbl" "main" 1779777573.74478 0
+  "main.bcf" 1779777573 133947 1104f3c35bb0aaad64e3fff0f870f1bb "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778649076.78292 "c:/Users/jonat/Downloads/rapporter/process_rapport/main.tex" "main.pdf" "main" 1778649077.79472 0
-  "../figures/ViaLogo.png" 1778642056 10306 3069fa436e314b51d37288c336ec5517 ""
+["pdflatex"] 1779777571.36703 "c:/Users/jonat/Downloads/mynewproject/Sep4Report/rapporter/process_rapport/main.tex" "main.pdf" "main" 1779777573.74654 0
+  "../figures/ViaLogo.png" 1778819350 10306 3069fa436e314b51d37288c336ec5517 ""
   "C:/Users/jonat/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1778642705 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/jonat/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1728.pk" 1761127020 49100 b51b6c1e9397b93af5c467b1855c1eed ""
   "C:/Users/jonat/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2488.pk" 1758871564 72288 dfa48ec45439a5b329e411e5300fef31 ""
@@ -91,20 +91,20 @@
   "C:/Users/jonat/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/jonat/AppData/Local/Programs/MiKTeX/tex/latex/textpos/textpos.sty" 1658745447 12842 35403bda336a71a37a5edc37b78e3ec3 ""
   "C:/Users/jonat/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/jonat/Downloads/rapporter/process_rapport/main.tex" 1778649076 2025 0761d418e762bcf2e87a041308ef6870 ""
-  "main.aux" 1778649077 415 41e8aa16b19ece39dd6610b31ca62911 "pdflatex"
-  "main.bbl" 1778645090 486 76d65a242ec496c9b4361af646ff12cb "biber main"
-  "main.out" 1778649077 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.run.xml" 1778649077 2362 34c4a7385696d00b4e94f69249a19762 "pdflatex"
-  "main.tex" 1778649076 2025 0761d418e762bcf2e87a041308ef6870 ""
-  "main.toc" 1778649077 29 2fc576a1a0455e190e48574537c8c761 "pdflatex"
-  "sections/gruppearbejde.tex" 1778641653 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "sections/indledning.tex" 1778641662 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "sections/konklusion.tex" 1778641669 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "sections/personlige_refleksioner.tex" 1778641682 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "sections/projectinitiering.tex" 1778641711 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "sections/projektudfoerelse.tex" 1778641722 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "sections/refleksion_over_vejledning.tex" 1778641736 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "c:/Users/jonat/Downloads/mynewproject/Sep4Report/rapporter/process_rapport/main.tex" 1778819350 2027 812c2b5ebbc86091015ceb3ef2063f6d ""
+  "main.aux" 1779777573 415 6ef04a3a8337dbeff10dbcd5488f70a4 "pdflatex"
+  "main.bbl" 1779773192 486 76d65a242ec496c9b4361af646ff12cb "biber main"
+  "main.out" 1779777573 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.run.xml" 1779777573 2362 34c4a7385696d00b4e94f69249a19762 "pdflatex"
+  "main.tex" 1778819350 2027 812c2b5ebbc86091015ceb3ef2063f6d ""
+  "main.toc" 1779777573 29 2fc576a1a0455e190e48574537c8c761 "pdflatex"
+  "sections/gruppearbejde.tex" 1779777440 1394 690f07009b8517980dda82f4c6a81df4 ""
+  "sections/indledning.tex" 1778819350 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "sections/konklusion.tex" 1778819350 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "sections/personlige_refleksioner.tex" 1778819350 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "sections/projectinitiering.tex" 1779777569 1050 86cf4f02dccc657fdeec82c1ccee065b ""
+  "sections/projektudfoerelse.tex" 1779777440 443 ce3174bfebf7b03f41020b912acf0b06 ""
+  "sections/refleksion_over_vejledning.tex" 1778819350 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "main.aux"
   "main.bcf"

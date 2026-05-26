@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.26)  13 MAY 2026 07:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.26)  26 MAY 2026 08:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jonat/Downloads/rapporter/process_rapport/main.tex
-(c:/Users/jonat/Downloads/rapporter/process_rapport/main.tex
+**c:/Users/jonat/Downloads/mynewproject/Sep4Report/rapporter/process_rapport/main.tex
+(c:/Users/jonat/Downloads/mynewproject/Sep4Report/rapporter/process_rapport/main.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
 (C:\Users\jonat\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -634,7 +634,41 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.58 \clearpage
-                [1] (sections/indledning.tex) (sections/gruppearbejde.tex) (sections/projectinitiering.tex) (sections/projektudfoerelse.tex) (sections/personlige_refleksioner.tex) (sections/refleksion_over_vejledning.tex) (sections/konklusion.tex)
+                [1] (sections/indledning.tex) (sections/gruppearbejde.tex)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[2
+
+
+] (sections/projectinitiering.tex)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[3
+
+] (sections/projektudfoerelse.tex)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[4
+
+] (sections/personlige_refleksioner.tex) (sections/refleksion_over_vejledning.tex) (sections/konklusion.tex)
 
 LaTeX Warning: Empty bibliography on input line 82.
 
@@ -650,17 +684,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18955 strings out of 468130
- 338417 string characters out of 5430633
- 1279403 words of memory out of 5000000
+ 18958 strings out of 468130
+ 338891 string characters out of 5430633
+ 1279407 words of memory out of 5000000
  47371 multiletter control sequences out of 15000+600000
  631746 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,11n,67p,744b,2807s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,11n,67p,1144b,2807s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk>
-Output written on main.pdf (2 pages, 57114 bytes).
+Output written on main.pdf (5 pages, 70869 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
+ 191 PDF objects out of 1000 (max. 8388607)
+ 6 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
