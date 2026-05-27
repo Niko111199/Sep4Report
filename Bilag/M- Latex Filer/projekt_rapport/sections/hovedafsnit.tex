@@ -251,16 +251,89 @@ Diagrammet viser dermed en klar afhængighedskæde, hvor de tidlige use cases er
 Diagrammets enkelte use cases er udviklet ved at sammensmelte flere user stories ned til enkelte use cases for systemet. Dette er samlet endt ud i dette use case-diagram.
 
 \subsubsection{Actor Discription}
+I kravspecifikationen samt de medførende Usecases gøres der brug af en serie af primære- og sekundære aktører. For bedst at forstå intentionen bag og rollerne disse har er en actor description udarbejdet. (bilag B.2) 
+
+Beskrivelsen udligner tre primære aktører hvor i blandt to af disse er yderligere specialiseringer af vores første primæraktør, nemlig spilleren. Actor descriptionen tillader os yderligere at opdele hvor ansvaret for opfyldelse af funktionelle- og ikke funktionelle krav ligger. 
+
+Actor descriptions gav en bedre indsigt i hvilke funktionaliteter der skulle være for alle spillere samt hvilke der specifikt galdt for en af de to specialiseringer af spilleren. Desuden gav det mulighed for oprettelsen af en sekundær aktør i form af spilserveren hvor ikke funktionelle krav så som responstid og synkronisering kan håndteres.
 
 \subsubsection{Use case beskrivelser}
+Med aktører specificeret samt funktionelle og ikke-funktionelle krav opstillet var det næste skridt at lave use case beskrivelser som nøjagtigt gengiver cases ift. systemer til overholdelse af krav. 
+
+Sekvensen af disse gennemgås i mere detaljeret grad under usecase diagrammet. Beskrivelserne stod også for at give indblik i alternative sekvenser / exception sequences således at der til fremtidig test og implementering af systemet bedre kunne tages hånd om eventuelle konfilkter og andre bekymringer. 
+
+Use case beskrivelserne uddybber desuden relationen mellem vores aktører og giver konkrete eksempler med Pre- og postconditions som senere kan testet på.
 
 \subsubsection{Aktivitets diagrammer}
+For at specificere det aktuelle gameplay loop i spillet, altså grundessencen af projektet, er en række af aktivitets diagrammer udviklet. Disse viser tydeligt hvilket handlinger der forventes at spilleren kan tage på et givent tidspunkt samt hvilke konsekvenser eller resultater det har. 
+
+Første specifikation er centreret rundt om de funktionelle krav 1 og 2, som sammen udgør behovet for et system hvori spillere kan oprette brugere og logge ind med disse. (bilag D.2 & D.3)
+
+Dette gør det nemmere at overskue de mange muligheder for forgrenede veje et sådan flow kan tage, de vil ikke alle blive gået over i dybden her men i et best case scenario ville spillerens oplevelse for oprettelse af bruger være:
+
+\begin{itemize}
+    \item Spiller indtaster brugernavn, mail og adgangskode, antagende at dette input ikke allerede eksisterer i databasen.
+    \item Kontoen oprettes og opbevares, spilleren modtager bekræftelse på at kontoen er skabt.
+    \item Spilleren sendes videre til Login skærmen.
+\end{itemize}
+
+Login:
+\begin{itemize}
+    \item Spiller indtaster brugernavn, mail og adgangskode, antagende at dette input allerede eksisterer i databasen.
+    \item Oplysningerne bliver valideret i systemet
+    \item Spilleren sendes videre til session creation / join.
+\end{itemize}
+
+Funktionelle krav 3 & 4 omhandler oprettelse af en "lobby" samt holdvalg. Aktiviteten bag disse beskrives ved 3 diagrammer: (bilag D.4, D.5 & D.6)
+
+Opret Session:
+\begin{itemize}
+    \item Spilleren trykker opret session
+    \item En Listenserver oprettes og valideres.
+    \item Session sendes løbende ud til andre spillere
+\end{itemize}
+
+Join Session:
+\begin{itemize}
+    \item Spilleren trykker join session
+    \item Systemet søger efter åbne Listenservers og fremviser dem for spilleren
+    \item Spiller vælger en session og trykker join. 
+\end{itemize}
+
+Begge disse aktivetsdiagrammer ender i valg af hold:
+\begin{itemize}
+    \item De to hold i spillet fremvises
+    \item Spilleren vælger et af de to. 
+    \item Spilleren bliver placeret på det givne hold så længe reglerne for balancering af hold er overholdt. 
+\end{itemize}
+
+Herfra vælger spilleren deres klasse hvori et lignende flow bruges. (bilag D.7) Med disse diagrammer produceret gør det selve implementeringen- og håndtering af spiller login, session creation & klasse- og holdvalg mere overskueligt. De mnage forgrenede veje er afklaret ift. indtastning af allerede eksisterende oplysninger og hvad der sker hvis spilleren forlader sessions, holdvalg og klassevalg ved et givent tidspunkt.
+
+Aktivitetsdiagrammer er desuden oprettet for selve gameplay loopet som giver en indikation af win / lose conditions, samt udarbejdelsen af et system til synkronisering af spillere og funktionalitet til at gæmnme spillerdata. 
 
 \subsubsection{System sequence diagrammer}
+For at uddybe spillets gameplay loop ud fra aktivitetsdiagrammerne med en vinkel på sammenspillet mellem aktører og systemet blev en række system sekvens diagrammer udarbejdet. 
 
-\subsubsection{State mashine diagrammer}
+Disse gør flowet af information og kommandoer mellem spiller og system tydligere så man til hvert et skridt af flowet kan se hvilke aktører der laver hvilke kald. Især er dette vigtigt at tydeliggøre når det gælder en situation hvor spilleren befinder sig med andre spillere som set i sekvens diagrammet for selve gameplay loopet. (bilag D.18)
+
+Her bliver det fremvist hvordan hver spiller handling sendes til systemet og hvordan systemet sikrer at andre spillere / clienter modtager og godtager handlingen. Det er også her muligt at tydeliggøre hvor ofte og hvornår disse opdateringer sker, i dette tilfælde ved hvert gametick. 
+
+System sekvensdiagrammerne giver yderligere mulighed for at vise samspillet mellem Spiller, SpilServer og System i forbindelse med opbevaring af spillerdata (bilag D.19) og selve kontrolleringen af win conditions. (bilad D.20)
+
+Dette gør det mere klart hvilken rolle spilserveren har i flowet da den før har været mere ubeskrevent og implicit. 
+
+\subsubsection{State machine diagrammer}
+Med et godt indblik i flowet og fordelingen af ansvar blandt aktører gav det mening at lave state machine diagrammer til formål at vise de states som spilleren samt spillet som helhed kan befinde sig i. Spillerens states er bundne i henholdsvis hold- og klassevalg hvor der er 6 mulige states som spilleren kan ende i efter disse valg er truffet. (bilag D.23)
+
+Spillet kan simplificeres til 3 states, ved session creation og hold- og klassevalg er spillet ikke endnu startet altså "GameNotStarted" state. Spillet kan naturligvis være "GameStarted" når alle spillere har valgt roller og til sidst kan spillet afsluttes til "GameFinished" gennem triggeren "AllKeysFound". (bilag D.22)
+
+State machine diagrammerne giver til implementationsfasen et hurtigt overblik over hvad der grundlæggende skal implementeres i gameplay loopet hvor man som udvikler kan få større detalje grad på de individuelle dele af disse gennem aktivitetsdiagrammerne samt kan få et bedre indblik i de forskellige aktører og den indbyrdes kommunikation mellem disse i system sekvens diagrammerne. 
 
 \subsubsection{Domaine model}
+Hidtil er det ikke taklet hvilke objekter i spillet som hører under hinanden, ligeledes ved nogle aspekter af spillet, såsom nøglerne der skal findes for at modstandsbevægelsen kan undslippe, mangler tydeligørrelse af mængden af dem i spilscenen samt de forskellige attributer de har. 
+
+Dette løses ved domænemodellen (bilag D.24) som indikerer spilelementer, antallet af disse og et overordnet indblik i hvilke attributer og data der gemmes i disse. Ligeledes indikerer den også relationerne mellem objekterne således at i implementationsfasen at det er nemmere at sammensætte blueprints og c++ klasser korrekt og forhold til ejerskab og nedarvning. 
+
 
 \subsection{Design}
 
