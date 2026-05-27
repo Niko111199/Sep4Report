@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1779872126.6098 "main.bcf" "main.bbl" "main" 1779873804.18114 0
+["biber main"] 1779872126.6098 "main.bcf" "main.bbl" "main" 1779874160.6362 0
   "../bibliography.bib" 1778654999 4618 dbbc4c5f5ce3995fc9062b366fa35266 ""
-  "main.bcf" 1779873804 134428 4f9fe5de1c72c8f94f8d1352980a93b7 "pdflatex"
+  "main.bcf" 1779874160 134428 4f9fe5de1c72c8f94f8d1352980a93b7 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1779873803.20544 "c:/Users/niko1/Desktop/Sep4Report/Bilag/M- Latex Filer/projekt_rapport/main.tex" "main.pdf" "main" 1779873804.18176 0
+["pdflatex"] 1779874159.62857 "c:/Users/niko1/Desktop/Sep4Report/Bilag/M- Latex Filer/projekt_rapport/main.tex" "main.pdf" "main" 1779874160.6369 0
   "../figures/ViaLogo.png" 1778654999 10306 3069fa436e314b51d37288c336ec5517 ""
   "C:/Users/niko1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1779706787 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/niko1/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1779706792 31952 13de0fa319216d4fdb48188e0268f081 ""
@@ -109,14 +109,14 @@
   "C:/Users/niko1/AppData/Local/Programs/MiKTeX/tex/latex/textpos/textpos.sty" 1658745447 12842 35403bda336a71a37a5edc37b78e3ec3 ""
   "C:/Users/niko1/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "c:/Users/niko1/Desktop/Sep4Report/Bilag/M- Latex Filer/projekt_rapport/main.tex" 1779872125 1989 7e1f723b266b6a411de4031fbb7647b7 ""
-  "main.aux" 1779873804 6119 1c7a00132d40b57306f981d74254c1d0 "pdflatex"
+  "main.aux" 1779874160 6463 2bbdefac51dbade41113cbcf1bba3139 "pdflatex"
   "main.bbl" 1779872128 24535 c75ba955817f2a67c24030518e534547 "biber main"
-  "main.out" 1779873804 4608 f444e7b781745ed0cafe0a61d24b2b66 "pdflatex"
-  "main.run.xml" 1779873804 2362 34c4a7385696d00b4e94f69249a19762 "pdflatex"
+  "main.out" 1779874160 4900 61dcc56b4eeca4586dfc46b5d4193a44 "pdflatex"
+  "main.run.xml" 1779874160 2362 34c4a7385696d00b4e94f69249a19762 "pdflatex"
   "main.tex" 1779872125 1989 7e1f723b266b6a411de4031fbb7647b7 ""
-  "main.toc" 1779873804 2719 89dcb04f7815fe2317be5952eb4bbfab "pdflatex"
+  "main.toc" 1779874160 2940 0938de0bdf29bf7f0155790c64a6da02 "pdflatex"
   "sections/diskussion.tex" 1778655000 20 69ac571a5517fd32f4c5eda3bb92cdf3 ""
-  "sections/hovedafsnit.tex" 1779873801 6133 7608c2bf00ce4eb5ee876a18d08a830c ""
+  "sections/hovedafsnit.tex" 1779874158 6207 2fc5483e6d5f603257911fb7bab5afe5 ""
   "sections/indledning.tex" 1778830497 3100 d139f996e53abd32e8c98ae1649ec447 ""
   "sections/konklusion.tex" 1779872164 36 0c935c7e267a5d5c0cdef644c9d4bd7f ""
   "sections/resume.tex" 1778830497 1241 fa2d9027efa3898a888a006192849464 ""

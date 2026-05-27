@@ -22,11 +22,14 @@
 \contentsline {subsubsection}{\numberline {3.3.1}Klasse diagram}{9}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Sequence diagram}{9}{subsubsection.3.3.2}%
 \contentsline {subsubsection}{\numberline {3.3.3}Conceptual ER-Diagram}{9}{subsubsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.4} EER-Diagram}{9}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.4}EER-Diagram}{9}{subsubsection.3.3.4}%
 \contentsline {subsection}{\numberline {3.4}Implementation}{9}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Tests}{9}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}Test Cases}{9}{subsubsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.6}Resultater}{9}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.5}Brug af OPP}{9}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}C++}{9}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Blueprints}{9}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Tests}{9}{subsection.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.1}Test Cases}{9}{subsubsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.9}Resultater}{9}{subsection.3.9}%
 \contentsline {section}{\numberline {4}Diskussion}{10}{section.4}%
 \contentsline {section}{\numberline {5}Konklusion og anbefalinger}{11}{section.5}%
 \contentsline {section}{Litteratur}{12}{section.5}%
