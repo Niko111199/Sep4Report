@@ -235,14 +235,13 @@ Derudover er der en række systemoverordnede use cases, som understøtter hele s
     \item Voice chat, som understøtter kommunikation mellem spillere og er begrænset til holdvis interaktion.
     \item Mappet, som repræsenterer spillets fysiske miljø og er designet ud fra skolens historiske bygninger.
     \item NPC, som aktiveres i situationer hvor der ikke er nok spillere til at understøtte multiplayer gameplay.
-\end{itemize}\\
+\end{itemize}
 
 Endelig findes systemfunktionelle use cases som:
 
 \begin{itemize}
     \item Opret session, som gør det muligt for en spiller at hoste et spil, som andre kan deltage i.
-\end{itemize} \\
-
+\end{itemize} 
 Sammenhæng i systemet:
 
 Set samlet fungerer use casene som en lagdelt struktur, hvor systemet starter med brugeradgang (login), fortsætter med session og lobby-system, derefter rollefordeling (hold og klasse), og til sidst det egentlige gameplay-loop med mål, progression og win condition.
@@ -266,23 +265,82 @@ Diagrammets enkelte use cases er udviklet ved at sammensmelte flere user stories
 \subsection{Design}
 
 \subsubsection{Klasse diagram}
+Ud fra  domænemodellen er der blevet udarbejdet et klassediagram, som repræsenterer en mere teknisk og implementeringsnær struktur af systemets komponenter og deres indbyrdes relationer. Hvor domænemodellen primært havde til formål at beskrive de overordnede begreber, aktører og systemets funktionelle områder på et abstrakt niveau, fungerer klassediagrammet som en konkretisering af disse elementer i form af klasser, attributter, metoder og relationer. Overgangen fra domænemodel til klassediagram har derfor bestået i en systematisk nedbrydning af de centrale begreber fra domænet til mere tekniske enheder, dog skal det pointeres, at grunden brug af unreal enginge så er selve klasse diagrammet markant anderledes end domaine modellen, da Unreal Enigne kommer med en færdig bygget aktiketur som man skal bruge for at bygge sit system op omring, dog er gameplay-elementer, spillertyper, sessionshåndtering og netværkslogik  blevet omsat til konkrete klasser med ansvar og funktioner.
+
+I denne proceekt som dette har det været nødvendigt at skelne mellem gameplay-logik, brugerinteras er der blevet identificeret hvilke dele af domænet der skal repræsenteres som selvstændige klasser, hvilke der skal modelleres som relationer, og hvilke der skal håndteres som arv eller komposition. Særligt i et spiludviklingsprojktion og systemmæssige funktioner såsom netværk og state management. Klassediagrammet afspejler derfor både spillets struktur og de tekniske afhængigheder, som opstår i implementeringen af et multiplayer-system.
+
+Det er dog vigtigt at bemærke, at klassediagrammet i dette tilfælde har en begrænset praktisk overgang fra analyse til design i forhold til den faktiske implementering i Unreal Engine. Unreal Engine bygger på en allerede etableret og fast arkitektur, hvor centrale systemer som Actors, Components, Controllers og GameMode allerede er defineret af engine’en selv. Dette betyder, at man i praksis ikke frit designer hele sin klassearkitektur fra bunden, men i stedet arbejder inden for Unreal Engines eksisterende framework og nedarver fra deres baseklasser. Udviklingsarbejdet består derfor i høj grad i at udvide og specialisere disse klasser fremfor at opbygge et komplet klassedesign fra bunden.
+
+Som konsekvens heraf fungerer klassediagrammet primært som et dokumentarisk værktøj, der kan bruges til at forstå systemets logik og struktur på et højt niveau, snarere end som en direkte Proccesværktøj. Det giver et overblik over sammenhængen mellem systemets dele, men afspejler ikke nødvendigvis den fulde Design fase. Klassediagrammet skal derfor ses som en abstraheret model, der er nyttig til at forstår og tale om systemet, men har ikke kunne dirkete designes ud fra Anlaysen, uden at tage højde for Unreal Enginges enlige struktur og aktiketur der allerede 
+er defineret af Unreal Engine.
+
+Som det fremgår af klassediagrammet (bilag D.26), er der en række arvrelationer fra de underliggende systemer markeret som “Unreal Engine”-elementer. Disse er inkluderet for at tydeliggøre, hvilke dele af systemets struktur der stammer fra Unreal Engine, og som derfor ikke er fuldt dokumenteret i diagrammet. Formålet med markeringen er samtidig at illustrere engineens arkitektur samt hvilke komponenter, der er leveret af engineen, og hvilke der er udviklet ovenpå denne.
+
+Derudover er de enkelte elementer i diagrammet annoteret efter implementeringstype. Elementer markeret med “Blueprint” angiver dele, der er udviklet i Unreal Engines Blueprint-system, mens klasser markeret med “C++” repræsenterer systemer, som er implementeret af gruppen i C++-kode. Denne opdeling er foretaget for at skabe et klart overblik over, hvilke dele af systemet der er udviklet med hvilke teknologier, og dermed tydeliggøre den tekniske opbygning og ansvarfordeling i projektet.
 
 \subsubsection{Sequence diagram}
+Som det fremgår af sekvensdiagrammet (bilag D.29), fungerer diagrammet som et samlet design for “Sunshine”-systemets sekvenser, der er konsolideret fra en række mindre og mere analytiske systemsekvensdiagrammer. Hvor de individuelle systemsekvensdiagrammer hver især beskriver isolerede brugerinteraktioner og specifikke funktionelle flows, samler dette overordnede sekvensdiagram hele systemets interaktioner i én sammenhængende model.
+
+Formålet med at udarbejde et samlet sekvensdiagram er at skabe et helhedsorienteret overblik over systemets dynamiske adfærd. Dette gør det muligt at se, hvordan de forskellige dele af systemet interagerer på tværs af funktioner, og hvordan data og kontrolflow bevæger sig mellem aktører og systemkomponenter. I praksis fungerer diagrammet som en bro mellem de tidlige analysemodeller og den endelige design- og implementeringsfase.
+
+I processen med at udarbejde diagrammet er de individuelle systemsekvensdiagrammer blevet analyseret og abstraheret, hvorefter overlappende og relaterede interaktioner er blevet samlet i fælles sekvenser. Dette har krævet en strukturering af de forskellige hændelsesforløb, så redundans er fjernet, og så de mest centrale interaktionsmønstre fremstår tydeligt. Resultatet er et mere kompakt og sammenhængende diagram, som stadig bevarer den logiske struktur fra de oprindelige analyser.
+
+Det samlede sekvensdiagram gør det samtidig muligt at identificere afhængigheder mellem systemets komponenter samt rækkefølgen af vigtige operationer. Dette er særligt vigtigt i forhold til forståelsen af systemets arkitektur, da det tydeliggør, hvordan de forskellige moduler i “Sunshine”-systemet kommunikerer og samarbejder under udførelsen af centrale funktioner.
+
+Derudover bidrager diagrammet til at sikre konsistens mellem design og implementering, da det fungerer som referencepunkt for udviklingen. Ved at samle alle sekvenser i ét overordnet diagram opnås en mere præcis visualisering af systemets samlede adfærd, hvilket både styrker dokumentationen og gør det lettere at validere systemets funktionelle krav.
+
+diagrammet er nærmest opdelt i 2 forkselige sekvenser, den øvre seksvens som udgøre hele login fasen frem til at spilleren har valgt en karatker, op så den nedre fase, som som er marteret som et Loop, dette loop anses som Game loopeet, og disse sekvenser køre derfor hele tiden, ind til spillet stopper, denne opdelen hænger også godt sammen med spillets opdeling i en menu struktur for at være klar til at spille, og så selve spillet
+
+som det også ses fra sequence diagrammet er systemet oprindeligt desinget til også at inkludere en Database, som skulle administere bruger logins, samt bruger data, således at spiller kunne logge ind i systemet, og hente navn og score, databasen er conseptuelt desinget men er ikke blivet implemnteret grunndet priotering af udvikling af selve spillet først
 
 \subsubsection{Conceptual ER-Diagram}
+Som det fremgår af ER-diagrammet (bilag D.27) er der designet en database, som understøtter et login-system og håndteringen af de centrale data i systemet. Databasen er udviklet med udgangspunkt i et klassisk databasedesign-forløb, hvor der først er blevet udarbejdet et Entity-Relationship (ER) diagram som fundament for den endelige databaseimplementering.
+
+Udarbejdelsen af ER-diagrammet er sket på baggrund af domænemodellen (bilag D.24), hvor de væsentligste entiteter i systemets problemområde først er blevet identificeret. Domænemodellen har fungeret som et konceptuelt udgangspunkt, der beskriver systemets overordnede struktur og forretningsmæssige begreber. Herefter er disse entiteter blevet analyseret og omsat til en mere databaserettet model, hvor fokus er på datarepræsentation og relationer frem for abstrakte domænebegreber.
+
+Efter identifikationen af entiteter er der blevet foretaget en detaljeret analyse af de enkelte entiteters attributter. Formålet med denne fase har været at definere, hvilke egenskaber der er nødvendige for at repræsentere hver entitet korrekt i databasen. Dette inkluderer blandt andet overvejelser om primærnøgler, datatyper samt hvilke attributter der er obligatoriske eller valgfrie. Denne strukturering er essentiel for at sikre dataintegritet og entydighed i databasen.
+
+Dernæst er relationerne mellem entiteterne blevet analyseret og modelleret i ER-diagrammet. Her er der taget stilling til kardinalitet (1:1, 1:N og N:M), blandt andet ses det at en kamp indholder 2 hold, eller så er det en 1:1 realtion der er imellem all entiteterne. Denne del af designprocessen er central, da den sikrer, at databasen kan understøtte systemets logiske sammenhænge uden redundans eller inkonsistens i data. I tilfælde hvor der opstår mange-til-mange-relationer, er disse blevet håndteret ved introduktion af forbindelsestabeller for at normalisere datastrukturen.
+
+Det endelige ER-diagram fungerer dermed som en samlet konceptuel model for databasen, hvor både strukturen af data og relationerne mellem dem er defineret.
+
+dog som før nævnt er denne database ikke implementeret, dog er den videre analayseret til et EER
 
 \subsubsection{EER-Diagram}
+Efter færdiggørelsen af ER-diagrammet er der blevet udarbejdet et EER-diagram (bilag D.28). Dette diagram udgør en videreudvikling af det oprindelige ER-diagram og repræsenterer et Enhanced Entity-Relationship (EER) design, hvor modellen udvides med mere avancerede datamodelleringskoncepter. Formålet med EER-diagrammet er at give en mere detaljeret og implementeringsnær beskrivelse af databasen, hvor både strukturelle relationer og yderligere constraints er eksplicit defineret.
 
+I EER-diagrammet indgår blandt andet mapping af entiteterne i form af primærnøgler og fremmednøgler. Hver entitet er således blevet tildelt en primærnøgle markeret med \texttt{PK}, som entydigt identificerer hver instans af entiteten i databasen. Et eksempel herpå er entiteten \textit{spiller}, hvor attributten \textit{spiller\_id} anvendes som primærnøgle. Denne nøgle er et såkaldt ``opfundet id'' (surrogate key), som genereres og kontrolleres af systemet selv. Fordelen ved denne type nøgle er, at den er stabil, unik og ikke afhænger af forretningsdata, hvilket betyder, at den ikke ændres over tid og derfor er velegnet som identifikator i relationelle databaser.
+
+Derudover er fremmednøgler markeret med \texttt{FK}, hvilket angiver relationer mellem entiteterne. Fremmednøgler anvendes til at sikre referentiel integritet og etablere forbindelser mellem tabeller. Dette ses eksempelvis i entiteten \textit{spillerkamp}, som fungerer som en associerende entitet. Denne type entitet anvendes til at håndtere relationer mellem to eller flere entiteter og indeholder derfor fremmednøgler fra flere forskellige tabeller. På denne måde fungerer \textit{spillerkamp} som en kobling, der binder data fra relaterede entiteter sammen og muliggør modellering af komplekse relationer såsom mange-til-mange-sammenhænge.
+
+EER-diagrammet indeholder desuden udvidelser i form af specialisering og generalisering (nedarvning), hvilket ikke eksplicit fremgår af det oprindelige ER-diagram. Dette ses eksempelvis ved entiteten \textit{klasse}, hvor der er defineret en hierarkisk struktur mellem overordnede og underordnede entitetstyper. Diagrammet angiver her både mandatory participation og OR-kardinalitet, hvilket betyder, at en given instans af den overordnede entitet nødvendigvis skal være specialiseret som præcis én af de underliggende entitetstyper. Denne constraint sikrer en streng klassifikation af data og forhindrer, at entiteter eksisterer uden en defineret subtype.
+
+Tilsvarende gør sig gældende for \textit{hold}-entiteten, hvor der ligeledes er anvendt specialisering. Dette bidrager til en mere præcis datamodel, hvor forskellige typer af hold kan repræsenteres uden at kompromittere datakonsistens eller struktur. Ved at anvende EER-modellens udvidede begreber opnås dermed en mere nuanceret og realistisk datamodellering, som bedre afspejler systemets domæne og de regler, der gælder heri.
+
+Samlet set fungerer EER-diagrammet som en udvidet og mere formaliseret version af ER-diagrammet, hvor både nøgler, relationer og specialiseringer er tydeligt defineret.
+ 
 \subsection{Implementation}
+Den detaljerede implementering af systemets forskellige dele samt forklaringer af koden er uddybet i procesrapporten, da dette vurderes som en del af udviklingsprocessen. I dette afsnit fokuseres der derfor på, hvordan forskellige implementeringsmetoder og koncepter er blevet anvendt, samt hvilken betydning disse valg har haft for det endelige produkt.
 
 \subsection{Brug af OPP}
+
 
 \subsection{C++}
 
 \subsection{Blueprints}
 
+\subsection{Package Diagram}
+
 \subsection{Tests}
 
 \subsubsection{Test Cases}
+På baggrund af use casene blev der løbende udarbejdet test cases til systemet. Disse test cases blev skrevet før implementeringen af koden med inspiration fra principperne bag Test-Driven Development (TDD). Formålet var at sikre, at systemet løbende kunne vurderes op imod de opstillede krav og forventede funktionaliteter.
+
+Testene (bilag H) er opdelt i forskellige kategorier og fokuserer på specifikke dele af systemet. Under implementeringsfasen blev testene løbende anvendt og udført af systemets udviklere for at verificere funktionaliteten.
+
+Efterfølgende blev samtlige tests udført af et testpanel bestående af to personer uden for projektgruppen. Det skal dog bemærkes, at begge testpersoner har relationer til medlemmer af gruppen, hvorfor der bør tages forbehold for potentiel bias i evalueringen. Testpanelet blev derfor instrueret i at forholde sig neutralt og objektivt til deres oplevelse af spillet samt til de krav, som testene opstillede.
+
+resutlatet af testpanelets gennemgang af testene, kan ses under (bilag H), ud fra den gældene trin i testen, er en status beskrevet, for om testen er godkent eller fejlet
 
 \subsection{Resultater}
+på baggrund af hele proceesen kan det resulteret at gruppen har været i stand til at udvikle et spil i unreal engine som har klare refrerance til Viborg Katadralskole.
