@@ -20,7 +20,7 @@ i praksis blev implementationen af online sessions først oprettet som et system
 
 \newpage
 \subsection{VoiceChat}
-Ved den indledende undersøgelse af, hvad der lå bag et funktionelt “proximity” voicechat-system, var den generelle konsensus online, at det var bedst at “betale $40 og spare hovedpinen”. Eksisterende YouTube-guides gjorde oftest brug af et tredjepartsplugin, “Advanced Sessions”, som eksponerer flere funktioner og attributter fra Unreal Engines Online Subsystem.
+Ved den indledende undersøgelse af, hvad der lå bag et funktionelt "proximity" voicechat-system, var den generelle konsensus online, at det var bedst at betale \texttt{\$40} og spare hovedpinen. Eksisterende YouTube-guides gjorde oftest brug af et tredjepartsplugin, "Advanced Sessions", som eksponerer flere funktioner og attributter fra Unreal Engines Online Subsystem.
 
 Dette havde til formål at muliggøre brugen af Steams version af Online Subsystem, en spilplatform udviklet af Valve. Herigennem ville det være muligt at gøre brug af “Steam Voice Chat”, som håndterer hele logikken bag VoIP (Voice over Internet Protocol).
 
@@ -42,7 +42,7 @@ Værdien mellem 0 og 1 blev skabt ved at tage et Audio Envelope Value, som under
 
 
 \newpage
-\subsection{Kundekontakt & 3D-skanning af Katedralskolen}
+\subsection{Kundekontakt \& 3D-skanning af Katedralskolen}
 Kundekontakt foregik primært gennem mailkorrespondance med Simon Justesen og Signe Bro, som er lærere ansat på Katedralskolen. Derudover blev der sendt mails til tre elever fra skolen med henblik på potentiel musikproduktion til projektet.
 
 Yderligere kommunikation og koordinering fandt sted i forbindelse med skanningen af skolen, hvor det var muligt at planlægge det kommende samarbejdsforløb sammen med Simon Justesen, som deltog under skanningen.
@@ -53,17 +53,119 @@ De skannede lokaler omfattede gangarealer, klasseværelser, laboratorier, gymnas
 
 \newpage
 \subsection{Timer}
-//tænker Jonathan dit kan være her
+Formålet med opgaven var både at skabe en fungerende countdown-timer til gameplayet og samtidig opnå en bedre forståelse af Unreal Engines multiplayer-arkitektur, herunder kommunikationen mellem server og klient samt samspillet mellem GameMode, GameState og PlayerController.
 
+Da projektet allerede indeholdt en eksisterende MainUI-widget, tog jeg udgangspunkt i denne. Jeg tilføjede et tekst-element til brugerfladen, som blev gemt som variablen \texttt{RemainingTime}. Under arbejdet fandt jeg frem til, at MainUI-widgetten bliver oprettet i PlayerController og derefter tilføjet til spillerens skærm.
+
+\begin{figure}[!b]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+        \includegraphics[width=\textwidth]{../../Bilag/F - Kilde Kode/F.2 BluePrints/BPScreenshot_PlayController_AddMainUI.png}
+		\caption{Oprettelse af MainUI i PlayerController.}
+		\label{fig:playcontroller_add_mainui}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../Bilag/F - Kilde Kode/F.2 BluePrints/BPSC_MainUI_TimerUI.png}
+		\caption{Timer UI-elementet \texttt{RemainingTime} i MainUI.}
+		\label{fig:mainui_timer_ui}
+	\end{minipage}
+\end{figure}
+
+For at få timeren til at fungere korrekt i multiplayer blev variablen \texttt{RemainingTime} placeret i GameState som en replicated variabel. Dette gjorde det muligt for alle klienter at modtage den samme opdaterede tid fra serveren. Selve countdown-logikken blev implementeret i GameMode ved hjælp af Unreal Engines “Set Timer By Event”-node.
+
+\begin{figure}[!b]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../../Bilag/F - Kilde Kode/F.2 BluePrints/BPSC_GameMode_TimerLogik.png}
+	\caption{Countdown-logik implementeret i GameMode.}
+	\label{fig:gamemode_timer_logik}
+\end{figure}
+
+I GameMode oprettede jeg to custom events: \texttt{Start Countdown} og \texttt{Countdown Event}. \texttt{Countdown Event} blev sat som delegate til “Set Timer By Event” med looping aktiveret. Eventet hentede derefter den aktuelle GameState, castede til GameState, hentede værdien af \texttt{RemainingTime}, reducerede værdien med ét sekund og opdaterede derefter variablen igen.
+
+Denne opgave var udfordrende, da jeg i starten havde begrænset erfaring med Unreal Engines multiplayer-struktur og replicated variabler. Jeg brugte derfor en stor del af tiden på research og testning for at forstå, hvordan de forskellige dele af systemet kommunikerer. Gennem processen fik jeg en væsentligt bedre forståelse af server-authoritative systemer i Unreal Engine og hvordan GameMode og GameState anvendes forskelligt i multiplayer-spil.
 
 \newpage
 \subsection{Class Selection}
 
-
 \newpage
-\subsection{Speceille Evner}
-//tænker Jonathan dit kan være her
+\subsection{Specielle Evner}
+En af de største tekniske udfordringer i projektet var implementeringen af abilities til de forskellige robber-karakterer. Tidligt i projektforløbet besluttede gruppen, at spillet skulle indeholde forskellige robber-typer med unikke abilities. De planlagte karakterer var blandt andet Athlete, Scientist, Language og Music robber. På dette tidspunkt var kun karakterernes overordnede temaer fastlagt, mens de konkrete abilities endnu ikke var designet.
 
+Jeg begyndte arbejdet med abilities ved først at implementere en simpel dash-ability til Athlete-karakteren. Formålet var at skabe en relativt simpel mechanic, som samtidig kunne hjælpe mig med at forstå, hvordan abilities bedst kunne struktureres i Unreal Engine Blueprints.
+
+Ability-systemet for dash blev opdelt i flere custom events, blandt andet \texttt{TryDash}, \texttt{StartDash} og inputhåndtering via keypress-events. I \texttt{TryDash} blev der først kontrolleret, om abilityen var tilgængelig gennem variablen \texttt{AbilityAvailable}. Hvis abilityen kunne anvendes, blev variablen sat til \texttt{false}, cooldown blev startet, og \texttt{StartDash}-eventet blev kaldt.
+
+\begin{figure}[!b]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../../Bilag/F - Kilde Kode/F.2 BluePrints/BPSC_Sport_DashLogik.png}
+	\caption{Dash-ability logik for Athlete-karakteren.}
+	\label{fig:sport_dash_logik}
+\end{figure}
+
+I \texttt{StartDash} blev karakterens bevægelseshastighed midlertidigt ændret ved hjælp af \texttt{CharacterMovement}-komponenten. Derudover blev \texttt{Launch Character}-funktionen anvendt sammen med \texttt{GetActorForwardVector} for at sikre, at dash-bevægelsen fulgte den retning, spilleren kiggede i. Efter en kort delay-periode svarende til abilityens varighed blev karakterens normale hastighed gendannet.
+
+Cooldown-systemet blev implementeret ved hjælp af variablen \texttt{CurrentCooldown}, som kontinuerligt blev reduceret med \texttt{Delta Seconds} på hvert \texttt{Event Tick}. Da cooldowns er spiller-specifikke data, fandt jeg undervejs ud af, at disse værdier ikke burde placeres i GameState eller GameMode, men i stedet håndteres lokalt i den enkelte karakterklasse. Dette var en vigtig læring i forhold til Unreal Engines multiplayer-arkitektur.
+
+\subsubsection*{Udvikling af UI til abilities}
+Efter implementeringen af de første abilities begyndte jeg at generalisere systemet og udvikle et fælles UI til cooldowns og ability-information. Hver ability indeholdt blandt andet variablerne:
+\begin{itemize}
+	\item \texttt{CurrentCooldown} (float)
+	\item \texttt{AbilityName} (string)
+	\item \texttt{AbilityAvailable} (bool)
+\end{itemize}
+
+En af de største udfordringer var kommunikationen mellem ability-klasserne og UI-systemet. Jeg havde tidligere arbejdet med replicated værdier i GameState til den globale spil-timer, men cooldowns skulle i stedet opdateres lokalt hos den enkelte spiller.
+
+Den løsning jeg endte med at implementere, var at gemme en reference til MainUI-widgetten i PlayerController. Når UI-widgetten blev oprettet med \texttt{Create Main UI Widget}, blev returværdien gemt som en objekt-reference kaldet \texttt{MainUIRef}.
+
+\begin{figure}[!b]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../Bilag/F - Kilde Kode/F.2 BluePrints/BPSC_AbilityClass_AbilityUI.png}
+		\caption{Ability-klassens kommunikation med UI via PlayerController.}
+		\label{fig:ability_class_ui}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../Bilag/F - Kilde Kode/F.2 BluePrints/BPSC_MainUI_AbilityText.png}
+		\caption{Opdatering af ability-tekst i MainUI.}
+		\label{fig:mainui_ability_text}
+	\end{minipage}
+\end{figure}
+
+Derefter kunne ability-klasserne på hvert \texttt{Event Tick} caste til PlayerController og opdatere UI’et gennem et custom event kaldet \texttt{AbilityUI} i MainUI-blueprintet. Eventet modtog blandt andet ability-navn og resterende cooldown som parametre og opdaterede derefter tekstfelterne i UI’et via \texttt{SetText}-funktioner.
+
+Denne del af projektet var særligt udfordrende, da jeg skulle opnå en forståelse af, hvordan UI, PlayerController og gameplay-klasser kommunikerer i Unreal Engine. Gennem processen lærte jeg meget om referencehåndtering, objektkommunikation og forskellen mellem replicated data og lokale spillerdata i multiplayer-spil.
+
+Efter implementeringen af dash-abilityen begyndte jeg at arbejde mere systematisk med abilities og deres tilhørende cooldown-system. På dette tidspunkt havde jeg opnået en bedre forståelse af Unreal Engines Blueprint-struktur og multiplayer-arkitektur, hvilket gjorde det muligt at generalisere flere dele af systemet. Figur~\ref{fig:science_stun_logik} viser den overordnede struktur for stun-abilityen samt kommunikationen mellem gameplay-logik og UI.
+
+Stun-abilityen blev implementeret som en area-of-effect (AoE) ability, hvor spillere inden for en bestemt radius bliver påvirket midlertidigt. Abilityen blev opdelt i flere separate events for at gøre logikken mere overskuelig og lettere at debugge. De centrale events var blandt andet \texttt{TryStun}, \texttt{StartStun} samt forskellige events til håndtering af cooldown og UI-opdateringer.
+
+Når spilleren trykker på ability-knappen, kaldes \texttt{TryStun}-eventet. Her bliver der først kontrolleret, om abilityen er tilgængelig ved hjælp af variablen \texttt{AbilityAvailable}. Hvis abilityen er klar til brug, sættes variablen til \texttt{false}, cooldown-værdien sættes til den definerede \texttt{StunCooldown}, og \texttt{StartStun}-eventet bliver aktiveret.
+
+\begin{figure}[!b]
+	\centering
+    \includegraphics[width=0.9\textwidth]{../../Bilag/F - Kilde Kode/F.2 BluePrints/BPSC_Science_StunLogik.png}
+	\caption{Stun-ability logik for Scientist-karakteren.}
+	\label{fig:science_stun_logik}
+\end{figure}
+
+I \texttt{StartStun}-eventet anvendes funktionen \texttt{Get Overlapping Actors} til at finde spillere inden for abilityens radius. Herefter gennemløbes alle fundne aktører med et \texttt{For Each Loop}. For at sikre at kun modstanderholdet blev påvirket, blev der anvendt \texttt{Actor Has Tag} til at kontrollere, om karakteren havde det relevante tag. Hvis betingelsen var opfyldt, blev karakteren castet til den relevante character-klasse.
+
+Selve stun-effekten blev implementeret ved midlertidigt at ændre spillerens \texttt{Max Walk Speed} gennem \texttt{CharacterMovement}-komponenten. Når abilityen aktiveres, reduceres spillerens bevægelseshastighed kraftigt, hvilket effektivt forhindrer normal bevægelse. Efter en delay-periode svarende til \texttt{StunDuration} blev hastigheden sat tilbage til standardværdien.
+
+Cooldown-systemet blev håndteret lokalt i character-klassen gennem variablen \texttt{CurrentCooldown}. På hvert \texttt{Event Tick} blev cooldown-værdien reduceret med \texttt{Delta Seconds}, indtil værdien nåede nul. Når cooldown-værdien var nul eller lavere, blev \texttt{AbilityAvailable} sat tilbage til \texttt{true}, hvilket gjorde abilityen tilgængelig igen.
+
+Udviklingen af UI til abilities viste sig at være mere kompleks end forventet. Da cooldowns er spiller-specifikke data, var det ikke hensigtsmæssigt at placere dem i GameState eller GameMode, som tidligere var blevet anvendt til den globale spil-timer. I stedet blev UI-opdateringen håndteret lokalt via PlayerController.
+
+Da MainUI-widgetten oprettes i PlayerController, gemte jeg en reference til widgetten i variablen \texttt{MainUIRef}. Dette gjorde det muligt for character-klassen at caste til PlayerController og kalde custom eventet \texttt{UpdateAbilityUI}. Eventet modtog blandt andet ability-navn og resterende cooldown som parametre og opdaterede derefter tekstfelterne i UI’et ved hjælp af \texttt{SetText}-funktioner.
+
+Denne del af projektet krævede omfattende debugging og research, da kommunikationen mellem gameplay-klasser og UI i Unreal Engine var mere kompleks end forventet. Gennem processen opnåede jeg en bedre forståelse af objekt-referencer, lokal spillerdatahåndtering og forskellen mellem replicated data og klient-specifikke data i multiplayer-spil.
 
 \newpage
 \subsection{nøgler og kisten}
