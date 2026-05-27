@@ -42,7 +42,24 @@ I den første version af systemet blev der implementeret en relativt simpel løs
 
 Denne løsning fungerede som et udgangspunkt for at få systemet teknisk stabilt, men viste sig senere at være begrænset i forhold til brugeroplevelse og fleksibilitet.
 
-Senere i udviklingsforløbet blev systemet derfor videreudviklet til den nuværende løsning (jf. bilag F.2.29--F.2.30), hvor spillere i stedet kunne vælge mellem tilgængelige sessioner. Der blev desuden implementeret en lobby-funktion, hvor spillere kunne samles og vente, inden spillet startede.
+Senere i udviklingsforløbet blev systemet derfor viderBPeudviklet til den nuværende løsning (jf. bilag F.2.29--F.2.30) firgur \ref{fig:GameInstance 1} og \ref{fig:GameInstance 2}, hvor spillere i stedet kunne vælge mellem tilgængelige sessioner. Der blev desuden implementeret en lobby-funktion, hvor spillere kunne samles og vente, inden spillet startede.
+
+\begin{figure}[!b]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+        \includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.29 BP_GameInstance del 1.png}
+		\caption{oprettelse af listen server}
+		\label{fig:GameInstance 1}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.30 BP_GameInstance del 2.png}
+        \caption{join en listen server}
+		\label{fig:GameInstance 2}
+	\end{minipage}
+\end{figure}
 
 Denne ændring blev foretaget på baggrund af test og overvejelser om brugeroplevelse, da gruppen vurderede, at det var vigtigt at give spillerne mere kontrol og bedre overblik over multiplayer-delen af spillet.
 
@@ -64,7 +81,14 @@ Implementeringen af Team Selection blev i første omgang lavet ved hjælp af Unr
 
 Gruppen udviklede i denne forbindelse et widget-baseret system, hvor spilleren fik tildelt et specifikt tag baseret på deres holdvalg. Dette blev håndteret gennem \texttt{TeamSelectionUI}, som registrerede spillerens valg og sendte informationen videre til \texttt{GameMode}-klassen.
 
-For at understøtte dette blev der oprettet spawn points i scenen med tilsvarende tags, således at systemet kunne matche spillerens tag med det relevante spawn point. På denne måde blev spilleren automatisk spawn’et på den korrekte placering afhængigt af det valgte hold (jf. bilag F.2.3). Denne løsning gjorde det muligt at skabe en simpel, men effektiv logik til holdopdeling i den tidlige fase af udviklingen.
+For at understøtte dette blev der oprettet spawn points i scenen med tilsvarende tags, således at systemet kunne matche spillerens tag med det relevante spawn point. På denne måde blev spilleren automatisk spawn’et på den korrekte placering afhængigt af det valgte hold (jf. bilag F.2.3) som vist på figur \ref{fig:gamemode 1}. Denne løsning gjorde det muligt at skabe en simpel, men effektiv logik til holdopdeling i den tidlige fase af udviklingen.
+
+\begin{figure}[!b]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.3 BP_SEP_GameMode del 1.png}
+	\caption{gamemode.}
+	\label{fig:gamemode 1}
+\end{figure}
 
 Som projektet udviklede sig, blev der senere implementeret et mere avanceret nedarvningssystem for spillerklasser, som gjorde det muligt at differentiere spillernes egenskaber og roller mere detaljeret. Dette klassesystem vil blive behandlet senere i rapporten.
 
@@ -74,9 +98,33 @@ For at gøre systemet tilgængeligt for spilleren blev der udviklet et UI, hvor 
 
 UI’et blev instansieret gennem \texttt{PlayerController}-klassen, da denne klasse håndterer spillerens input og interaktion med spillet. Denne placering gjorde det muligt at sikre en effektiv kobling mellem brugerinput og spillets logik. Når spilleren valgte et hold, blev informationen sendt videre til \texttt{GameMode}, som herefter stod for spawning af spilleren på det korrekte spawn point.
 
-Systemet blev løbende testet og itereret gennem udviklingsprocessen for at sikre stabil funktionalitet og en god brugeroplevelse, da holdvalg var en vigtig del af spillets multiplayer-dynamik (jf. bilag F.2.10--F.2.11).
+Systemet blev løbende testet og itereret gennem udviklingsprocessen for at sikre stabil funktionalitet og en god brugeroplevelse, da holdvalg var en vigtig del af spillets multiplayer-dynamik (jf. bilag F.2.10--F.2.11) som vist på figur \ref{fig:PlayerController 1} og \ref{fig:PlayerController 2}.
 
-Efter at spilleren havde valgt et hold, blev vedkommende sendt videre til næste UI, hvor spilleren kunne vælge deres klasse (jf. bilag F.2.33). Denne opdeling i flere trin bidrog til en mere struktureret onboarding-proces i spillet og gjorde det lettere for spilleren at forstå deres rolle i spillets startfase.
+\begin{figure}[!b]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+        \includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.10 BP_SEP_PlayerController del 1}
+		\caption{PlayerController}
+		\label{fig:PlayerController 1}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.11 BP_SEP_PlayerController del 2}
+        \caption{PlayerController}
+		\label{fig:PlayerController 2}
+	\end{minipage}
+\end{figure}
+
+Efter at spilleren havde valgt et hold, blev vedkommende sendt videre til næste UI, hvor spilleren kunne vælge deres klasse (jf. bilag F.2.33) figur \ref{fig:TeamSelection} . Denne opdeling i flere trin bidrog til en mere struktureret onboarding-proces i spillet og gjorde det lettere for spilleren at forstå deres rolle i spillets startfase.
+
+\begin{figure}[!b]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.33 BPW_TeamSelection.png}
+	\caption{TeamSelection}
+	\label{fig:TeamSelection}
+\end{figure}
 
 \newpage
 \subsection{VoiceChat}
@@ -132,7 +180,39 @@ De skannede lokaler omfattede gangarealer, klasseværelser, laboratorier, gymnas
 
 \newpage
 \subsection{Timer}
-//tænker Jonathan dit kan være her
+Formålet med opgaven var både at skabe en fungerende countdown-timer til gameplayet og samtidig opnå en bedre forståelse af Unreal Engines multiplayer-arkitektur, herunder kommunikationen mellem server og klient samt samspillet mellem GameMode, GameState og PlayerController.
+
+Da projektet allerede indeholdt en eksisterende MainUI-widget, tog Gruppen udgangspunkt i denne. Gruppen tilføjede et tekst-element til brugerfladen, som blev gemt som variablen \texttt{RemainingTime}. Under arbejdet fandt Gruppen frem til, at MainUI-widgetten bliver oprettet i PlayerController og derefter tilføjet til spillerens skærm.
+
+\begin{figure}[!b]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+        \includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/BPScreenshot_PlayController_AddMainUI.png}
+		\caption{Oprettelse af MainUI i PlayerController.}
+		\label{fig:playcontroller_add_mainui}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/BPSC_MainUI_TimerUI.png}
+		\caption{Timer UI-elementet \texttt{RemainingTime} i MainUI.}
+		\label{fig:mainui_timer_ui}
+	\end{minipage}
+\end{figure}
+
+For at få timeren til at fungere korrekt i multiplayer blev variablen \texttt{RemainingTime} placeret i GameState som en replicated variabel. Dette gjorde det muligt for alle klienter at modtage den samme opdaterede tid fra serveren. Selve countdown-logikken blev implementeret i GameMode ved hjælp af Unreal Engines “Set Timer By Event”-node.
+
+\begin{figure}[!b]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../../F - Kilde Kode/F.2 BluePrints/BPSC_GameMode_TimerLogik.png}
+	\caption{Countdown-logik implementeret i GameMode.}
+	\label{fig:gamemode_timer_logik}
+\end{figure}
+
+I GameMode oprettede Gruppen to custom events: \texttt{Start Countdown} og \texttt{Countdown Event}. \texttt{Countdown Event} blev sat som delegate til “Set Timer By Event” med looping aktiveret. Eventet hentede derefter den aktuelle GameState, castede til GameState, hentede værdien af \texttt{RemainingTime}, reducerede værdien med ét sekund og opdaterede derefter variablen igen.
+
+Denne opgave var udfordrende, da Gruppen i starten havde begrænset erfaring med Unreal Engines multiplayer-struktur og replicated variabler. Gruppen brugte derfor en stor del af tiden på research og testning for at forstå, hvordan de forskellige dele af systemet kommunikerer. Gennem processen fik Gruppen en væsentligt bedre forståelse af server-authoritative systemer i Unreal Engine og hvordan GameMode og GameState anvendes forskelligt i multiplayer-spil.
 
 
 \newpage
@@ -147,7 +227,24 @@ Derfra blev der implementeret yderligere nedarvede klasser inden for hvert hold,
 
 For \texttt{ResistanceTeam} blev der eksempelvis udviklet fire forskellige karakterklasser: \texttt{SportClass}, \texttt{ScienceClass}, \texttt{MusicClass} og \texttt{LanguageClass}. Tilsvarende blev \texttt{NaziTeam} udvidet med to karakterklasser: \texttt{GestapoSoldier} og \texttt{SSOfficer}. Hver klasse blev desuden udstyret med unikke meshes, hvilket gjorde det muligt visuelt at skelne mellem både klasser og hold i spillet.
 
-I praksis foregik klassevalget ved, at spilleren først blev sendt videre fra \texttt{TeamSelectionUI} til et klassevalg-UI (jf. bilag F.2.33). Herfra blev spilleren dirigeret videre til Unreal Engine-baserede UI’er for henholdsvis \texttt{ResistanceUI} (jf. bilag F.2.28) og \texttt{NaziUI} (jf. bilag F.2.27).
+I praksis foregik klassevalget ved, at spilleren først blev sendt videre fra \texttt{TeamSelectionUI} til et klassevalg-UI (jf. bilag F.2.33) figur \ref{fig:TeamSelection}. Herfra blev spilleren dirigeret videre til Unreal Engine-baserede UI’er for henholdsvis \texttt{ResistanceUI} (jf. bilag F.2.28) figur \ref{fig:Resistance classes} og \texttt{NaziUI} (jf. bilag F.2.27) figur \ref{fig:nazi classes}.
+
+\begin{figure}[!b]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+        \includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.28 BPW_Resistance_Class}
+		\caption{Resistance classe}
+		\label{fig:Resistance classes}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.27 BPW_NAZI_class.png}
+		\caption{nazi classes}
+		\label{fig:nazi classes}
+	\end{minipage}
+\end{figure}
 
 Disse UI’er bestod af interaktive knapper, som kaldte en funktion, der spawner spillerens karakter, tildeler det korrekte team-tag og placerer spilleren på det relevante spawn point. Dette blev håndteret gennem funktioner i henholdsvis \texttt{GameMode}- og \texttt{PlayerController}-klasserne, som stod for spawning og initialisering af spilleren.
 
@@ -155,56 +252,187 @@ Når karakteren var blevet spawnet korrekt, kunne spilleren vælge deres specifi
 
 \newpage
 \subsection{Speceille Evner}
-//tænker Jonathan dit kan være her
+Selve stun-effekten blev implementeret ved midlertidigt at ændre spillerens \texttt{Max Walk Speed} gennem \texttt{CharacterMovement}-komponenten. Når abilityen aktiveres, reduceres spillerens bevægelseshastighed kraftigt, hvilket effektivt forhindrer normal bevægelse. Efter en delay-periode svarende til \texttt{StunDuration} blev hastigheden sat tilbage til standardværdien.
+
+Cooldown-systemet blev håndteret lokalt i character-klassen gennem variablen \texttt{CurrentCooldown}. På hvert \texttt{Event Tick} blev cooldown-værdien reduceret med \texttt{Delta Seconds}, indtil værdien nåede nul. Når cooldown-værdien var nul eller lavere, blev \texttt{AbilityAvailable} sat tilbage til \texttt{true}, hvilket gjorde abilityen tilgængelig igen.
+
+Udviklingen af UI til abilities viste sig at være mere kompleks end forventet. Da cooldowns er spiller-specifikke data, var det ikke hensigtsmæssigt at placere dem i GameState eller GameMode, som tidligere var blevet anvendt til den globale spil-timer. I stedet blev UI-opdateringen håndteret lokalt via PlayerController.
+
+Da MainUI-widgetten oprettes i PlayerController, gemte Gruppen en reference til widgetten i variablen \texttt{MainUIRef}. Dette gjorde det muligt for character-klassen at caste til PlayerController og kalde custom eventet \texttt{UpdateAbilityUI}. Eventet modtog blandt andet ability-navn og resterende cooldown som parametre og opdaterede derefter tekstfelterne i UI’et ved hjælp af \texttt{SetText}-funktioner.
+
+Denne del af projektet krævede omfattende debugging og research, da kommunikationen mellem gameplay-klasser og UI i Unreal Engine var mere kompleks end forventet. Gennem processen opnåede Gruppen en bedre forståelse af objekt-referencer, lokal spillerdatahåndtering og forskellen mellem replicated data og klient-specifikke data i multiplayer-spil.
 
 
 \newpage
-\subsection{nøgler og kisten}
+\subsection{Nøgler og kisten}
 For at løse use casene omkring at finde nøgler og låse en kiste op, som fungerer som en reference til skolens symbolik og historie, blev der udviklet et dedikeret gameplay-system. Systemet blev implementeret ved at oprette en Actor kaldet \texttt{BPA\_Key} i spillet. Denne \texttt{Actor} indeholder en collider, som registrerer, når en spiller interagerer med objektet. Når en spiller kommer i kontakt med collideren, udløses en event, som sender en besked til spillets \texttt{GameState} om, at spilleren har samlet en nøgle.
 
 Implementeringen er baseret på Unreal Engine’s event-system, hvor en overlap-event på collideren anvendes til at detektere spillerens interaktion med nøglen. Når denne event trigges, sendes der en besked videre til \texttt{GameState}-klassen, som håndterer den overordnede logik for registrering af nøgler.
 
-Denne løsning blev valgt, fordi \texttt{GameState} er en replicated klasse, hvilket betyder, at den kan synkronisere information på tværs af alle klienter i et multiplayer-spil (jf. bilag F.2.16 og F.2.7). Når en spiller har samlet en nøgle, broadcaster \texttt{GameState} desuden en opdatering til alle klienter, så deres UI bliver opdateret og viser, at en nøgle er blevet fundet (jf. bilag F.2.18). Dette bidrager til en mere dynamisk og fælles spiloplevelse, hvor alle spillere løbende kan følge med i spillets progression.
+Denne løsning blev valgt, fordi \texttt{GameState} er en replicated klasse, hvilket betyder, at den kan synkronisere information på tværs af alle klienter i et multiplayer-spil (jf. bilag F.2.16 og F.2.7) figur \ref{fig:Key} og \ref{fig:GameState}. Når en spiller har samlet en nøgle, broadcaster \texttt{GameState} desuden en opdatering til alle klienter, så deres UI bliver opdateret og viser, at en nøgle er blevet fundet (jf. bilag F.2.18) figur \ref{fig:ui}. Dette bidrager til en mere dynamisk og fælles spiloplevelse, hvor alle spillere løbende kan følge med i spillets progression.
 
-For at gøre placeringen af nøglerne mere dynamisk blev der udviklet et separat script til en Actor kaldet \texttt{BPA\_KeySpawnArea}. Denne \texttt{Actor} fungerer som et afgrænset område med en bounding box (jf. bilag F.2.17), hvorfra der kan genereres tilfældige spawn-positioner. Ved spilstart beregner systemet et tilfældigt punkt inden for dette område, hvor nøglen derefter spawnes.
+\begin{figure}[!b]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+        \includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.16 BPA_Key}
+		\caption{BPA Key}
+		\label{fig:Key}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.7 BP_SEP_GameState del 1.png}
+		\caption{GameState}
+		\label{fig:GameState}
+	\end{minipage}
+\end{figure}
 
-Denne løsning blev valgt for at øge variationen i gameplayet, da nøglerne dermed ikke altid er placeret samme sted i hver spil-session. For at sikre korrekt synkronisering på tværs af alle klienter blev spawn-logikken implementeret i \texttt{GameMode}-klassen (jf. bilag F.2.4), som håndterer spillets overordnede regler og initiering af spilobjekter.
+For at gøre placeringen af nøglerne mere dynamisk blev der udviklet et separat script til en Actor kaldet \texttt{BPA\_KeySpawnArea}. Denne \texttt{Actor} fungerer som et afgrænset område med en bounding box (jf. bilag F.2.17) figur \ref{fig:KeySpawnArea}, hvorfra der kan genereres tilfældige spawn-positioner. Ved spilstart beregner systemet et tilfældigt punkt inden for dette område, hvor nøglen derefter spawnes.
 
-Efterfølgende blev der udviklet et tilsvarende system for kisten (chest). Kisten fungerer på mange måder på samme måde som nøglen og indeholder også en collider, der registrerer spillerinteraktion. Her kontrollerer systemet dog, om spilleren tilhører Resistance team, og hvis dette er tilfældet, aktiveres spillets win condition (jf. bilag F.2.14), som vil blive uddybet senere i rapporten.
+\begin{figure}[!b]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+        \includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.18 BPW_MainUi}
+		\caption{main UI}
+		\label{fig:ui}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.17 BPA_KeySpawnArea.png}
+		\caption{KeySpawnArea}
+		\label{fig:KeySpawnArea}
+	\end{minipage}
+\end{figure}
 
-Ligesom med nøglerne blev kistens placering også koblet til key spawn-området, så den ikke altid befinder sig samme sted i hver spil-session. Dette blev ligeledes håndteret via \texttt{GameMode} for at sikre synkronisering mellem klienter og konsistent gameplay (jf. bilag F.2.4).
+Denne løsning blev valgt for at øge variationen i gameplayet, da nøglerne dermed ikke altid er placeret samme sted i hver spil-session. For at sikre korrekt synkronisering på tværs af alle klienter blev spawn-logikken implementeret i \texttt{GameMode}-klassen (jf. bilag F.2.4) figur \ref{fig:gamemode 2}, som håndterer spillets overordnede regler og initiering af spilobjekter.
+
+\begin{figure}[!b]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+        \includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.4 BP_SEP_GameMode del 2}
+		\caption{Gamemode}
+		\label{fig:gamemode 2}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.14 BPA_Chest.png}
+		\caption{BPA Chest}
+		\label{fig:Chest}
+	\end{minipage}
+\end{figure}
+
+Efterfølgende blev der udviklet et tilsvarende system for kisten (chest). Kisten fungerer på mange måder på samme måde som nøglen og indeholder også en collider, der registrerer spillerinteraktion. Her kontrollerer systemet dog, om spilleren tilhører Resistance team, og hvis dette er tilfældet, aktiveres spillets win condition (jf. bilag F.2.14) figur \ref{fig:Chest}, som vil blive uddybet senere i rapporten.
+
+Ligesom med nøglerne blev kistens placering også koblet til key spawn-området, så den ikke altid befinder sig samme sted i hver spil-session. Dette blev ligeledes håndteret via \texttt{GameMode} for at sikre synkronisering mellem klienter og konsistent gameplay (jf. bilag F.2.4) figur \ref{fig:gamemode 2}.
 
 Samlet set skaber dette system en gameplay-mekanisme, hvor spillerne skal udforske kortet, finde nøgler og til sidst låse kisten op for at vinde spillet. Dette bidrager til en dynamisk spiloplevelse, hvor både samarbejde og strategisk bevægelse på kortet bliver centrale elementer.
 \newpage
 \subsection{Fange Mechanic}
-For at implementere mekanikken omkring at fange modstandere, som er en central del af Nazi team-gameplayet, blev der tilføjet en collider på parent-klassen for alle Resistance team-spillere (bilag F.2.13). Denne collider kommunikerer via en variabel, som er tilgængelig for Nazi team-spilleren.
+For at implementere mekanikken omkring at fange modstandere, som er en central del af Nazi team-gameplayet, blev der tilføjet en collider på parent-klassen for alle Resistance team-spillere (bilag F.2.13) \ref{fig:Ressistance}. Denne collider kommunikerer via en variabel, som er tilgængelig for Nazi team-spilleren.
 
-Når der opstår et overlap, og variablen er aktiv, trigges der logik på Nazi team-spilleren (bilag F.2.9). Denne logik er implementeret i et Blueprint, som kalder et custom C++-funktionalitet, der er defineret i klassen \texttt{Sep4Character} (bilag F.1.7 og F.1.8). Denne klasse fungerer som den overordnede karakterklasse, som alle spillets characters nedarver fra.
+\begin{figure}[!b]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+        \includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.13 BP_SEP_Ressistance_base_charactor}
+		\caption{Ressistance base}
+		\label{fig:Ressistance}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.9 BP_SEP_NAZI_BASE_Charactor.png}
+		\caption{Nazi Base}
+		\label{fig:Nazi}
+	\end{minipage}
+\end{figure}
+
+Når der opstår et overlap, og variablen er aktiv, trigges der logik på Nazi team-spilleren (bilag F.2.9) figur \ref{fig:Nazi}. Denne logik er implementeret i et Blueprint, som kalder et custom C++-funktionalitet, der er defineret i klassen \texttt{Sep4Character} (bilag F.1.7 og F.1.8) figur \ref{fig:GameState 1} og \ref{fig:GameState 2}. Denne klasse fungerer som den overordnede karakterklasse, som alle spillets characters nedarver fra.
+
+\begin{figure}[!b]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+        \includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.7 BP_SEP_GameState del 1}
+		\caption{GameState 1}
+		\label{fig:GameState 1}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.8 BP_SEP_GameState del 2}
+		\caption{GameState 2}
+		\label{fig:GameState 2}
+	\end{minipage}
+\end{figure}
 
 Funktionaliteten håndterer, at den fangede spiller “fastholdes” og derefter via serveren får besked om at blive teleporteret til en fast position i banen. Dette sikrer, at handlingen bliver synkroniseret korrekt i multiplayer-miljøet og dermed er ens for alle spillere.
 
 Det område, spilleren bliver teleportet til, er implementeret som en separat Actor kaldet \texttt{BPA\_JailArea}. Denne \texttt{Actor} består af fire vægge, som afgrænser området og definerer “fængslet” i spillet.
 
-Derudover er der implementeret en dør som en selvstændig Actor, \texttt{BPA\_Door}, som indeholder logik til både åbning og lukning. Døren lukkes automatisk ved spillets start via det custom \texttt{GameMode} (bilag F.2.6).
+Derudover er der implementeret en dør som en selvstændig Actor, \texttt{BPA\_Door}, som indeholder logik til både åbning og lukning. Døren lukkes automatisk ved spillets start via det custom \texttt{GameMode} (bilag F.2.6) figur \ref{fig:start}.
+
+\begin{figure}[!b]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.6 BP_SEP_GameMode del 4.png}
+	\caption{custome start event.}
+	\label{fig:start}
+\end{figure}
 
 Døren indeholder desuden en collider, som gør det muligt for andre spillere at interagere med den for at befri en fanget spiller. Denne befrielsesmekanik vil blive uddybet senere i rapporten.
 
 \newpage
-\subsection{befri fængslet}
+\subsection{Befri Fængslet}
 Som tidligere nævnt er der implementeret en mekanik, hvor spillere på Resistance-teamet kan befri fangede holdkammerater fra fængslet. Denne funktionalitet blev implementeret ved at tilføje en collider til døren i \texttt{BPA\_Door}-klassen, som registrerer, når en spiller interagerer med objektet.
 
-Når en spiller kommer i kontakt med collideren, udløses en event, som sender en besked til serveren om, at døren skal åbnes. Serveren håndterer herefter den overordnede logik for åbning af døren (bilag F.2.15). Denne serverbaserede tilgang sikrer, at handlingen bliver synkroniseret korrekt i multiplayer-spillet, så alle spillere oplever den samme ændring i spilverdenen samtidig.
+Når en spiller kommer i kontakt med collideren, udløses en event, som sender en besked til serveren om, at døren skal åbnes. Serveren håndterer herefter den overordnede logik for åbning af døren (bilag F.2.15) figur \ref{fig:Door}. Denne serverbaserede tilgang sikrer, at handlingen bliver synkroniseret korrekt i multiplayer-spillet, så alle spillere oplever den samme ændring i spilverdenen samtidig.
+
+\begin{figure}[!b]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.15 BPA_Door.png}
+	\caption{BPA Door}
+	\label{fig:Door}
+\end{figure}
 
 \newpage
 \subsection{Win Conditions}
-Da der allerede var implementeret en timer i spillet, og systemet med nøgler og kiste var på plads, var det en relativt overskuelig opgave at implementere et win condition-system, som samler disse mekanikker. Dette blev gjort ved at tilføje en funktion i \texttt{GameState}-klassen, som løbende evaluerer, om enten timeren er udløbet, eller om kisten er blevet åbnet (jf. bilag F.2.8).
+Da der allerede var implementeret en timer i spillet, og systemet med nøgler og kiste var på plads, var det en relativt overskuelig opgave at implementere et win condition-system, som samler disse mekanikker. Dette blev gjort ved at tilføje en funktion i \texttt{GameState}-klassen, som løbende evaluerer, om enten timeren er udløbet, eller om kisten er blevet åbnet (jf. bilag F.2.8) figur \ref{fig:GameState 3}.
 
-Når en af disse betingelser opfyldes, broadcaster systemet en besked til alle klienter, som aktiverer et slutspils-UI, hvor spillerne kan se, om deres hold har vundet eller tabt (jf. bilag F.2.19 og F.2.20). Samtidig stoppes den løbende spilopdatering (Game Tick) for at sikre, at spillets tilstand fryses ved afslutning, så resultatet ikke ændres efter win condition er opnået.
+\begin{figure}[!b]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.8 BP_SEP_GameState del 3}
+	\caption{GameState 3}
+	\label{fig:GameState 3}
+\end{figure}
+
+Når en af disse betingelser opfyldes, broadcaster systemet en besked til alle klienter, som aktiverer et slutspils-UI, hvor spillerne kan se, om deres hold har vundet eller tabt (jf. bilag F.2.19 og F.2.20) figur \ref{fig:naziWin} og \ref{fig:reswin}. Samtidig stoppes den løbende spilopdatering (Game Tick) for at sikre, at spillets tilstand fryses ved afslutning, så resultatet ikke ændres efter win condition er opnået.
+
+\begin{figure}[!b]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+        \includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.19 BPW_WinLoseUI del 1.png}
+		\caption{Nazi Win}
+		\label{fig:naziWin}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.20 BPW_WinLoseUI del 2.png}
+		\caption{Resistance Win}
+		\label{fig:reswin}
+	\end{minipage}
+\end{figure}
 
 Denne løsning sikrer en klar og synkron afslutning på spillet for alle spillere og binder de forskellige gameplay-systemer sammen til én samlet spiloplevelse.
 
 \newpage
-\subsection{map opsætning}
+\subsection{Map opsætning}
 For at udvikle mappet til spillet så realistisk som muligt, blev der anvendt specialiseret hardware i form af kameraer til optagelse af 360-graders video af relevante lokationer på Viborg Katedralskole. Disse videoer blev efterfølgende opdelt i stillbilleder, som blev brugt som datagrundlag til photogrammetry-processen.
 
 Til dette blev RealityScan anvendt, som er et værktøj udviklet af Epic Games. Softwaren analyserer en stor mængde billeder, hvor hvert billede indeholder information om perspektiv, position og vinkel. På baggrund af dette genererer programmet en point cloud, som efterfølgende anvendes til at opbygge et 3D mesh samt tilhørende materialer. Denne proces gør det muligt at skabe meget realistiske 3D-modeller og blev derfor valgt som en central metode til opbygning af spillets miljø.
@@ -223,22 +451,60 @@ Set i retrospektiv vurderer gruppen, at et portalsystem, hvor spilleren teleport
 \subsection{AI NPC'er}
 På trods af at spillet primært er udviklet som et multiplayer-spil, var idéen om også at understøtte singleplayer en vigtig prioritet i designfasen. For at realisere dette blev AI-NPC’er implementeret som en løsning, der kunne simulere modstandere og medspillere i spillet.
 
-Til at starte med blev der oprettet en AI-nedarvning af alle karakterklasser. Derudover fik host-spilleren et dedikeret UI, hvorfra det var muligt at spawne enten tilfældige Resistance team-klasser eller tilfældige Nazi team-karakterer (bilag F.2.22). Dette gjorde det muligt at teste og spille spillet uden andre spillere online, samtidig med at de samme gameplay-systemer kunne genbruges.
+Til at starte med blev der oprettet en AI-nedarvning af alle karakterklasser. Derudover fik host-spilleren et dedikeret UI, hvorfra det var muligt at spawne enten tilfældige Resistance team-klasser eller tilfældige Nazi team-karakterer (bilag F.2.22) figur \ref{fig:HostStartGame}. Dette gjorde det muligt at teste og spille spillet uden andre spillere online, samtidig med at de samme gameplay-systemer kunne genbruges.
+
+\begin{figure}[!b]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.22 BPW_HostStartGame del 2.png}
+	\caption{HostStartGame}
+	\label{fig:HostStartGame}
+\end{figure}
 
 På alle AI-nedarvede karakterer blev der tilføjet et AI Sense-komponent, som giver AI’en mulighed for at “se” og registrere objekter i spillets verden. Dette blev brugt til at give NPC’erne perception og reaktionsevne, så de kunne interagere med spillets elementer på en mere dynamisk måde.
 
 Derudover blev der implementeret logik, som styrer AI’ens adfærd afhængigt af dens rolle. Hvis en Resistance team-AI opdager en nøgle, vil den prioritere at bevæge sig mod og samle den i stedet for at roame tilfældigt. Omvendt vil en Nazi team-AI aktivt forsøge at opspore og forfølge Resistance team-spillere.
 
-Denne adfærd blev implementeret i en custom AIController (bilag F.2.1), som håndterer beslutningslogik og styring af NPC’ernes handlinger. AIControlleren fungerer som hjernen i systemet og sikrer, at NPC’erne reagerer passende på deres omgivelser og spillets tilstand.
+Denne adfærd blev implementeret i en custom AIController (bilag F.2.1) figur \ref{fig:AI}, som håndterer beslutningslogik og styring af NPC’ernes handlinger. AIControlleren fungerer som hjernen i systemet og sikrer, at NPC’erne reagerer passende på deres omgivelser og spillets tilstand.
+
+\begin{figure}[!b]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.1 BP_SEP_AIController.png}
+	\caption{AIController}
+	\label{fig:AI}
+\end{figure}
 
 Samlet set gjorde denne løsning det muligt at understøtte singleplayer-oplevelsen uden at ændre grundlæggende på spillets multiplayer-arkitektur, da AI’en er bygget oven på de samme karakter- og gameplay-systemer.
 
 ud over dette, gjorde det også sådan at fære spiller, ville kunne spille store spil, med mange modstander, da AI'en også blev synkroniserede ud til alle spiller.
 
 \newpage
-\subsection{aflsuttende forbedringer}
-For at gøre spillet til en samlet og færdig oplevelse blev der først implementeret en funktion, hvor session-hosteren har mulighed for at starte spillet. Dette blev gjort ved at tilføje en start-knap, som først aktiverer spillets øvrige funktionaliteter, når hosten trykker på den. Når knappen aktiveres, broadcastes beskeden via GameMode fra hosten ud til alle spillere (jf. bilag F.2.21 og F.2.6). Dette sikrer, at spilstart er synkroniseret på tværs af alle klienter.
+\subsection{Aflsuttende forbedringer}
+For at gøre spillet til en samlet og færdig oplevelse blev der først implementeret en funktion, hvor session-hosteren har mulighed for at starte spillet. Dette blev gjort ved at tilføje en start-knap, som først aktiverer spillets øvrige funktionaliteter, når hosten trykker på den. Når knappen aktiveres, broadcastes beskeden via GameMode fra hosten ud til alle spillere (jf. bilag F.2.21 og F.2.6) figur \ref{fig:HostStartGame 1} og \ref{fig:GameMode4}. Dette sikrer, at spilstart er synkroniseret på tværs af alle klienter.
 
 Derudover blev der implementeret animationer og simple gameplay-triggers for karaktererne. For at spare tid og reducere kompleksitet blev disse funktioner implementeret direkte i base PlayerCharacter-klassen, som alle spillere nedarver fra. Denne løsning medførte dog udfordringer, da ikke alle meshes anvender samme skeleton, hvilket resulterer i, at animationerne i nogle tilfælde fremstår forkert eller uhensigtsmæssige. På trods af dette blev det vurderet som en acceptabel løsning inden for projektets tidsramme.
 
-Afslutningsvis blev der udviklet en startside samt en main menu til at håndtere opstart af spillet og give en samlet brugeroplevelse (jf. bilag F.2.23). Dette bidrager til at samle spillets funktioner i en mere komplet og brugervenlig helhed.
+Afslutningsvis blev der udviklet en startside samt en main menu til at håndtere opstart af spillet og give en samlet brugeroplevelse (jf. bilag F.2.23) figur \ref{fig:MainMenu}. Dette bidrager til at samle spillets funktioner i en mere komplet og brugervenlig helhed.
+
+\begin{figure}[!b]
+	\centering
+	\begin{minipage}{0.30\textwidth}
+		\centering
+        \includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.21 BPW_HostStartGame del 1.png}
+		\caption{HostStartGame}
+		\label{fig:HostStartGame 1}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.30\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.6 BP_SEP_GameMode del 4.png}
+		\caption{GameMode}
+		\label{fig:GameMode4}
+	\end{minipage}
+    \hfill
+	\begin{minipage}{0.30\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../F - Kilde Kode/F.2 BluePrints/F.2.23 BPW_MainMenu.png}
+		\caption{MainMenu}
+		\label{fig:MainMenu}
+	\end{minipage}
+\end{figure}
