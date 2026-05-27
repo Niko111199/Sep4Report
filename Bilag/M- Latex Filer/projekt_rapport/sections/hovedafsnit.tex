@@ -1,13 +1,81 @@
 \section{Hovedafsnit}
 
 \subsection{Metoder}
+I projektet blev der anvendt en kombination af agile udviklingsmetoder, tekniske udviklingsværktøjer samt eksperimenterende og iterative arbejdsmetoder for at udvikle et multiplayer-spil baseret på Viborg Katedralskole’s historie og arkitektur. Projektet kombinerede softwareudvikling, 3D-modellering, netværksprogrammering og brugeroplevelsesdesign, hvilket gjorde det nødvendigt at arbejde tværfagligt og iterativt gennem hele udviklingsforløbet.
+
+\subsubsection{Scrum-lignende udviklingsmetode}
+
+Gruppen arbejdede gennem hele projektet ud fra en Scrum-lignende metode med fokus på agil udvikling og iterative sprint. Denne metode blev valgt, da projektet omfattede mange eksperimenterende og teknisk komplekse elementer, hvor krav og løsninger løbende ændrede sig under udviklingen. Ved at arbejde i sprint kunne gruppen kontinuerligt evaluere fremdrift, prioritere opgaver og tilpasse projektets retning efter nye erfaringer og tekniske udfordringer.
+
+Der blev anvendt Planning Poker til estimering af use cases og story points, hvilket gjorde det muligt at vurdere arbejdsbyrde og kompleksitet i de enkelte opgaver. Projektets backlog blev løbende opdateret, og opgaver blev fordelt mellem gruppemedlemmerne ved sprint planning-møder. Efter hvert sprint blev der afholdt retrospektive møder og reviews, hvor gruppen evaluerede både det tekniske arbejde og samarbejdsprocessen. Dette bidrog til en mere struktureret arbejdsproces og gjorde det muligt løbende at forbedre gruppens arbejdsmetoder.
+
+Gruppen valgte dog bevidst ikke at følge fuld Scrum-metodologi. Blandt andet blev daglige stand-up møder fravalgt, da gruppen ønskede en mere fleksibel arbejdsstruktur. Dette gav større frihed i arbejdet, men medførte samtidig udfordringer i forhold til løbende koordinering og opfølgning mellem gruppemedlemmerne.
+
+\subsubsection{Teknologier og udviklingsværktøjer}
+
+Spillet blev udviklet i Unreal Engine, som blev valgt på grund af engine’ens stærke understøttelse af multiplayer-funktionalitet, avanceret grafik og integration mellem C++ og Blueprint-systemet. Unreal Engine gjorde det muligt at kombinere visuel scripting gennem Blueprints med mere avanceret programmering i C++, hvilket gav gruppen fleksibilitet i udviklingsprocessen.
+
+Projektet blev oprettet som et C++-baseret First Person-projekt, da gruppen ønskede at udvikle spillet fra et førstepersonsperspektiv for at skabe en mere immersiv oplevelse. Der blev tidligt eksperimenteret med samspillet mellem C++ og Blueprints for at finde en balance mellem hurtig prototyping og mere struktureret kodeudvikling.
+
+Til versionsstyring og samarbejde blev der anvendt GitHub. Dette gjorde det muligt for gruppemedlemmerne at arbejde parallelt på projektet, samtidig med at ændringer kunne spores og håndteres gennem pull requests og code reviews. Denne metode blev anvendt for at reducere risikoen for konflikter i projektfilerne og sikre en mere stabil udviklingsproces.
+
+
+\subsubsection{Photogrammetry og map-udvikling}
+
+For at skabe et realistisk og autentisk map blev der anvendt photogrammetry som metode til 3D-modellering. Gruppen optog 360-graders video af skolens relevante områder ved hjælp af specialiseret kameraudstyr. Videoerne blev efterfølgende opdelt i stillbilleder, som blev anvendt som datagrundlag i RealityScan udviklet af Epic Games.
+
+RealityScan analyserede billedernes position og vinkler og genererede herefter point clouds, som blev brugt til at skabe 3D meshes og materialer. Denne metode gjorde det muligt at opnå et højt detaljeringsniveau og skabe realistiske gengivelser af skolens omgivelser.
+
+Metoden medførte dog også udfordringer. Flere meshes krævede manuel efterbehandling, collision-opsætning og sammensætning i Unreal Engine. Derudover viste photogrammetry sig at være mindre egnet til meget store sammenhængende områder, hvilket resulterede i fejl og uregelmæssigheder i nogle modeller.
+
+\subsubsection{Dataindsamling og samarbejde med fagpersoner}
+
+Som en del af projektets researchfase blev der afholdt møder med historielærere fra Viborg Katedralskole for at indsamle viden om skolens historie og rolle under Anden Verdenskrig. Disse samtaler blev anvendt som inspirations- og datagrundlag for spillets narrativ og gameplay-elementer.
+
+Gruppen undersøgte desuden eksisterende multiplayer-spil og gameplay-strukturer for at analysere, hvordan asymmetriske holdbaserede spil fungerer i praksis. Denne analyse blev brugt til at inspirere designvalg omkring teamwork, roller og win conditions i spillet.
+
+
+\subsubsection{Etiske overvejelser}
+
+Projektet bygger på historiske begivenheder fra Anden Verdenskrig og inkluderer derfor temaer omkring modstandsbevægelsen og nazistiske styrker. Gruppen har i udviklingen forsøgt at behandle dette emne respektfuldt og med fokus på historisk inspiration frem for glorificering. Formålet har været at skabe en engagerende og lærerig oplevelse med udgangspunkt i skolens historie.
+
+Ved optagelse af billeder og 360-graders video på skolens område blev der taget hensyn til omgivelserne og indhentet nødvendige tilladelser til brug af materialet i projektet.
 
 \subsection{Analyse}
+oprstarten projektet startede med møder med et udvalg fra viborg katadral skole, som udgjorde kunden for projketet i sammenarbejde med dem, blev der nedsat en rakke tanker og ønsker og krav til hvad skulle være inkluderet i spillet
+
+\subsubsection{UserStories}
+
+\subsubsection{Ikke funktionelle krav}
+
+\subsubsection{Usecase Diagram}
+
+\subsubsection{Actor Discription}
+
+\subsubsection{Use case beskrivelser}
+
+\subsubsection{Aktivitets diagrammer}
+
+\subsubsection{System sequence diagrammer}
+
+\subsubsection{State mashine diagrammer}
+
+\subsubsection{Domaine model}
 
 \subsection{Design}
+
+\subsubsection{Klasse diagram}
+
+\subsubsection{Sequence diagram}
+
+\subsubsection{Conceptual ER-Diagram}
+
+\subsubsection{ EER-Diagram}
 
 \subsection{Implementation}
 
 \subsection{Tests}
+
+\subsubsection{Test Cases}
 
 \subsection{Resultater}
