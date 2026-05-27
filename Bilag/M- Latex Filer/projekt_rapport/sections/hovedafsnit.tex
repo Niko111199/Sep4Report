@@ -346,6 +346,15 @@ Derudover har projektet gjort brug af Remote Procedure Calls (RPC’er), som gø
 Anvendelsen af netværks- og replication-koncepter har derfor haft stor betydning for udviklingen af et stabilt multiplayer-system, hvor flere spillere kan interagere i samme spilverden med en ensartet oplevelse på tværs af klienterne.
 
 \subsubsection{C++}
+C++ er anvendt på to forskellige måder i Unreal Engine, da den primære implementering af gameplay typisk sker gennem Blueprints. På trods af dette spiller C++ stadig en central rolle i projektets udvikling og bruges særligt, hvor Blueprints ikke er tilstrækkeligt fleksible eller effektive.
+
+Den første anvendelse af C++ er til at opbygge mere avancerede baseklasser end dem, Unreal Engine som standard stiller til rådighed. Dette indebærer blandt andet definition af specifikke variabler og funktionalitet, som er skræddersyet til projektets behov. Denne tilgang har gjort det muligt at skabe mere specialiserede og kontrollerede systemer, som bedre passer til spillets design og struktur.
+
+Den anden anvendelse af C++ er implementeringen af mere komplekse og performancekritiske metoder, som enten er svære at realisere i Blueprints eller som kræver bedre optimering. Disse funktioner kan derefter stadig tilgås og anvendes gennem Blueprints, hvilket giver en fleksibel arbejdsdeling mellem visuel scripting og programmering. Ved at definere funktioner med kategorier i UFUNCTION kan udviklede metoder desuden organiseres overskueligt i Blueprints, hvilket forbedrer overblikket under udviklingen.
+
+Det er desuden vigtigt at bemærke, at C++ i Unreal Engine adskiller sig fra “rå” C++ programmering. Unreal benytter et refleksionssystem baseret på makroer som UFUNCTION og UPROPERTY, som gør det muligt for engine’en at håndtere funktioner, variabler og deres eksponering til Blueprints. Samtidig betyder dette system, at udvikleren i høj grad ikke selv skal håndtere memory management i form af garbage collection, da Unreal Engine automatisk håndterer oprydning af objekter.
+
+Brugen af C++ med pointers giver samtidig en effektiv måde at referere til objekter på, da det undgår unødvendige kopier i hukommelsen. Dette bidrager til en mere optimeret og performancedrevet struktur sammenlignet med nogle højere niveau-sprog, hvor objekthåndtering ofte sker mere indirekte.
 
 \subsubsection{Blueprints}
 
@@ -361,4 +370,8 @@ Efterfølgende blev samtlige tests udført af et testpanel bestående af to pers
 resutlatet af testpanelets gennemgang af testene, kan ses under (bilag H), ud fra den gældene trin i testen, er en status beskrevet, for om testen er godkent eller fejlet
 
 \subsection{Resultater}
-på baggrund af hele proceesen kan det resulteret at gruppen har været i stand til at udvikle et spil i unreal engine som har klare refrerance til Viborg Katadralskole.
+På baggrund af hele processen kan det konkluderes, at gruppen har været i stand til at udvikle et spil i Unreal Engine, som indeholder tydelige referencer til Viborg Katedralskole. Projektet har gennem både design-, implementerings- og testfasen udviklet sig til et sammenhængende produkt, hvor de valgte teknologier og metoder er blevet anvendt til at understøtte den ønskede funktionalitet og det overordnede koncept.
+
+De indarbejdede referencer til Viborg Katedralskole kommer til udtryk gennem spillets miljø, strukturer og visuelle elementer, hvilket har været med til at skabe en genkendelig kobling til den virkelige verden. Samtidig har brugen af Unreal Engine, Blueprints og C++ gjort det muligt at realisere projektets idéer i en interaktiv og funktionel spiloplevelse.
+
+Samlet set har projektets iterative udviklingsproces, kombineret med anvendelsen af relevante softwareteknologier og systematiske arbejdsmetoder, gjort det muligt at opnå en prototype af et produkt, som let ville kunne bygges videre og og færdiges, der både teknisk og konceptuelt lever op til projektets oprindelige mål.

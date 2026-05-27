@@ -28,10 +28,10 @@
 \contentsline {subsubsection}{\numberline {3.4.1}Brug af OOP}{22}{subsubsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.2}Netværk}{23}{subsubsection.3.4.2}%
 \contentsline {subsubsection}{\numberline {3.4.3}C++}{23}{subsubsection.3.4.3}%
-\contentsline {subsubsection}{\numberline {3.4.4}Blueprints}{23}{subsubsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.5}Tests}{23}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}Test Cases}{23}{subsubsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.6}Resultater}{24}{subsection.3.6}%
-\contentsline {section}{\numberline {4}Diskussion}{25}{section.4}%
-\contentsline {section}{\numberline {5}Konklusion og anbefalinger}{26}{section.5}%
-\contentsline {section}{Litteratur}{27}{section.5}%
+\contentsline {subsubsection}{\numberline {3.4.4}Blueprints}{24}{subsubsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.5}Tests}{24}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Test Cases}{24}{subsubsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.6}Resultater}{25}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Diskussion}{26}{section.4}%
+\contentsline {section}{\numberline {5}Konklusion og anbefalinger}{27}{section.5}%
+\contentsline {section}{Litteratur}{28}{section.5}%
