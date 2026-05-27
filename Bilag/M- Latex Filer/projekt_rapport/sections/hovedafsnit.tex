@@ -430,6 +430,13 @@ Det er desuden vigtigt at bemærke, at C++ i Unreal Engine adskiller sig fra “
 Brugen af C++ med pointers giver samtidig en effektiv måde at referere til objekter på, da det undgår unødvendige kopier i hukommelsen. Dette bidrager til en mere optimeret og performancedrevet struktur sammenlignet med nogle højere niveau-sprog, hvor objekthåndtering ofte sker mere indirekte.
 
 \subsubsection{Blueprints}
+Blueprints fungerer som centralstykket i udvikling og implementering i Unreal Engine. Det er et "node based" visuelt scripting-system hvor man ved brug af prædefinerede funktioner kan sammensætte logik for forskellige objekter i spilverdenen. Blueprints gør det nemt at sammensætte større objekter med forskellige elementer som colliders, meshes, lyd og animationer og tillader samarbejde mellem disse dele. 
+
+Blueprints egner sig især til simplere funktioner hvor det giver en umiddelbar mere overskuelig udviklingsproces hvor man hurtigt kan lave funktionel logik. Dog som benævnt under bruget af C++ kan disse hurtigt blive uoverskuelige ved højere kompleksitet som i nogen grad kan undgås ved opdeling af blueprints via "Custom events".
+
+Udover spil logik bruges blueprints også til bruger interaktion gennem "Widget blueprints". Her kan man ved brug af designeren sammensætte forskellige præ-definerede canvas elementer såsom knapper, progress bars og text. Disse elementer arbejder yderligere videre med graph editoren som ofte har unikke nodes som aktiveres ved interaktion af de forskellige canvas elementer. 
+
+Derfor fungerer blueprints ofte som bindeled mellem C++ logik, blueprint logik og UI elementer hvor attributer og værdier ligeledes kan eksponeres i blueprint graphs til brug af widget blueprints som i sidste ende tillader information og funktionalitet hos spilleren. 
 
 \subsection{Tests}
 
