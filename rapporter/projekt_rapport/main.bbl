@@ -19,6 +19,42 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{andersen2000viborg}{book}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4cc18f2280f9819fa3c62e040736d124}{%
+           family={Andersen},
+           familyi={A\bibinitperiod},
+           given={Lizzie},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {danish}%
+      }
+      \list{publisher}{1}{%
+        {Viborg Katedralskole}%
+      }
+      \strng{namehash}{e278c228ab1cccd7553a9e1b35706c4a}
+      \strng{fullhash}{e278c228ab1cccd7553a9e1b35706c4a}
+      \strng{fullhashraw}{e278c228ab1cccd7553a9e1b35706c4a}
+      \strng{bibnamehash}{e278c228ab1cccd7553a9e1b35706c4a}
+      \strng{authorbibnamehash}{e278c228ab1cccd7553a9e1b35706c4a}
+      \strng{authornamehash}{e278c228ab1cccd7553a9e1b35706c4a}
+      \strng{authorfullhash}{e278c228ab1cccd7553a9e1b35706c4a}
+      \strng{authorfullhashraw}{e278c228ab1cccd7553a9e1b35706c4a}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{87-984693-1-2}
+      \field{title}{900 {å}r Viborg Katedralskole: jubil{æ}umsskrift}
+      \field{year}{2000}
+    \endentry
     \entry{Bekas2024}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=8f9336a7c9f383e718e55322525d2e64}{%
@@ -303,6 +339,42 @@
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global/global}
+    \entry{andersen2000viborg}{book}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4cc18f2280f9819fa3c62e040736d124}{%
+           family={Andersen},
+           familyi={A\bibinitperiod},
+           given={Lizzie},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {danish}%
+      }
+      \list{publisher}{1}{%
+        {Viborg Katedralskole}%
+      }
+      \strng{namehash}{e278c228ab1cccd7553a9e1b35706c4a}
+      \strng{fullhash}{e278c228ab1cccd7553a9e1b35706c4a}
+      \strng{fullhashraw}{e278c228ab1cccd7553a9e1b35706c4a}
+      \strng{bibnamehash}{e278c228ab1cccd7553a9e1b35706c4a}
+      \strng{authorbibnamehash}{e278c228ab1cccd7553a9e1b35706c4a}
+      \strng{authornamehash}{e278c228ab1cccd7553a9e1b35706c4a}
+      \strng{authorfullhash}{e278c228ab1cccd7553a9e1b35706c4a}
+      \strng{authorfullhashraw}{e278c228ab1cccd7553a9e1b35706c4a}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{87-984693-1-2}
+      \field{title}{900 {å}r Viborg Katedralskole: jubil{æ}umsskrift}
+      \field{year}{2000}
+    \endentry
     \entry{Bekas2024}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=8f9336a7c9f383e718e55322525d2e64}{%

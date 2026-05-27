@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1778819743.83236 "main.bcf" "main.bbl" "main" 1778827629.56056 0
-  "../bibliography.bib" 1778819350 4618 dbbc4c5f5ce3995fc9062b366fa35266 ""
-  "main.bcf" 1778827629 134428 4f9fe5de1c72c8f94f8d1352980a93b7 "pdflatex"
+["biber main"] 1779906258.22139 "main.bcf" "main.bbl" "main" 1779906270.48673 0
+  "../bibliography.bib" 1779906215 4881 9ed160aa9a6acac8a2472209a6c13346 ""
+  "main.bcf" 1779906270 134501 43aac790c473cdf6c8b7939b28214c35 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778827627.17592 "c:/Users/jonat/Downloads/mynewproject/Sep4Report/rapporter/projekt_rapport/main.tex" "main.pdf" "main" 1778827629.56227 0
+["pdflatex"] 1779906267.76796 "c:/Users/jonat/Downloads/mynewproject/Sep4Report/rapporter/projekt_rapport/main.tex" "main.pdf" "main" 1779906270.48846 0
   "../figures/ViaLogo.png" 1778819350 10306 3069fa436e314b51d37288c336ec5517 ""
   "C:/Users/jonat/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1778642705 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/jonat/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1761127018 31952 9be69e0c33dc97c0614f398f6b64d1fc ""
@@ -107,13 +107,13 @@
   "C:/Users/jonat/AppData/Local/Programs/MiKTeX/tex/latex/textpos/textpos.sty" 1658745447 12842 35403bda336a71a37a5edc37b78e3ec3 ""
   "C:/Users/jonat/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "c:/Users/jonat/Downloads/mynewproject/Sep4Report/rapporter/projekt_rapport/main.tex" 1778819350 1975 11af865c8f8ad0b8bdaa880721061b24 ""
-  "main.aux" 1778827629 2667 f4d7726e84356d90a09d0a23e9c94844 "pdflatex"
-  "main.bbl" 1778819747 24535 c75ba955817f2a67c24030518e534547 "biber main"
-  "main.out" 1778827629 450 13536522fc83ad85c5cb714805dfdf07 "pdflatex"
-  "main.run.xml" 1778827629 2362 34c4a7385696d00b4e94f69249a19762 "pdflatex"
+  "main.aux" 1779906270 2929 5790f1345c50186889c91bd249e002de "pdflatex"
+  "main.bbl" 1779906262 27369 fad1b494d7fc3acd76a2479405332750 "biber main"
+  "main.out" 1779906270 450 13536522fc83ad85c5cb714805dfdf07 "pdflatex"
+  "main.run.xml" 1779906270 2362 34c4a7385696d00b4e94f69249a19762 "pdflatex"
   "main.tex" 1778819350 1975 11af865c8f8ad0b8bdaa880721061b24 ""
-  "main.toc" 1778827629 341 d2c0594d12fd35036be2e3692cdcf1dc "pdflatex"
-  "sections/diskussion.tex" 1778819350 20 69ac571a5517fd32f4c5eda3bb92cdf3 ""
+  "main.toc" 1779906270 341 84a0f81a1c80f1343a6122361249a1c4 "pdflatex"
+  "sections/diskussion.tex" 1779906257 2576 5756071905feb506314e3480264e09d1 ""
   "sections/hovedafsnit.tex" 1778819350 225 6820e3a0419ef6033c5ecb89b53fac9d ""
   "sections/indledning.tex" 1778827621 3100 d139f996e53abd32e8c98ae1649ec447 ""
   "sections/konklusion.tex" 1778819350 0 d41d8cd98f00b204e9800998ecf8427e ""

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.26)  15 MAY 2026 08:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.26)  27 MAY 2026 20:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -687,7 +687,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [6
 
-] (sections/konklusion.tex)
+]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7] (sections/konklusion.tex)
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 76.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -703,7 +712,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7
+[8
 
 
 ] (main.aux)
@@ -718,17 +727,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19271 strings out of 468130
- 345156 string characters out of 5430633
- 1284949 words of memory out of 5000000
- 47665 multiletter control sequences out of 15000+600000
+ 19281 strings out of 468130
+ 345467 string characters out of 5430633
+ 1285029 words of memory out of 5000000
+ 47673 multiletter control sequences out of 15000+600000
  635981 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,12n,67p,2691b,2807s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk>
-Output written on main.pdf (8 pages, 130700 bytes).
+Output written on main.pdf (9 pages, 135551 bytes).
 PDF statistics:
- 399 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
+ 409 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
