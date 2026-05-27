@@ -20,8 +20,36 @@ i praksis blev implementationen af online sessions først oprettet som et system
 
 \newpage
 \subsection{VoiceChat}
-//tænker Victor dit kan være her
+Ved den indledende undersøgelse af, hvad der lå bag et funktionelt “proximity” voicechat-system, var den generelle konsensus online, at det var bedst at “betale $40 og spare hovedpinen”. Eksisterende YouTube-guides gjorde oftest brug af et tredjepartsplugin, “Advanced Sessions”, som eksponerer flere funktioner og attributter fra Unreal Engines Online Subsystem.
 
+Dette havde til formål at muliggøre brugen af Steams version af Online Subsystem, en spilplatform udviklet af Valve. Herigennem ville det være muligt at gøre brug af “Steam Voice Chat”, som håndterer hele logikken bag VoIP (Voice over Internet Protocol).
+
+Denne løsning krævede dog, at projektet som helhed skiftede til brug af Steams Online Subsystem, hvilket samtidig medførte behov for refaktorering af andre aspekter af spillet. Ved nærmere undersøgelse af systemet rapporterede flere brugere også problemer med tick rate og båndbredde, og derfor var skiftet ikke særligt attraktivt.
+
+I den indledende udvikling af voicechat-systemet blev det derfor forsøgt at følge disse guides, men med udskiftning af funktionalitet, der var afhængig af Steams systemer, til tilsvarende funktioner fra Unreals eget subsystem. Kompleksiteten ved dette viste sig dog at være for høj og førte til mange timers arbejde med at forsøge at tilpasse funktioner til noget, de ikke oprindeligt var udviklet til.
+
+Problemet lå især i, at Unreal Engines subsystem ikke kan håndtere VoIP uden eksterne plugins, hvilket “Advanced Sessions” forsøgte at løse. Kommunikation mellem de to systemer krævede ændringer i projektets engine-konfigurationsfiler, specifikt i filen DefaultEngine.ini. Ved brug af kommandoerne “[OnlineSubsystem] bHasVoiceEnabled=true” og “[Voice] bEnabled=true” blev VoIP-funktionaliteten eksponeret til “Advanced Sessions”.
+
+Herefter kunne der oprettes en funktion, som skaber et objekt af typen UVOIPTalker ved oprettelsen af player characters. Denne UVOIPTalker bliver herefter bundet til hver enkelt spiller og muliggør brugen af VoIP.
+
+Som standard fungerer voicechat på global skala, hvilket betyder, at der ikke differentieres mellem spillernes lydniveau afhængigt af afstand, og at spillere altid kan høre hinanden uanset afstand. Dette blev løst ved at modificere UVOIPTalkers “Voice Settings”, hvor der ved brug af Sound Attenuation blev tilføjet en maksimal afstand på hver spillers lydoutput.
+
+Ved at kombinere Sound Attenuation med systemet for team selection og de tilhørende tags, som hver spiller modtager, blev der desuden skabt to separate Sound Attenuations unikke for hvert hold. Modstandsbevægelsens Sound Attenuation benytter standardværdier, mens Gestapos har forhøjet volume, reverb og max distance. Dette betyder, at de kan høres tydeligere, med mere rumklang og fra længere afstande.
+
+Til sidst blev et Widget Blueprint udviklet til at vise spillerens nuværende mikrofoninput ved runtime. Her anvendes en progress bar, som modtager et input mellem 0 og 1 og visualiserer den aktuelle værdi med en grøn bjælke.
+
+Værdien mellem 0 og 1 blev skabt ved at tage et Audio Envelope Value, som under test varierede mellem -0,7 og -2,7 afhængigt af lydniveauet. Denne værdi blev herefter clamped til intervallet mellem 0 og 1 og sendt videre til progress baren.
+
+
+\newpage
+\subsection{Kundekontakt & 3D-skanning af Katedralskolen}
+Kundekontakt foregik ved mail korrespondence med Simon Justesen & Signe Bro som er lærere ansat på Katedralskolen. Yderligere mails er sendt til tre elever fra skolen med henblik på potentiel musikproduktion til projektet. 
+
+Yderligere kommunikation og koordinering skete sted ved skanning af skolen hvor det var muligt at planlægge det kommende forløb for samarbejdet med Simon Justesen som var med på skolen under skanningen.
+
+Skanningen af skolen blev gjordt i samarbejde med den anden gruppe som også valgte Katedralskolen som projekt, her blev der lånt udstyr fra Klok Visuals. Skanningen startede Mandag d. 20 April kl 17. 
+
+Skannede lokaler indeholder: gang, klasseværelse, laboratorie, gymnastiksal, bibliotek, musiklokale, balsal og gårdspladsen.
 
 \newpage
 \subsection{Timer}
