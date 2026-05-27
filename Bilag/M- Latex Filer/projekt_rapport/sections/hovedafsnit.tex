@@ -42,11 +42,159 @@ Projektet bygger på historiske begivenheder fra Anden Verdenskrig og inkluderer
 Ved optagelse af billeder og 360-graders video på skolens område blev der taget hensyn til omgivelserne og indhentet nødvendige tilladelser til brug af materialet i projektet.
 
 \subsection{Analyse}
-oprstarten projektet startede med møder med et udvalg fra viborg katadral skole, som udgjorde kunden for projketet i sammenarbejde med dem, blev der nedsat en rakke tanker og ønsker og krav til hvad skulle være inkluderet i spillet
+oprstarten projektet startede med møder med et udvalg fra viborg katadral skole, som udgjorde kunden for projketet i sammenarbejde med dem, blev der nedsat en rakke tanker og ønsker og krav til hvad skulle være inkluderet i spillet, efter at havde fået krav fra kunden, gik gruppen igang med at analysere kravenden ud udarbejde en række UserStories til spillet
 
 \subsubsection{UserStories}
+ens logo består af tre nøgler, som krydser hinanden. Dette symbol stammer fra en historisk fortælling om en gammel skattekiste, som krævede tre nøgler for at blive åbnet. Disse nøgler repræsenterede henholdsvis rektoren, en repræsentant fra kirken og en repræsentant fra staten. Denne historiske fortælling blev vurderet som et stærkt gameplay-element og blev derfor også integreret i projektets user stories som centrale mekanikker.
+
+Derudover introducerede kunden viden om skolens rolle under Anden Verdenskrig. Dette førte til use cases, hvor spillerne kan vælge at spille som enten modstandsfolk eller nazister, hvilket danner grundlag for spillets asymmetriske multiplayer-design og forskellige roller i gameplayet.
+
+Som en del af semesterets overordnede krav blev det desuden et fokusområde at implementere online multiplayer-funktionalitet. Dette resulterede i use cases relateret til oprettelse og tilslutning af spil-sessioner samt lobby-systemer. Derudover blev der inkluderet krav om brugerhåndtering, herunder oprettelse af brugere og login-funktionalitet.
+
+Alle disse krav og idéer blev samlet i en samlet liste over user stories:
+\begin{enumerate}
+    \item Opret bruger  
+    Som spiller vil jeg kunne oprette en konto, så mine fremskridt og statistikker kan gemmes.
+
+    \item Login  
+    Som spiller vil jeg kunne logge ind, så jeg kan spille online med andre.
+
+    \item Join lobby  
+    Som spiller vil jeg kunne join en lobby, så jeg kan deltage i et spil med andre spillere.
+
+    \item Holdvalg  
+    Som spiller vil jeg kunne vælge hold, så jeg enten kan spille som modstandsmand eller SS-soldat.
+
+    \item Bevæge sig skjult  
+    Som modstandsmand vil jeg kunne snige mig rundt på kortet uden at blive opdaget.
+
+    \item Finde nøgler  
+    Som modstandsmand vil jeg kunne finde skjulte nøgler rundt omkring på skolen.
+
+    \item Åbne kiste  
+    Som modstandsmand vil jeg kunne bruge de 3 nøgler til at åbne kisten og vinde spillet.
+
+    \item Samarbejde  
+    Som modstandsmand vil jeg kunne kommunikere med mit hold for at koordinere strategier.
+
+    \item Patruljere området  
+    Som SS-soldat vil jeg kunne patruljere skolens områder for at finde modstandsfolkene.
+
+    \item Fange spillere  
+    Som SS-soldat vil jeg kunne stoppe eller fange modstandsfolkene.
+
+    \item Overvåge områder  
+    Som SS-soldat vil jeg kunne overvåge bestemte områder for at beskytte nøglerne eller kisten.
+
+    \item Vælge klasse  
+    Som spiller vil jeg kunne vælge mellem forskellige klasser før spilstart.
+
+    \item Unikke evner  
+    Som spiller vil jeg kunne bruge specielle evner, som er unikke for min klasse.
+
+    \item Timer  
+    Som spiller vil jeg kunne se, hvor meget tid der er tilbage af kampen.
+
+    \item Victory conditions  
+    Som spiller vil jeg tydeligt kunne se, hvornår et hold har vundet.
+
+    \item Befri fangede holdkammerater  
+    Som modstandsmand vil jeg kunne befri fangede holdkammerater, så de kan være med igen.
+
+    \item Voice chat  
+    Som spiller vil jeg kunne kommunikere via voice chat med de andre spillere.
+
+    \item Map  
+    Som spiller vil jeg have et map, der reflekterer det historiske perspektiv.
+
+    \item NPC  
+    Som spiller vil jeg kunne spille mod NPC'er, hvis der ikke er nok spillere.
+
+    \item Opret session  
+    Som spiller vil jeg kunne oprette en session, så andre spillere kan joine mit spil.
+\end{enumerate}
+
+fter udarbejdelsen af user stories anvendte gruppen Planning Poker som estimeringsmetode. Her blev hver use case tildelt story points baseret på vurderet kompleksitet og arbejdsbyrde. Dette gjorde det muligt at planlægge sprintforløb mere struktureret og skabe et bedre overblik over projektets samlede omfang.
+
+Undervejs i projektet blev story point-estimaterne løbende revideret og justeret i takt med, at gruppen fik mere indsigt i de tekniske udfordringer og opgavernes reelle kompleksitet. Den endelige fordeling af story points fremgår af figuren nedenfor:
+
+\begin{longtable}{|c|p{11cm}|c|}
+\hline
+\textbf{Problem} & \textbf{User Story} & \textbf{Story Points} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Problem} & \textbf{User Story} & \textbf{Story Points} \\
+\hline
+\endhead
+
+1 & Som spiller vil jeg kunne oprette en konto, så mine fremskridt og statistikker kan gemmes & 40 \\
+\hline
+2 & Som spiller vil jeg kunne logge ind, så jeg kan spille online med andre. & 5 \\
+\hline
+3 & Som spiller vil jeg kunne join en lobby, så jeg kan deltage i et spil med andre spillere & 5 \\
+\hline
+4 & Som spiller vil jeg kunne vælge hold, så jeg enten kan spille som modstandsmand eller SS-soldat. & 8 \\
+\hline
+5 & Som modstandsmand vil jeg kunne snige mig rundt på kortet uden at blive opdaget. & 3 \\
+\hline
+6 & Som modstandsmand vil jeg kunne finde skjulte nøgler rundt omkring på skolen. & 8 \\
+\hline
+7 & Som modstandsmand vil jeg kunne bruge de 3 nøgler til at åbne kisten og vinde spillet. & 3 \\
+\hline
+8 & Som modstandsmand vil jeg kunne kommunikere med mit hold for at koordinere strategier. & 13 \\
+\hline
+9 & Som SS-soldat vil jeg kunne patruljere skolens områder for at finde modstandsfolkene & 2 \\
+\hline
+10 & Som SS-soldat vil jeg kunne stoppe eller fange modstandsfolkene & 13 \\
+\hline
+11 & Som SS-soldat vil jeg kunne overvåge bestemte områder for at beskytte nøglerne eller kisten. & 2 \\
+\hline
+12 & Som spiller vil jeg kunne vælge mellem forskellige klasser før spilstart. & 8 \\
+\hline
+13 & Som spiller vil jeg kunne bruge specielle evner, som er unikke for min klasse. & 20 \\
+\hline
+14 & Som spiller vil jeg kunne se, hvor meget tid der er tilbage af kampen. & 5 \\
+\hline
+15 & Som spiller vil jeg tydeligt kunne se, hvornår et hold har vundet. & 3 \\
+\hline
+16 & Som modstandsmand vil jeg gerne kunne befri eventuelt fangede holdkammerater, så de kan være med igen & 5 \\
+\hline
+17 & Som spiller vil jeg gerne kunne kommunikere via voice chat med de andre & 40 \\
+\hline
+18 & Som spiller vil jeg gerne have et map der reflekterer det historiske perspektiv & 8 \\
+\hline
+19 & Som spiller vil jeg gerne kunne spille mod NPC hvis der ikke er nok spillere & 100 \\
+\hline
+20 & Som spiller vil jeg kunne oprette session, så andre spillere kan joine mit spil & 5 \\
+\hline
+\caption{User stories og story points} 
+\label{tab:user-stories}
+\end{longtable}
 
 \subsubsection{Ikke funktionelle krav}
+Ud over user stories blev der også defineret en række ikke-funktionelle krav, som har haft til formål at beskrive de overordnede kvalitetsmæssige og tekniske rammer for systemet. Hvor user stories fokuserer på funktionalitet og brugerens interaktion med spillet, beskriver de ikke-funktionelle krav de egenskaber, som systemet skal leve op til i forhold til ydeevne, stabilitet, brugervenlighed og skalerbarhed.
+
+Disse krav tager udgangspunkt i, at spillet skal kunne fungere stabilt i en online multiplayer-kontekst, hvor flere spillere interagerer simultant i realtid. Dette stiller særlige krav til netværksperformance, serverhåndtering og synkronisering mellem klienter. Samtidig er spillet udviklet med henblik på skolens elever som primær målgruppe, hvilket betyder, at brugeroplevelsen skal være intuitiv, let tilgængelig og hurtigt forståelig, også for brugere uden tidligere erfaring med lignende spil.
+
+De ikke-funktionelle krav fungerer derfor som en række retningslinjer, der sikrer, at spillet ikke blot fungerer teknisk, men også lever op til forventningerne om spilbarhed, læringskurve og stabil drift i et undervisnings- og testmiljø. Dette inkluderer blandt andet krav til responstid, netværksforsinkelse, systemstabilitet og brugergrænsefladens kompleksitet, som alle er centrale faktorer i udviklingen af et multiplayer-spil baseret på Unreal Engine.
+
+Derudover har kravene også fungeret som et styringsværktøj i udviklingsprocessen, da de har givet gruppen et klart grundlag for at vurdere tekniske løsninger og prioritere implementeringer ud fra, hvad der var realistisk inden for projektets tidsramme og tekniske begrænsninger.
+
+\begin{itemize}
+    \item Spillet skal reagere på spillerinput inden for 100 ms under normale netværksforhold.
+    \item Serveren skal kunne håndtere mindst 6 samtidige spillere uden nedbrud.
+    \item Brugerfladen skal være let at forstå for nye spillere.
+    \item Nye spillere skal kunne lære de grundlæggende mekanikker på under 5 minutter.
+    \item Systemet skal kunne opdage eller forhindre simple former for cheating.
+    \item Alle spilleres positioner skal opdateres i realtid med minimal forsinkelse.
+    \item Spillet skal understøtte asynkrone handlinger mellem spillere og server.
+    \item Kodebasen skal være opdelt i moduler, så nye klasser og maps nemt kan tilføjes.
+    \item Spillet skal være lavet i Unreal Engine.
+    \item Klasserne i spillet skal være velbalancerede.
+    \item Voice chatten skal fungere effektivt og kun mellem hold, samt der skal kunne lægges filtre over voice chatten.
+\end{itemize}
 
 \subsubsection{Usecase Diagram}
 

@@ -9,27 +9,27 @@
 \contentsline {subsubsection}{\numberline {3.1.4}Dataindsamling og samarbejde med fagpersoner}{8}{subsubsection.3.1.4}%
 \contentsline {subsubsection}{\numberline {3.1.5}Etiske overvejelser}{8}{subsubsection.3.1.5}%
 \contentsline {subsection}{\numberline {3.2}Analyse}{8}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}UserStories}{9}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Ikke funktionelle krav}{9}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Usecase Diagram}{9}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}Actor Discription}{9}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}Use case beskrivelser}{9}{subsubsection.3.2.5}%
-\contentsline {subsubsection}{\numberline {3.2.6}Aktivitets diagrammer}{9}{subsubsection.3.2.6}%
-\contentsline {subsubsection}{\numberline {3.2.7}System sequence diagrammer}{9}{subsubsection.3.2.7}%
-\contentsline {subsubsection}{\numberline {3.2.8}State mashine diagrammer}{9}{subsubsection.3.2.8}%
-\contentsline {subsubsection}{\numberline {3.2.9}Domaine model}{9}{subsubsection.3.2.9}%
-\contentsline {subsection}{\numberline {3.3}Design}{9}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Klasse diagram}{9}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Sequence diagram}{9}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Conceptual ER-Diagram}{9}{subsubsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.4}EER-Diagram}{9}{subsubsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.4}Implementation}{9}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Brug af OPP}{9}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}C++}{9}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}Blueprints}{9}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Tests}{9}{subsection.3.8}%
-\contentsline {subsubsection}{\numberline {3.8.1}Test Cases}{9}{subsubsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.9}Resultater}{9}{subsection.3.9}%
-\contentsline {section}{\numberline {4}Diskussion}{10}{section.4}%
-\contentsline {section}{\numberline {5}Konklusion og anbefalinger}{11}{section.5}%
-\contentsline {section}{Litteratur}{12}{section.5}%
+\contentsline {subsubsection}{\numberline {3.2.1}UserStories}{8}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Ikke funktionelle krav}{12}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Usecase Diagram}{14}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Actor Discription}{14}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}Use case beskrivelser}{14}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.6}Aktivitets diagrammer}{14}{subsubsection.3.2.6}%
+\contentsline {subsubsection}{\numberline {3.2.7}System sequence diagrammer}{14}{subsubsection.3.2.7}%
+\contentsline {subsubsection}{\numberline {3.2.8}State mashine diagrammer}{14}{subsubsection.3.2.8}%
+\contentsline {subsubsection}{\numberline {3.2.9}Domaine model}{14}{subsubsection.3.2.9}%
+\contentsline {subsection}{\numberline {3.3}Design}{14}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Klasse diagram}{14}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Sequence diagram}{14}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Conceptual ER-Diagram}{14}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}EER-Diagram}{14}{subsubsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.4}Implementation}{14}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Brug af OPP}{14}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}C++}{14}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Blueprints}{14}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Tests}{14}{subsection.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.1}Test Cases}{14}{subsubsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.9}Resultater}{14}{subsection.3.9}%
+\contentsline {section}{\numberline {4}Diskussion}{15}{section.4}%
+\contentsline {section}{\numberline {5}Konklusion og anbefalinger}{16}{section.5}%
+\contentsline {section}{Litteratur}{17}{section.5}%
