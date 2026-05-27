@@ -9,4 +9,5 @@
 \contentsline {subsection}{\numberline {3.5}Tests}{5}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}Resultater}{5}{subsection.3.6}%
 \contentsline {section}{\numberline {4}Diskussion}{6}{section.4}%
-\contentsline {section}{Litteratur}{7}{section.4}%
+\contentsline {section}{\numberline {5}Konklusion og anbefalinger}{7}{section.5}%
+\contentsline {section}{Litteratur}{8}{section.5}%
