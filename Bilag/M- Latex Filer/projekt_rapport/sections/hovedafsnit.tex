@@ -202,7 +202,17 @@ Derudover har kravene også fungeret som et styringsværktøj i udviklingsproces
 \end{itemize}
 
 \subsubsection{Usecase Diagram}
-Det overordnede use case diagram illustrerer, hvordan spillets funktionalitet er opbygget som en sammenhængende brugerrejse, hvor de enkelte use cases enten er afhængige af hinanden eller udvider hinandens funktionalitet. Systemet er designet som en sekventiel proces for spilleren, hvor der først etableres adgang til spillet, hvorefter selve gameplay-loopet aktiveres.
+Det overordnede use case diagram, firgur \ref{fig:UseCase Diagram} illustrerer, hvordan spillets funktionalitet er opbygget som en sammenhængende brugerrejse, hvor de enkelte use cases enten er afhængige af hinanden eller udvider hinandens funktionalitet. Systemet er designet som en sekventiel proces for spilleren, hvor der først etableres adgang til spillet, hvorefter selve gameplay-loopet aktiveres.
+
+\begin{figure}[!b]
+    \centering 
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../../D - UML Diagrammer/D.1 UseCase Diagram.png}
+        \caption{UseCase Diagram}
+        \label{fig:UseCase Diagram}
+    \end{minipage}
+\end{figure}
 
 Processen starter med use casene \textit{Opret bruger} og \textit{Login}, som tilsammen udgør den grundlæggende adgang til systemet. Oprettelse af bruger gør det muligt at gemme spillerdata, mens login sikrer, at spilleren kan identificeres og tilgå sin profil. Disse to use cases fungerer som forudsætning for alle efterfølgende funktioner, da ingen gameplay-relaterede handlinger kan udføres uden autentificering.
 
@@ -267,12 +277,39 @@ Med aktører specificeret samt funktionelle og ikke-funktionelle krav opstillet 
 
 Sekvensen af disse gennemgås i mere detaljeret grad under usecase diagrammet. Beskrivelserne stod også for at give indblik i alternative sekvenser / exception sequences således at der til fremtidig test og implementering af systemet bedre kunne tages hånd om eventuelle konfilkter og andre bekymringer. 
 
-Use case beskrivelserne uddybber desuden relationen mellem vores aktører og giver konkrete eksempler med Pre- og postconditions som senere kan testet på.
+Use case beskrivelserne figure \ref{fig:Usecase Beksrivelse} uddybber desuden relationen mellem vores aktører og giver konkrete eksempler med Pre- og postconditions som senere kan testet på.
+
+\begin{figure}[!b]
+    \centering 
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../../B - Use Case Beskrivelser/B.7 Vælg Klasse.png}
+        \caption{eksempel på Usecase Beskrivelse}
+        \label{fig:Usecase Beksrivelse}
+    \end{minipage}
+\end{figure}
 
 \subsubsection{Aktivitets diagrammer}
 For at specificere det aktuelle gameplay loop i spillet, altså grundessencen af projektet, er en række af aktivitets diagrammer udviklet. Disse viser tydeligt hvilket handlinger der forventes at spilleren kan tage på et givent tidspunkt samt hvilke konsekvenser eller resultater det har. 
 
-Første specifikation er centreret rundt om de funktionelle krav 1 og 2, som sammen udgør behovet for et system hvori spillere kan oprette brugere og logge ind med disse. (bilag D.2 & D.3)
+Første specifikation er centreret rundt om de funktionelle krav 1 og 2, som sammen udgør behovet for et system hvori spillere kan oprette brugere og logge ind med disse. (bilag D.2 \& D.3) figur \ref{fig:OpretBruger} og \ref{fig:Login}
+
+\begin{figure}[!b]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+        \includegraphics[width=\textwidth]{../../D - UML Diagrammer/D.2 OpretBruger Activity Diagram.png}
+		\caption{OpretBruger Activity Diagram}
+		\label{fig:OpretBruger}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../D - UML Diagrammer/D.3 Login Activity Diagram.png}
+        \caption{Login Activity Diagram}
+		\label{fig:Login}
+	\end{minipage}
+\end{figure}
 
 Dette gør det nemmere at overskue de mange muligheder for forgrenede veje et sådan flow kan tage, de vil ikke alle blive gået over i dybden her men i et best case scenario ville spillerens oplevelse for oprettelse af bruger være:
 
@@ -289,7 +326,7 @@ Login:
     \item Spilleren sendes videre til session creation / join.
 \end{itemize}
 
-Funktionelle krav 3 & 4 omhandler oprettelse af en "lobby" samt holdvalg. Aktiviteten bag disse beskrives ved 3 diagrammer: (bilag D.4, D.5 & D.6)
+Funktionelle krav 3 \& 4 omhandler oprettelse af en "lobby" samt holdvalg. Aktiviteten bag disse beskrives ved 3 diagrammer: (bilag D.4, D.5 \& D.6)
 
 Opret Session:
 \begin{itemize}
@@ -312,14 +349,24 @@ Begge disse aktivetsdiagrammer ender i valg af hold:
     \item Spilleren bliver placeret på det givne hold så længe reglerne for balancering af hold er overholdt. 
 \end{itemize}
 
-Herfra vælger spilleren deres klasse hvori et lignende flow bruges. (bilag D.7) Med disse diagrammer produceret gør det selve implementeringen- og håndtering af spiller login, session creation & klasse- og holdvalg mere overskueligt. De mnage forgrenede veje er afklaret ift. indtastning af allerede eksisterende oplysninger og hvad der sker hvis spilleren forlader sessions, holdvalg og klassevalg ved et givent tidspunkt.
+Herfra vælger spilleren deres klasse hvori et lignende flow bruges. (bilag D.7) Med disse diagrammer produceret gør det selve implementeringen- og håndtering af spiller login, session creation \& klasse- og holdvalg mere overskueligt. De mnage forgrenede veje er afklaret ift. indtastning af allerede eksisterende oplysninger og hvad der sker hvis spilleren forlader sessions, holdvalg og klassevalg ved et givent tidspunkt.
 
 Aktivitetsdiagrammer er desuden oprettet for selve gameplay loopet som giver en indikation af win / lose conditions, samt udarbejdelsen af et system til synkronisering af spillere og funktionalitet til at gæmnme spillerdata. 
 
 \subsubsection{System sequence diagrammer}
 For at uddybe spillets gameplay loop ud fra aktivitetsdiagrammerne med en vinkel på sammenspillet mellem aktører og systemet blev en række system sekvens diagrammer udarbejdet. 
 
-Disse gør flowet af information og kommandoer mellem spiller og system tydligere så man til hvert et skridt af flowet kan se hvilke aktører der laver hvilke kald. Især er dette vigtigt at tydeliggøre når det gælder en situation hvor spilleren befinder sig med andre spillere som set i sekvens diagrammet for selve gameplay loopet. (bilag D.18)
+Disse gør flowet af information og kommandoer mellem spiller og system tydligere så man til hvert et skridt af flowet kan se hvilke aktører der laver hvilke kald. Især er dette vigtigt at tydeliggøre når det gælder en situation hvor spilleren befinder sig med andre spillere som set i sekvens diagrammet for selve gameplay loopet. (bilag D.18) figur \ref{fig:Spil Seqeunce Diagram}
+
+\begin{figure}[!b]
+    \centering 
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../../D - UML Diagrammer/D.18 Spil Seqeunce Diagram.png}
+        \caption{Spil Seqeunce Diagram}
+        \label{fig:Spil Seqeunce Diagram}
+    \end{minipage}
+\end{figure}
 
 Her bliver det fremvist hvordan hver spiller handling sendes til systemet og hvordan systemet sikrer at andre spillere / clienter modtager og godtager handlingen. Det er også her muligt at tydeliggøre hvor ofte og hvornår disse opdateringer sker, i dette tilfælde ved hvert gametick. 
 
@@ -328,22 +375,41 @@ System sekvensdiagrammerne giver yderligere mulighed for at vise samspillet mell
 Dette gør det mere klart hvilken rolle spilserveren har i flowet da den før har været mere ubeskrevent og implicit. 
 
 \subsubsection{State machine diagrammer}
-Med et godt indblik i flowet og fordelingen af ansvar blandt aktører gav det mening at lave state machine diagrammer til formål at vise de states som spilleren samt spillet som helhed kan befinde sig i. Spillerens states er bundne i henholdsvis hold- og klassevalg hvor der er 6 mulige states som spilleren kan ende i efter disse valg er truffet. (bilag D.23)
+Med et godt indblik i flowet og fordelingen af ansvar blandt aktører gav det mening at lave state machine diagrammer til formål at vise de states som spilleren samt spillet som helhed kan befinde sig i. Spillerens states er bundne i henholdsvis hold- og klassevalg hvor der er 6 mulige states som spilleren kan ende i efter disse valg er truffet. (bilag D.23) \ref{fig:PlayerState}
 
 Spillet kan simplificeres til 3 states, ved session creation og hold- og klassevalg er spillet ikke endnu startet altså "GameNotStarted" state. Spillet kan naturligvis være "GameStarted" når alle spillere har valgt roller og til sidst kan spillet afsluttes til "GameFinished" gennem triggeren "AllKeysFound". (bilag D.22)
 
 State machine diagrammerne giver til implementationsfasen et hurtigt overblik over hvad der grundlæggende skal implementeres i gameplay loopet hvor man som udvikler kan få større detalje grad på de individuelle dele af disse gennem aktivitetsdiagrammerne samt kan få et bedre indblik i de forskellige aktører og den indbyrdes kommunikation mellem disse i system sekvens diagrammerne. 
 
+\begin{figure}[h]
+    \centering 
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../../D - UML Diagrammer/D.23 PlayerState State Machine Diagram.png}
+        \caption{Spil PlayerState State Machine}
+        \label{fig:PlayerState}
+    \end{minipage}
+\end{figure}
+
 \subsubsection{Domaine model}
 Hidtil er det ikke taklet hvilke objekter i spillet som hører under hinanden, ligeledes ved nogle aspekter af spillet, såsom nøglerne der skal findes for at modstandsbevægelsen kan undslippe, mangler tydeligørrelse af mængden af dem i spilscenen samt de forskellige attributer de har. 
 
-Dette løses ved domænemodellen (bilag D.24) som indikerer spilelementer, antallet af disse og et overordnet indblik i hvilke attributer og data der gemmes i disse. Ligeledes indikerer den også relationerne mellem objekterne således at i implementationsfasen at det er nemmere at sammensætte blueprints og c++ klasser korrekt og forhold til ejerskab og nedarvning. 
+Dette løses ved domænemodellen (bilag D.24) figur \ref{fig:Domain}, som indikerer spilelementer, antallet af disse og et overordnet indblik i hvilke attributer og data der gemmes i disse. Ligeledes indikerer den også relationerne mellem objekterne således at i implementationsfasen at det er nemmere at sammensætte blueprints og c++ klasser korrekt og forhold til ejerskab og nedarvning. 
 
+\begin{figure}[h]
+    \centering 
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../../D - UML Diagrammer/D.24 Domain Diagram.png}
+        \caption{Domain Diagram}
+        \label{fig:Domain}
+    \end{minipage}
+\end{figure}
 
 \subsection{Design}
 
 \subsubsection{Klasse diagram}
-Ud fra  domænemodellen er der blevet udarbejdet et klassediagram, som repræsenterer en mere teknisk og implementeringsnær struktur af systemets komponenter og deres indbyrdes relationer. Hvor domænemodellen primært havde til formål at beskrive de overordnede begreber, aktører og systemets funktionelle områder på et abstrakt niveau, fungerer klassediagrammet som en konkretisering af disse elementer i form af klasser, attributter, metoder og relationer. Overgangen fra domænemodel til klassediagram har derfor bestået i en systematisk nedbrydning af de centrale begreber fra domænet til mere tekniske enheder, dog skal det pointeres, at grunden brug af unreal enginge så er selve klasse diagrammet markant anderledes end domaine modellen, da Unreal Enigne kommer med en færdig bygget aktiketur som man skal bruge for at bygge sit system op omring, dog er gameplay-elementer, spillertyper, sessionshåndtering og netværkslogik  blevet omsat til konkrete klasser med ansvar og funktioner.
+Ud fra  domænemodellen er der blevet udarbejdet et klassediagram, figur \ref{fig:Class}, som repræsenterer en mere teknisk og implementeringsnær struktur af systemets komponenter og deres indbyrdes relationer. Hvor domænemodellen primært havde til formål at beskrive de overordnede begreber, aktører og systemets funktionelle områder på et abstrakt niveau, fungerer klassediagrammet som en konkretisering af disse elementer i form af klasser, attributter, metoder og relationer. Overgangen fra domænemodel til klassediagram har derfor bestået i en systematisk nedbrydning af de centrale begreber fra domænet til mere tekniske enheder, dog skal det pointeres, at grunden brug af unreal enginge så er selve klasse diagrammet markant anderledes end domaine modellen, da Unreal Enigne kommer med en færdig bygget aktiketur som man skal bruge for at bygge sit system op omring, dog er gameplay-elementer, spillertyper, sessionshåndtering og netværkslogik  blevet omsat til konkrete klasser med ansvar og funktioner.
 
 I denne proceekt som dette har det været nødvendigt at skelne mellem gameplay-logik, brugerinteras er der blevet identificeret hvilke dele af domænet der skal repræsenteres som selvstændige klasser, hvilke der skal modelleres som relationer, og hvilke der skal håndteres som arv eller komposition. Særligt i et spiludviklingsprojktion og systemmæssige funktioner såsom netværk og state management. Klassediagrammet afspejler derfor både spillets struktur og de tekniske afhængigheder, som opstår i implementeringen af et multiplayer-system.
 
@@ -356,8 +422,28 @@ Som det fremgår af klassediagrammet (bilag D.26), er der en række arvrelatione
 
 Derudover er de enkelte elementer i diagrammet annoteret efter implementeringstype. Elementer markeret med “Blueprint” angiver dele, der er udviklet i Unreal Engines Blueprint-system, mens klasser markeret med “C++” repræsenterer systemer, som er implementeret af gruppen i C++-kode. Denne opdeling er foretaget for at skabe et klart overblik over, hvilke dele af systemet der er udviklet med hvilke teknologier, og dermed tydeliggøre den tekniske opbygning og ansvarfordeling i projektet.
 
+\begin{figure}[h]
+    \centering 
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../../D - UML Diagrammer/D.26 Class Diagram.png}
+        \caption{Class Diagram}
+        \label{fig:Class}
+    \end{minipage}
+\end{figure}
+
 \subsubsection{Sequence diagram}
-Som det fremgår af sekvensdiagrammet (bilag D.29), fungerer diagrammet som et samlet design for “Sunshine”-systemets sekvenser, der er konsolideret fra en række mindre og mere analytiske systemsekvensdiagrammer. Hvor de individuelle systemsekvensdiagrammer hver især beskriver isolerede brugerinteraktioner og specifikke funktionelle flows, samler dette overordnede sekvensdiagram hele systemets interaktioner i én sammenhængende model.
+Som det fremgår af sekvensdiagrammet (bilag D.29) figur \ref{fig:Seqeunce}, fungerer diagrammet som et samlet design for “Sunshine”-systemets sekvenser, der er konsolideret fra en række mindre og mere analytiske systemsekvensdiagrammer. Hvor de individuelle systemsekvensdiagrammer hver især beskriver isolerede brugerinteraktioner og specifikke funktionelle flows, samler dette overordnede sekvensdiagram hele systemets interaktioner i én sammenhængende model.
+
+\begin{figure}[h]
+    \centering 
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../../D - UML Diagrammer/D.29 Seqeunce Diagram.png}
+        \caption{Seqeunce Diagram}
+        \label{fig:Seqeunce}
+    \end{minipage}
+\end{figure}
 
 Formålet med at udarbejde et samlet sekvensdiagram er at skabe et helhedsorienteret overblik over systemets dynamiske adfærd. Dette gør det muligt at se, hvordan de forskellige dele af systemet interagerer på tværs af funktioner, og hvordan data og kontrolflow bevæger sig mellem aktører og systemkomponenter. I praksis fungerer diagrammet som en bro mellem de tidlige analysemodeller og den endelige design- og implementeringsfase.
 
@@ -372,9 +458,9 @@ diagrammet er nærmest opdelt i 2 forkselige sekvenser, den øvre seksvens som u
 som det også ses fra sequence diagrammet er systemet oprindeligt desinget til også at inkludere en Database, som skulle administere bruger logins, samt bruger data, således at spiller kunne logge ind i systemet, og hente navn og score, databasen er conseptuelt desinget men er ikke blivet implemnteret grunndet priotering af udvikling af selve spillet først
 
 \subsubsection{Conceptual ER-Diagram}
-Som det fremgår af ER-diagrammet (bilag D.27) er der designet en database, som understøtter et login-system og håndteringen af de centrale data i systemet. Databasen er udviklet med udgangspunkt i et klassisk databasedesign-forløb, hvor der først er blevet udarbejdet et Entity-Relationship (ER) diagram som fundament for den endelige databaseimplementering.
+Som det fremgår af ER-diagrammet (bilag D.27) figur \ref{fig:ER} er der designet en database, som understøtter et login-system og håndteringen af de centrale data i systemet. Databasen er udviklet med udgangspunkt i et klassisk databasedesign-forløb, hvor der først er blevet udarbejdet et Entity-Relationship (ER) diagram som fundament for den endelige databaseimplementering.
 
-Udarbejdelsen af ER-diagrammet er sket på baggrund af domænemodellen (bilag D.24), hvor de væsentligste entiteter i systemets problemområde først er blevet identificeret. Domænemodellen har fungeret som et konceptuelt udgangspunkt, der beskriver systemets overordnede struktur og forretningsmæssige begreber. Herefter er disse entiteter blevet analyseret og omsat til en mere databaserettet model, hvor fokus er på datarepræsentation og relationer frem for abstrakte domænebegreber.
+Udarbejdelsen af ER-diagrammet er sket på baggrund af domænemodellen (bilag D.24) figur \ref{fig:Domain}, hvor de væsentligste entiteter i systemets problemområde først er blevet identificeret. Domænemodellen har fungeret som et konceptuelt udgangspunkt, der beskriver systemets overordnede struktur og forretningsmæssige begreber. Herefter er disse entiteter blevet analyseret og omsat til en mere databaserettet model, hvor fokus er på datarepræsentation og relationer frem for abstrakte domænebegreber.
 
 Efter identifikationen af entiteter er der blevet foretaget en detaljeret analyse af de enkelte entiteters attributter. Formålet med denne fase har været at definere, hvilke egenskaber der er nødvendige for at repræsentere hver entitet korrekt i databasen. Dette inkluderer blandt andet overvejelser om primærnøgler, datatyper samt hvilke attributter der er obligatoriske eller valgfrie. Denne strukturering er essentiel for at sikre dataintegritet og entydighed i databasen.
 
@@ -384,8 +470,18 @@ Det endelige ER-diagram fungerer dermed som en samlet konceptuel model for datab
 
 dog som før nævnt er denne database ikke implementeret, dog er den videre analayseret til et EER
 
+\begin{figure}[h]
+    \centering 
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../../D - UML Diagrammer/D.27 ER Diagram.png}
+        \caption{ER Diagram}
+        \label{fig:ER}
+    \end{minipage}
+\end{figure}
+
 \subsubsection{EER-Diagram}
-Efter færdiggørelsen af ER-diagrammet er der blevet udarbejdet et EER-diagram (bilag D.28). Dette diagram udgør en videreudvikling af det oprindelige ER-diagram og repræsenterer et Enhanced Entity-Relationship (EER) design, hvor modellen udvides med mere avancerede datamodelleringskoncepter. Formålet med EER-diagrammet er at give en mere detaljeret og implementeringsnær beskrivelse af databasen, hvor både strukturelle relationer og yderligere constraints er eksplicit defineret.
+Efter færdiggørelsen af ER-diagrammet er der blevet udarbejdet et EER-diagram (bilag D.28) figur \ref{fig:EER}. Dette diagram udgør en videreudvikling af det oprindelige ER-diagram og repræsenterer et Enhanced Entity-Relationship (EER) design, hvor modellen udvides med mere avancerede datamodelleringskoncepter. Formålet med EER-diagrammet er at give en mere detaljeret og implementeringsnær beskrivelse af databasen, hvor både strukturelle relationer og yderligere constraints er eksplicit defineret.
 
 I EER-diagrammet indgår blandt andet mapping af entiteterne i form af primærnøgler og fremmednøgler. Hver entitet er således blevet tildelt en primærnøgle markeret med \texttt{PK}, som entydigt identificerer hver instans af entiteten i databasen. Et eksempel herpå er entiteten \textit{spiller}, hvor attributten \textit{spiller\_id} anvendes som primærnøgle. Denne nøgle er et såkaldt ``opfundet id'' (surrogate key), som genereres og kontrolleres af systemet selv. Fordelen ved denne type nøgle er, at den er stabil, unik og ikke afhænger af forretningsdata, hvilket betyder, at den ikke ændres over tid og derfor er velegnet som identifikator i relationelle databaser.
 
@@ -396,13 +492,33 @@ EER-diagrammet indeholder desuden udvidelser i form af specialisering og general
 Tilsvarende gør sig gældende for \textit{hold}-entiteten, hvor der ligeledes er anvendt specialisering. Dette bidrager til en mere præcis datamodel, hvor forskellige typer af hold kan repræsenteres uden at kompromittere datakonsistens eller struktur. Ved at anvende EER-modellens udvidede begreber opnås dermed en mere nuanceret og realistisk datamodellering, som bedre afspejler systemets domæne og de regler, der gælder heri.
 
 Samlet set fungerer EER-diagrammet som en udvidet og mere formaliseret version af ER-diagrammet, hvor både nøgler, relationer og specialiseringer er tydeligt defineret.
+
+\begin{figure}[h]
+    \centering 
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../../D - UML Diagrammer/D.28 EER Diagram.png}
+        \caption{EER Diagram}
+        \label{fig:EER}
+    \end{minipage}
+\end{figure}
  
 \subsubsection{Package Diagram}
-Package Diagrammet (bilag D.25) er et supplerende diagram, som gruppen har valgt at anvende for at skabe et overblik over systemets overordnede arkitektur. Behovet for dette diagram opstod som følge af, at systemet er opbygget omkring flere forskellige delsystemer, herunder en database, selve spillet udviklet i Unreal Engine samt eksterne værktøjer såsom RealityScan.
+Package Diagrammet (bilag D.25) figur \ref{fig:Package}, er et supplerende diagram, som gruppen har valgt at anvende for at skabe et overblik over systemets overordnede arkitektur. Behovet for dette diagram opstod som følge af, at systemet er opbygget omkring flere forskellige delsystemer, herunder en database, selve spillet udviklet i Unreal Engine samt eksterne værktøjer såsom RealityScan.
 
 Diagrammet illustrerer den lagdelte struktur i systemet og viser, hvordan de forskellige komponenter er organiseret og afhængige af hinanden. Dette har været med til at tydeliggøre, hvordan data og funktionalitet flyder mellem de enkelte dele af systemet under udviklingen.
 
 Formålet med Package Diagrammet har derfor været at skabe et arkitektonisk overblik, som understøtter forståelsen af systemets opbygning og gør det lettere at udvikle og vedligeholde de enkelte moduler i projektet.
+
+\begin{figure}[h]
+    \centering 
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../../D - UML Diagrammer/D.25 Package Diagram.png}
+        \caption{Package Diagram}
+        \label{fig:Package}
+    \end{minipage}
+\end{figure}
 
 \subsection{Implementation}
 Den detaljerede implementering af systemets forskellige dele samt forklaringer af koden er uddybet i procesrapporten, da dette vurderes som en del af udviklingsprocessen. I dette afsnit fokuseres der derfor på, hvordan forskellige implementeringsmetoder og koncepter er blevet anvendt, samt hvilken betydning disse valg har haft for det endelige produkt.
