@@ -1,0 +1,25 @@
+\babel@toc {danish}{}\relax 
+\contentsline {section}{\numberline {1}Indledning}{2}{section.1}%
+\contentsline {section}{\numberline {2}Gruppearbejde}{4}{section.2}%
+\contentsline {section}{\numberline {3}Projektinitiering}{6}{section.3}%
+\contentsline {section}{\numberline {4}Projektudførelse}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Oprettelse af projekt}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Game Sessions}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}TeamSelection}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}VoiceChat}{11}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Kundekontakt \& 3D-skanning af Katedralskolen}{13}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Timer}{14}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Class Selection}{16}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Specielle Evner}{17}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}nøgler og kisten}{22}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}Fange Mechanic}{23}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}befri fængslet}{24}{subsection.4.11}%
+\contentsline {subsection}{\numberline {4.12}Win Conditions}{25}{subsection.4.12}%
+\contentsline {subsection}{\numberline {4.13}map opsætning}{26}{subsection.4.13}%
+\contentsline {subsection}{\numberline {4.14}AI NPC'er}{27}{subsection.4.14}%
+\contentsline {section}{\numberline {5}Personlige Refleksioner}{28}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Jonathan}{28}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Victor}{29}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Nikolaj}{30}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Refleksion over vejledning}{31}{section.6}%
+\contentsline {section}{\numberline {7}Konklusion}{32}{section.7}%
