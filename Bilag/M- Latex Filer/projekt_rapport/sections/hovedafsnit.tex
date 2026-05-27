@@ -197,6 +197,59 @@ Derudover har kravene også fungeret som et styringsværktøj i udviklingsproces
 \end{itemize}
 
 \subsubsection{Usecase Diagram}
+Det overordnede use case diagram illustrerer, hvordan spillets funktionalitet er opbygget som en sammenhængende brugerrejse, hvor de enkelte use cases enten er afhængige af hinanden eller udvider hinandens funktionalitet. Systemet er designet som en sekventiel proces for spilleren, hvor der først etableres adgang til spillet, hvorefter selve gameplay-loopet aktiveres.
+
+Processen starter med use casene \textit{Opret bruger} og \textit{Login}, som tilsammen udgør den grundlæggende adgang til systemet. Oprettelse af bruger gør det muligt at gemme spillerdata, mens login sikrer, at spilleren kan identificeres og tilgå sin profil. Disse to use cases fungerer som forudsætning for alle efterfølgende funktioner, da ingen gameplay-relaterede handlinger kan udføres uden autentificering.
+
+Herefter følger use casen \textit{Join lobby}, hvor spilleren tilslutter sig en aktiv session. Denne use case fungerer som bindeled mellem login-systemet og selve spiloplevelsen, da den placerer spilleren i et multiplayer-miljø sammen med andre deltagere. Når spilleren er i en lobby, aktiveres næste centrale use case: \textit{Holdvalg}. Her fordeles spilleren på enten modstandsbevægelsen eller SS-soldaterne, hvilket definerer spillerens rolle og efterfølgende gameplay-mekanikker.
+
+Efter holdvalg udvides systemet yderligere med use casen \textit{Vælge klasse}, som giver spilleren mulighed for at specialisere sig inden for sit hold. Dette use case leder videre til \textit{Unikke evner}, som er direkte afhængige af den valgte klasse og dermed fungerer som en udvidelse af klassevalget (include-relation).
+
+Når spillet er startet, aktiveres selve gameplay-loopet, som er forskelligt afhængigt af hold:
+
+For modstandsmanden inkluderer dette:
+
+\begin{itemize}
+    \item Bevæge sig skjult, som er en grundlæggende bevægelsesmekanik, der understøtter stealth gameplay.
+    \item Finde nøgler, som er en central progressionsmekanik.
+    \item Åbne kiste, som er den direkte win condition for holdet og afhænger af, at nøglerne er indsamlet.
+    \item Samarbejde, som understøtter koordinering mellem spillere.
+    \item Fangede holdkammerater, som giver mulighed for at befri allierede og genindføre dem i spillet.
+\end{itemize}
+
+For SS-soldaten består gameplayet af:
+
+\begin{itemize}
+    \item Patruljere området, som danner basis for bevægelse og kontrol af kortet.
+    \item Overvåge områder, som giver mulighed for strategisk kontrol over nøgleområder.
+    \item Fange spillere, som fungerer som en direkte modmekanik til modstandsbevægelsen.
+\end{itemize}
+
+Disse mekanikker er designet som parallelle gameplay-strukturer, hvor begge hold har forskellige mål, men interagerer i det samme system.
+
+Derudover er der en række systemoverordnede use cases, som understøtter hele spiloplevelsen:
+
+\begin{itemize}
+    \item Timer, som løbende informerer spilleren om spillets resterende tid.
+    \item Victory conditions, som aktiveres når enten timer eller spilmål er opfyldt og tydeligt informerer spilleren om kampens resultat.
+    \item Voice chat, som understøtter kommunikation mellem spillere og er begrænset til holdvis interaktion.
+    \item Mappet, som repræsenterer spillets fysiske miljø og er designet ud fra skolens historiske bygninger.
+    \item NPC, som aktiveres i situationer hvor der ikke er nok spillere til at understøtte multiplayer gameplay.
+\end{itemize}\\
+
+Endelig findes systemfunktionelle use cases som:
+
+\begin{itemize}
+    \item Opret session, som gør det muligt for en spiller at hoste et spil, som andre kan deltage i.
+\end{itemize} \\
+
+Sammenhæng i systemet:
+
+Set samlet fungerer use casene som en lagdelt struktur, hvor systemet starter med brugeradgang (login), fortsætter med session og lobby-system, derefter rollefordeling (hold og klasse), og til sidst det egentlige gameplay-loop med mål, progression og win condition.
+
+Diagrammet viser dermed en klar afhængighedskæde, hvor de tidlige use cases er nødvendige for at aktivere de senere gameplay-funktioner, og hvor de centrale spilmekanikker er opdelt i holdspecifikke handlinger, der tilsammen skaber den samlede spiloplevelse.
+
+Diagrammets enkelte use cases er udviklet ved at sammensmelte flere user stories ned til enkelte use cases for systemet. Dette er samlet endt ud i dette use case-diagram.
 
 \subsubsection{Actor Discription}
 
