@@ -34,5 +34,5 @@
 \contentsline {subsubsection}{\numberline {3.5.1}Test Cases}{33}{subsubsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.6}Resultater}{33}{subsection.3.6}%
 \contentsline {section}{\numberline {4}Diskussion}{35}{section.4}%
-\contentsline {section}{\numberline {5}Konklusion og anbefalinger}{36}{section.5}%
-\contentsline {section}{Litteratur}{38}{section.5}%
+\contentsline {section}{\numberline {5}Konklusion og anbefalinger}{37}{section.5}%
+\contentsline {section}{Litteratur}{39}{section.5}%

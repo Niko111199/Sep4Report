@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1779911326.19078 -1
-  "../bibliography.bib" 1778654999 4618 dbbc4c5f5ce3995fc9062b366fa35266 ""
-  "main.bcf" 1779911325 134428 4f9fe5de1c72c8f94f8d1352980a93b7 "pdflatex"
+["biber main"] 1779912290.84945 "main.bcf" "main.bbl" "main" 1779912494.77582 0
+  "../bibliography.bib" 1779912248 4980 5177a4be5ac7e977ae6057118e633db0 ""
+  "main.bcf" 1779912494 134565 228d677c92b182cdb4c293a06e5259f1 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1779911323.61952 "c:/Users/niko1/Desktop/Sep4Report/Bilag/M- Latex Filer/projekt_rapport/main.tex" "main.pdf" "main" 1779911326.19141 0
+["pdflatex"] 1779912492.02719 "c:/Users/niko1/Desktop/Sep4Report/Bilag/M- Latex Filer/projekt_rapport/main.tex" "main.pdf" "main" 1779912494.77653 0
   "../../B - Use Case Beskrivelser/B.7 Vælg Klasse.png" 1778604648 28213 30f8ca353f49d1b3761f32afbbb74502 ""
   "../../D - UML Diagrammer/D.1 UseCase Diagram.png" 1778604647 80149 97e19eb64c550539411614110725dd18 ""
   "../../D - UML Diagrammer/D.18 Spil Seqeunce Diagram.png" 1779737805 37492 8a23869bfc39dded2a32fc98ba1465ea ""
@@ -124,16 +124,16 @@
   "C:/Users/niko1/AppData/Local/Programs/MiKTeX/tex/latex/tools/longtable.sty" 1761901070 16014 dfa4b4d4e04a78a3f05a90c19711737a ""
   "C:/Users/niko1/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "c:/Users/niko1/Desktop/Sep4Report/Bilag/M- Latex Filer/projekt_rapport/main.tex" 1779878942 2017 1705bded69b29f9304e310cc44bc0d96 ""
-  "main.aux" 1779911325 9598 263a583bfb91be76f8ed31959abe2496 "pdflatex"
-  "main.bbl" 1779879795 24535 c75ba955817f2a67c24030518e534547 "biber main"
-  "main.out" 1779911325 5310 8f54e397f1e2e64b11506c4ad1c33abe "pdflatex"
-  "main.run.xml" 1779911325 2362 34c4a7385696d00b4e94f69249a19762 "pdflatex"
+  "main.aux" 1779912494 9971 0279ed1ed63c0953782ac05f48619e8e "pdflatex"
+  "main.bbl" 1779912292 27943 3f2ba8ea26955131f13b18a8724eaae1 "biber main"
+  "main.out" 1779912494 5310 8f54e397f1e2e64b11506c4ad1c33abe "pdflatex"
+  "main.run.xml" 1779912494 2362 34c4a7385696d00b4e94f69249a19762 "pdflatex"
   "main.tex" 1779878942 2017 1705bded69b29f9304e310cc44bc0d96 ""
-  "main.toc" 1779911325 3255 75ff4d2c8afaac844b3e843071318c74 "pdflatex"
-  "sections/diskussion.tex" 1779884098 105 8f270fe9fd804f29d401303909e4b320 ""
+  "main.toc" 1779912494 3255 f93bc080faf31e65eb85713eaf4f9658 "pdflatex"
+  "sections/diskussion.tex" 1779912488 3161 129b6d34c3193188dc8e266526515de6 ""
   "sections/hovedafsnit.tex" 1779911320 53685 6c5743e1c2eb18be650b84550a44967e ""
   "sections/indledning.tex" 1778830497 3100 d139f996e53abd32e8c98ae1649ec447 ""
-  "sections/konklusion.tex" 1779908652 3403 575f0ca63b9d9506ec8baa940a9fd319 ""
+  "sections/konklusion.tex" 1779912342 3405 1fbea3a2dbad63aaa9d620aaf856469d ""
   "sections/resume.tex" 1779909146 1475 4144b60aee751f89e8bf6f8137d0f6f7 ""
   (generated)
   "main.aux"

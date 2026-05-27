@@ -3078,6 +3078,8 @@
     <bcf:citekey order="5" intorder="1">Wouters2013</bcf:citekey>
     <bcf:citekey order="6" intorder="1">Mayer2022</bcf:citekey>
     <bcf:citekey order="7" intorder="1">Lai2025</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">andersen2000viborg</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">Storm2026</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
